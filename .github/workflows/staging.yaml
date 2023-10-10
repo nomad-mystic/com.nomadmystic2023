@@ -25,42 +25,42 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-#      - name: Dump GitHub context
-#        env:
-#          GITHUB_CONTEXT: ${{ toJSON(github) }}
-#        run: echo "$GITHUB_CONTEXT"
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
-
-      - name: Run Yarn Build
-        run: yarn build
-
-      - name: Install dependencies
-        uses: php-actions/composer@v6
-        with:
-          php_version: "8.2"
-
-      - name: SSH Setup
-        run: |
-          mkdir -p ~/.ssh
-          echo "StrictHostKeyChecking no" > ~/.ssh/config
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
-
-      - name: Setup Git
-        run: |
-          git config --global user.email "$EMAIL"
-          git config --global user.name "nomad"
-          echo git remote -v
-
-      - name: Deploy to Hostgator
-        run: |
-          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
-          git fetch --unshallow
-          git push -u hostgator staging
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#
+#      - name: Install dependencies
+#        run: yarn --frozen-lockfile
+#
+#      - name: Run Yarn Build
+#        run: yarn build
+#
+#      - name: Install dependencies
+#        uses: php-actions/composer@v6
+#        with:
+#          php_version: "8.2"
+#
+#      - name: SSH Setup
+#        run: |
+#          mkdir -p ~/.ssh
+#          echo "StrictHostKeyChecking no" > ~/.ssh/config
+#          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+#          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+#
+#      - name: Setup Git
+#        run: |
+#          git config --global user.email "$EMAIL"
+#          git config --global user.name "nomad"
+#          echo git remote -v
+#
+#      - name: Deploy to Hostgator
+#        run: |
+#          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
+#          git fetch --unshallow
+#          git push -u hostgator staging
