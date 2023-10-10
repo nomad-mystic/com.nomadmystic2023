@@ -67,6 +67,7 @@ jobs:
 
       - name: Deploy to Hostgator
         run: |
-          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
-          git fetch --unshallow
-          git push -u hostgator staging
+          git status && ls -al
+#          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
+#          git fetch --unshallow
+#          git push -u hostgator staging
