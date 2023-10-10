@@ -20,21 +20,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: SSH Setup
+      - name: Debug
         run: |
-          mkdir -p ~/.ssh
-          echo "StrictHostKeyChecking no" > ~/.ssh/config
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
-
-      - name: Setup Git
-        run: |
-          git config --global user.email "$EMAIL"
-          git config --global user.name "nomad"
-          echo git remote -v
-
-      - name: Deploy to Hostgator
-        run: |
-          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
-          git fetch --unshallow
-          git push --force -u hostgator staging
+          echo "${{ github }}"
+#      - name: SSH Setup
+#        run: |
+#          mkdir -p ~/.ssh
+#          echo "StrictHostKeyChecking no" > ~/.ssh/config
+#          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+#          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+#
+#      - name: Setup Git
+#        run: |
+#          git config --global user.email "$EMAIL"
+#          git config --global user.name "nomad"
+#          echo git remote -v
+#
+#      - name: Deploy to Hostgator
+#        run: |
+#          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
+#          git fetch --unshallow
+#          git push --force -u hostgator staging
