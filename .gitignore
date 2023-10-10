@@ -1,6 +1,6 @@
 ### IDE
 .idea
-.htaccess
+/.htaccess
 
 ### WordPress template
 # ignore these plugins
