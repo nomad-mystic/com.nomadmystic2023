@@ -34,24 +34,6 @@ jobs:
 #          echo "----------"
 #          cd ./wp-content/themes/nomad-mystic && ls -al
 
-      # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install Yarn dependencies
-        run: cd ./wp-content/themes/nomad-mystic && yarn --frozen-lockfile
-
-      - name: Run Yarn Build
-        run: cd ./wp-content/themes/nomad-mystic && yarn build
-
-      - name: Install PHP with Composer
-        uses: php-actions/composer@v6
-        with:
-          php_version: "8.2"
-          working_dir: ./wp-content/themes/nomad-mystic
-
       - name: SSH Setup
         run: |
           mkdir -p ~/.ssh
@@ -67,8 +49,6 @@ jobs:
 
       - name: Deploy to Hostgator
         run: |
-          cd ./wp-content/themes/nomad-mystic && git status
-          cd ./wp-content/themes/nomad-mystic && ls -al
-#          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
-#          git fetch --unshallow
-#          git push -u hostgator staging
+          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
+          git fetch --unshallow
+          git push -u hostgator staging
