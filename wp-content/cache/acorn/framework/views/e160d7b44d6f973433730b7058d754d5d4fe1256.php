@@ -1,6 +1,5 @@
 <header class="banner">
   <a class="brand" href="<?php echo e(home_url('/')); ?>">
-    <?php echo $siteName; ?>
 
   </a>
 
