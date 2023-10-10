@@ -1,4 +1,5 @@
 # https://gist.github.com/joaosalless/dbc295c5f8954747ee7dae92e466fb35
+# https://stackoverflow.com/questions/11117823/git-push-error-refusing-to-update-checked-out-branch
 name: Deploy to HostGator Staging
 
 on:
@@ -17,13 +18,21 @@ jobs:
       EMAIL: ${{ secrets.EMAIL }}
       SSH_AUTH_SOCK: /tmp/ssh_agent.sock
 
+    strategy:
+      matrix:
+        node-version: [ '18.x' ]
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
 #      - name: Dump GitHub context
 #        env:
 #          GITHUB_CONTEXT: ${{ toJSON(github) }}
-#        run: echo "$GITHUB_CONTEXT"
+#        run: |
+#          # echo "$GITHUB_CONTEXT"
+#
+#          echo "----------"
+#          cd ./wp-content/themes/nomad-mystic && ls -al
 
       - name: SSH Setup
         run: |
