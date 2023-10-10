@@ -50,9 +50,8 @@ jobs:
         uses: php-actions/composer@v6
         with:
           php_version: "8.2"
+          container_workdir: ./wp-content/themes/nomad-mystic
 
-      - name: Install dependencies
-        run: cd ./wp-content/themes/nomad-mystic && composer install
 #
 #      - name: SSH Setup
 #        run: |
