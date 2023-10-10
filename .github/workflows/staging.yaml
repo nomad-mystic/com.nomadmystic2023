@@ -37,6 +37,5 @@ jobs:
         run: |
             git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
             git fetch --unshallow
-            git checkout main
             git merge staging
             git push --force -u hostgator main
