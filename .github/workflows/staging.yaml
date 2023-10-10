@@ -18,13 +18,33 @@ jobs:
       EMAIL: ${{ secrets.EMAIL }}
       SSH_AUTH_SOCK: /tmp/ssh_agent.sock
 
+    strategy:
+      matrix:
+        node-version: [ '18.x' ]
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
 #      - name: Dump GitHub context
 #        env:
 #          GITHUB_CONTEXT: ${{ toJSON(github) }}
 #        run: echo "$GITHUB_CONTEXT"
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Run Yarn Build
+        run: yarn build
+
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          php_version: "8.2"
 
       - name: SSH Setup
         run: |
