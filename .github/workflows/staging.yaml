@@ -2,37 +2,36 @@
 name: Deploy to HostGator Staging
 
 on:
-    pull_request:
-        branches:
-            - main
-        types: [ closed ]
+  pull_request:
+    branches:
+      - staging
+    types: [ closed ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-    deploy:
-        timeout-minutes: 3
-        # The type of runner that the job will run on
-        runs-on: ubuntu-latest
+  deploy:
+    timeout-minutes: 3
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-        env:
-            EMAIL: ${{ secrets.EMAIL }}
-            SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+    env:
+      EMAIL: ${{ secrets.EMAIL }}
+      SSH_AUTH_SOCK: /tmp/ssh_agent.sock
 
-        steps:
-            -   uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-            -   name: SSH Setup
-                run: |
-                    mkdir -p ~/.ssh
-                    echo "StrictHostKeyChecking no" > ~/.ssh/config
-                    ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-                    ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+      - name: SSH Setup
+        run: |
+          mkdir -p ~/.ssh
+          echo "StrictHostKeyChecking no" > ~/.ssh/config
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
 
-            -   name: Setup Git
-                run: |
-                    git config --global user.email "$EMAIL"
-                    git config --global user.name "nomad"
-                    echo git remote -v
+      - name: Setup Git
+        run: |
+          git config --global user.email "$EMAIL"
+          git config --global user.name "nomad"
+          echo git remote -v
 
             -   name: Deploy to Hostgator
                 run: |
