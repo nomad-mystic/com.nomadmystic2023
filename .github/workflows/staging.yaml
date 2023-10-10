@@ -22,7 +22,7 @@ jobs:
 
       - name: Debug
         run: |
-          echo "${{ github }}"
+          echo ${{ github }}
 #      - name: SSH Setup
 #        run: |
 #          mkdir -p ~/.ssh
