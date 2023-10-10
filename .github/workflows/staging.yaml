@@ -28,7 +28,12 @@ jobs:
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
-        run: echo "$GITHUB_CONTEXT"
+        run: |
+          # echo "$GITHUB_CONTEXT"
+
+          echo "----------"
+          cd ./wp-content/themes/nomad-mystic && ls -al
+
 
 #      - name: Use Node.js ${{ matrix.node-version }}
 #        uses: actions/setup-node@v3
