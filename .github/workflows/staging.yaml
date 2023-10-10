@@ -35,16 +35,16 @@ jobs:
           cd ./wp-content/themes/nomad-mystic && ls -al
 
 
-#      - name: Use Node.js ${{ matrix.node-version }}
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version: ${{ matrix.node-version }}
-#
-#      - name: Install dependencies
-#        run: yarn --frozen-lockfile
-#
-#      - name: Run Yarn Build
-#        run: yarn build
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: cd ./wp-content/themes/nomad-mystic && yarn --frozen-lockfile
+
+      - name: Run Yarn Build
+        run: cd ./wp-content/themes/nomad-mystic && yarn build
 #
 #      - name: Install dependencies
 #        uses: php-actions/composer@v6
