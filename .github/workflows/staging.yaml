@@ -34,7 +34,7 @@ jobs:
           echo "----------"
           cd ./wp-content/themes/nomad-mystic && ls -al
 
-
+      # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -45,11 +45,14 @@ jobs:
 
       - name: Run Yarn Build
         run: cd ./wp-content/themes/nomad-mystic && yarn build
-#
-#      - name: Install dependencies
-#        uses: php-actions/composer@v6
-#        with:
-#          php_version: "8.2"
+
+      - name: Use PHP Composer
+        uses: php-actions/composer@v6
+        with:
+          php_version: "8.2"
+
+      - name: Install dependencies
+        run: cd ./wp-content/themes/nomad-mystic && composer install
 #
 #      - name: SSH Setup
 #        run: |
