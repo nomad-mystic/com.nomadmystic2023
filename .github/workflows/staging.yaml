@@ -67,7 +67,8 @@ jobs:
 
       - name: Deploy to Hostgator
         run: |
-          git status && ls -al
+          cd ./wp-content/themes/nomad-mystic && git status
+          cd ./wp-content/themes/nomad-mystic && ls -al
 #          git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
 #          git fetch --unshallow
 #          git push -u hostgator staging
