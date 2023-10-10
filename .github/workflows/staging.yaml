@@ -35,22 +35,22 @@ jobs:
           cd ./wp-content/themes/nomad-mystic && ls -al
 
       # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#
+#      - name: Install Yarn dependencies
+#        run: cd ./wp-content/themes/nomad-mystic && yarn --frozen-lockfile
+#
+#      - name: Run Yarn Build
+#        run: cd ./wp-content/themes/nomad-mystic && yarn build
 
-      - name: Install dependencies
-        run: cd ./wp-content/themes/nomad-mystic && yarn --frozen-lockfile
-
-      - name: Run Yarn Build
-        run: cd ./wp-content/themes/nomad-mystic && yarn build
-
-      - name: Use PHP Composer
+      - name: Install PHP with Composer
         uses: php-actions/composer@v6
         with:
           php_version: "8.2"
-          container_workdir: ./wp-content/themes/nomad-mystic
+          working_dir: ./wp-content/themes/nomad-mystic
 
 #
 #      - name: SSH Setup
