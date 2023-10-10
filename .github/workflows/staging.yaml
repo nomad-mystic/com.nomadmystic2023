@@ -1,0 +1,41 @@
+# https://gist.github.com/joaosalless/dbc295c5f8954747ee7dae92e466fb35
+name: Deploy to HostGator Staging
+
+on:
+    pull_request:
+        branches:
+            - main
+        types: [ closed ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+    deploy:
+        timeout-minutes: 3
+        # The type of runner that the job will run on
+        runs-on: ubuntu-latest
+
+        env:
+            EMAIL: ${{ secrets.EMAIL }}
+            SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+
+        steps:
+            -   uses: actions/checkout@v3
+
+            -   name: SSH Setup
+                run: |
+                    mkdir -p ~/.ssh
+                    echo "StrictHostKeyChecking no" > ~/.ssh/config
+                    ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+                    ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+
+            -   name: Setup Git
+                run: |
+                    git config --global user.email "$EMAIL"
+                    git config --global user.name "nomad"
+                    echo git remote -v
+
+            -   name: Deploy to Hostgator
+                run: |
+                    git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
+                    git fetch --unshallow
+                    git push --force -u hostgator main
