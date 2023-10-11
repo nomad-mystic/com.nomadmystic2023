@@ -1,5 +1,9 @@
 .Home-builtWith {
-    header {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    .header {
 
     }
 
@@ -13,8 +17,8 @@
         }
 
         svg {
-            width: 32px;
-            height: 32px;
+            width: 80px;
+            height: 80px;
         }
     }
 }
