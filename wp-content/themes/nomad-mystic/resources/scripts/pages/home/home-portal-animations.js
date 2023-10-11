@@ -17,27 +17,27 @@ export default class HomePortalAnimations extends AnimationMethods {
     }
 
     /**
-     * @description Portal Sections call to action Featured, School, and Website SVGs
+     * @description Portal sections animations for Featured, School, and Website SVGs
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      *
      * @return {void}
      */
     homePortalSections = () => {
-        const homeSectionsFeaturedPaths = window.document.querySelectorAll('.homePageFeaturedSectionsFeaturedPath');
-        this.textPathAnimation(homeSectionsFeaturedPaths, '3s');
+        const featuredPaths = window.document.querySelectorAll('.homePageFeaturedSectionsFeaturedPath');
+        this.textPathAnimation(featuredPaths);
 
-        const homeSectionsSchoolPaths = window.document.querySelectorAll('.homePageFeaturedSectionsSchoolPath');
-        this.textPathAnimation(homeSectionsSchoolPaths, '3s');
+        const schoolPaths = window.document.querySelectorAll('.homePageFeaturedSectionsSchoolPath');
+        this.textPathAnimation(schoolPaths);
 
-        const homeSectionsWebsitesPaths = window.document.querySelectorAll('.homePageFeaturedSectionsWebsitesPath');
-        this.textPathAnimation(homeSectionsWebsitesPaths, '3s');
+        const websitesPaths = window.document.querySelectorAll('.homePageFeaturedSectionsWebsitesPath');
+        this.textPathAnimation(websitesPaths);
 
         // Animations for filling three sections action words
         setTimeout(() => {
-            this.fillPathAnimation(homeSectionsFeaturedPaths);
-            this.fillPathAnimation(homeSectionsSchoolPaths);
-            this.fillPathAnimation(homeSectionsWebsitesPaths);
+            this.fillPathAnimation(featuredPaths);
+            this.fillPathAnimation(schoolPaths);
+            this.fillPathAnimation(websitesPaths);
         }, 3000);
     };
 }

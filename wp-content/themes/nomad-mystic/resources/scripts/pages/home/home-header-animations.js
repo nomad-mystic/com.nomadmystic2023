@@ -1,5 +1,6 @@
 import AnimationMethods from '@scripts/pages/home/animation-methods.js';
 import HomePortalAnimations from '@scripts/pages/home/home-portal-animations.js';
+import HomeAspirationsAnimations from '@scripts/pages/home/home-aspirations-animations.js';
 
 
 export default class HomeHeaderAnimations extends AnimationMethods {
@@ -40,11 +41,13 @@ export default class HomeHeaderAnimations extends AnimationMethods {
             const headerMysticTextPaths = window.document.querySelectorAll('.headerMysticTextPath');
             this.fillPathAnimation(headerMysticTextPaths);
 
-            // when header animations stop call Explore Discover and Code path animations
-            // setTimeout(function() {
-            //     homePageExploreDiscoverCodeAnimations();
-            // }, 1000);
 
+            // When header animations stop call Explore Discover and Code path animations
+            setTimeout(function() {
+                new HomeAspirationsAnimations().init();
+            }, 1000);
+
+            // @todo Maybe this needs to be shown when a user scrolls to it
             new HomePortalAnimations().init();
         }, 5000);
     };

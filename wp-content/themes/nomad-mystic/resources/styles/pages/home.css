@@ -1,4 +1,6 @@
 .Home {
+    /* Hero */
+
     &-heroContainer {
         background-repeat: no-repeat;
         background-size: cover;
@@ -7,7 +9,7 @@
         #homePageHeaderTriangle {
             opacity: 0;
             fill: transparent;
-            stroke: #fff;
+            stroke: var(--color-animation-stroke);
             stroke-width: 10;
             stroke-miterlimit: 10;
         }
@@ -23,6 +25,40 @@
 
     }
 
+    /* Aspirations */
+    &.homePageExploreDiscoverCodeSection {
+        .homePageExploreDiscoverCode {
+            margin: 1px auto;
+            position: relative;
+            height: 30vh;
+            width: 100%;
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+
+            .homePageExploreDiscoverCodeExplorePath,
+            .homePageExploreDiscoverCodeDiscoverPath,
+            .homePageExploreDiscoverCodeCodePath {
+                fill: transparent;
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+            }
+        }
+
+        .exploreDiscoverCodeExploreGroup {
+            background-color: var(--color-teal-light);
+        }
+
+        .exploreDiscoverCodeDiscoverGroup {
+            background: var(--color-teal);
+        }
+
+        .exploreDiscoverCodeCodeGroup {
+            background-color: var(--color-teal-light);
+        }
+    }
+
+    /* Portal */
     &.homePageThreeFeatures {
         margin: 3px auto;
 
@@ -47,7 +83,7 @@
             }
 
             &:after {
-                content: "";
+                content: '';
                 display: block;
             }
         }

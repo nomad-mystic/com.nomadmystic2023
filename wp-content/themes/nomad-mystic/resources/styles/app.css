@@ -13,5 +13,8 @@
     --color-purple-light: rgba(195, 15, 160, 1);
     --color-dark-grey: rgba(0, 0, 0, .10);
 
+    --color-animation-fill: #000000;
+    --color-animation-stroke: #000000;
+
     --font-stack: "Playfair Display", Arial, Hevetica, sans-serif;
 }
