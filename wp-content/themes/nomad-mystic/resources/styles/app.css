@@ -1,3 +1,6 @@
+/* https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports */
+@import './sections/header.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

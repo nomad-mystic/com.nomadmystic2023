@@ -35,7 +35,7 @@ export default async (app) => {
   app
     .setUrl('http://localhost:9000')
     .setProxyUrl('http://nomadmystic2023.com.test/')
-    .watch(['resources/views', 'app']);
+    .watch(['resources/views', 'app', 'tailwind.config.js']);
 
   /**
    * Generate WordPress `theme.json`
