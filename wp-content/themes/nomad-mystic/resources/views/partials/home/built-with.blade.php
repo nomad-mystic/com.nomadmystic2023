@@ -24,19 +24,19 @@
             </figure>
         </a>
 
-        <a href="https://roots.io/" target="_blank" rel="noreferrer" class="p-4 mx-2">
+        <a href="https://nodejs.org/" target="_blank" rel="noreferrer" class="p-4 mx-2">
             <figure class="icon">
                 @svg('si-nodedotjs')
             </figure>
         </a>
 
-        <a href="https://roots.io/" target="_blank" rel="noreferrer" class="p-4 mx-2">
+        <a href="https://laravel.com/" target="_blank" rel="noreferrer" class="p-4 mx-2">
             <figure class="icon">
                 @svg('si-laravel')
             </figure>
         </a>
 
-        <a href="https://roots.io/" target="_blank" rel="noreferrer" class="p-4 mx-2">
+        <a href="https://vuejs.org/" target="_blank" rel="noreferrer" class="p-4 mx-2">
             <figure class="icon">
                 @svg('si-vuedotjs')
             </figure>

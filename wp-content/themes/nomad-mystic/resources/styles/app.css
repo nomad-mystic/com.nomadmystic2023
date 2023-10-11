@@ -12,9 +12,11 @@
     --color-purple: rgba(173, 0, 173, 1);
     --color-purple-light: rgba(195, 15, 160, 1);
     --color-dark-grey: rgba(0, 0, 0, .10);
+    --color-black: #4a4a4a;
+    --color-white: #ffffff;
 
-    --color-animation-fill: #000000;
-    --color-animation-stroke: #000000;
+    --color-animation-fill: #4a4a4a;
+    --color-animation-stroke: #4a4a4a;
 
     --font-stack: "Playfair Display", Arial, Hevetica, sans-serif;
 }

@@ -1,4 +1,4 @@
-<header class="Header">
+<header class="Header fixed w-screen z-10">
     <section class="flex justify-around items-center h-full">
         <a class="Header-logo" href="{{ home_url('/') }}">
             <img src="@asset('images/nav-logo-dark.png')">

@@ -1,8 +1,12 @@
 .Header {
-    --lg-header-height: 70px;
+    --lg-header-height: 60px;
+    --header-color: var(--color-white);
+
+    background-color: var(--header-color);
 
     @media (min-width: 1024px) {
-        height: var( --lg-header-height);
+        height: var(--lg-header-height);
+        top: calc(0px + var(--wp-admin--admin-bar--height))
     }
 
     &-logo {
@@ -12,6 +16,7 @@
     &-navigation {
         li {
             padding: 0 .5rem;
+            color: var(--color-black);
         }
     }
 }
