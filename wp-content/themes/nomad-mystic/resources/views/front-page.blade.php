@@ -9,6 +9,8 @@
 
 	@include('partials.home.portal-svg')
 
+	@include('partials.home.built-with')
+
 </section>
 
 @endsection
