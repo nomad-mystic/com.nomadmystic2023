@@ -25,6 +25,8 @@
     },
     "require": {
         "php": "^8.0",
+        "blade-ui-kit/blade-icons": "^1.5",
+        "codeat3/blade-simple-icons": "^1.90",
         "roots/acorn": "^3.2"
     },
     "require-dev": {

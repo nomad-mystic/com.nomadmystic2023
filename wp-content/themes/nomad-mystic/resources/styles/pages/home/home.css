@@ -1,0 +1,139 @@
+@import 'built-with.css';
+
+.Home {
+    /* Hero */
+
+    &-heroContainer {
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        #homePageHeaderHexagon,
+        #homePageHeaderTriangle {
+            opacity: 0;
+            fill: transparent;
+            stroke: var(--color-animation-stroke);
+            stroke-width: 10;
+            stroke-miterlimit: 10;
+        }
+
+        .headerMysticTextPath {
+            fill: transparent;
+            stroke-miterlimit: 10;
+            stroke-width: 2.5;
+        }
+    }
+
+    &-heroSVG {
+
+    }
+
+    /* Aspirations */
+
+    &.homePageExploreDiscoverCodeSection {
+        .homePageExploreDiscoverCode {
+            margin: 1px auto;
+            position: relative;
+            height: 30vh;
+            width: 100%;
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+
+            .homePageExploreDiscoverCodeExplorePath,
+            .homePageExploreDiscoverCodeDiscoverPath,
+            .homePageExploreDiscoverCodeCodePath {
+                fill: transparent;
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+            }
+        }
+
+        .exploreDiscoverCodeExploreGroup {
+            background-color: var(--color-teal-light);
+        }
+
+        .exploreDiscoverCodeDiscoverGroup {
+            background: var(--color-teal);
+        }
+
+        .exploreDiscoverCodeCodeGroup {
+            background-color: var(--color-teal-light);
+        }
+    }
+
+    /* Portal */
+
+    &.homePageThreeFeatures {
+        margin: 3px auto;
+
+        a {
+            height: 100%;
+            width: 100%;
+        }
+
+        .homePageThreeFeaturePiece {
+            margin: 1px auto;
+            position: relative;
+            height: 30vh;
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+
+            .homePageFeaturedSectionsWebsitesPath,
+            .homePageFeaturedSectionsSchoolPath,
+            .homePageFeaturedSectionsFeaturedPath {
+                fill: transparent;
+                stroke-miterlimit: 10;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+            }
+        }
+    }
+
+    .homePageThreeSVG {
+        width: 50%;
+        position: absolute;
+        inset: 0;
+        height: 30%;
+        margin: auto;
+    }
+
+    &-featuredPortal,
+    &-websitesPortal {
+        background-color: var(--color-teal);
+    }
+
+    &-schoolPortal {
+        background-color: var(--color-teal-light);
+    }
+
+    &-websitesPortal {
+
+    }
+
+    &-featuredPortal,
+    &-schoolPortal,
+    &-websitesPortal {
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 100%;
+            width: 0;
+            background: transparent;
+            transition: width 1s ease, background-color 1s ease;
+            position: absolute;
+            inset: 0;
+        }
+
+        &:hover:after {
+            width: 100%;
+            background: var(--color-dark-grey);
+        }
+    }
+}

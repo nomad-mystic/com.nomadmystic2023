@@ -1,0 +1,20 @@
+.Home-builtWith {
+    header {
+
+    }
+
+    .icons {
+
+    }
+
+    .icon {
+        a {
+            display: block;
+        }
+
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
