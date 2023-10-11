@@ -7,8 +7,8 @@
     "search": "",
     "pathname": "/",
     "path": "/",
-    "href": "http://localhost:3000/",
-    "port": 3000
+    "href": "http://localhost:9000/",
+    "port": 9000
   },
   "proxy": {
     "protocol": "http:",

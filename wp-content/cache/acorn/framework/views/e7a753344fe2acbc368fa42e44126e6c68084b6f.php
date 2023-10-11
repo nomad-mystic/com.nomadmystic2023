@@ -1,6 +1,9 @@
+<?php $__env->startSection('content'); ?>
 <section>
     <h1>Keith</h1>
 </section>
+
+<?php $__env->stopSection(); ?>
 
 
 
