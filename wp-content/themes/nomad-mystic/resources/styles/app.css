@@ -5,3 +5,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --color-teal: rgba(60, 192, 204, 1);
+    --color-teal-light: rgba(60, 192, 204, .5);
+    --color-purple: rgba(173, 0, 173, 1);
+    --color-purple-light: rgba(195, 15, 160, 1);
+    --color-dark-grey: rgba(0, 0, 0, .10);
+
+    --font-stack: "Playfair Display", Arial, Hevetica, sans-serif;
+}

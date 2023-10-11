@@ -3,6 +3,8 @@
 
 	<?php echo $__env->make('partials.home.hero-svg', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
+	<?php echo $__env->make('partials.home.portal-svg', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
 </section>
 
 <?php $__env->stopSection(); ?>

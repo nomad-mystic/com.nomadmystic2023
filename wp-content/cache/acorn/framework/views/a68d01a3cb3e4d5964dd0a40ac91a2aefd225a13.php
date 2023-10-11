@@ -2,10 +2,10 @@
 
 
 <section class="Home-heroContainer bg-black py-12" style="background-image: url(<?= \Roots\asset('images/home-header-background.jpg'); ?>)">
-    <div class="Home-heroSVG">
+    <div class="Home-heroSVG mx-auto w-2/4">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px"
-             viewBox="0 0 879.7 250.6" style="enable-background:new 0 0 879.7 250.6;" xml:space="preserve">
+             viewBox="0 0 879.7 250.6" xml:space="preserve">
             <g id="homeHeaderShapes">
                 <polygon class="st0" id="homePageHeaderHexagon"
                          points="336.3,66.9 437.8,8.5 539.3,66.9 539.3,183.7 437.8,242.2 336.3,183.7 "></polygon>

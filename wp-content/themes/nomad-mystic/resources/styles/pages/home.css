@@ -22,4 +22,78 @@
     &-heroSVG {
 
     }
+
+    &.homePageThreeFeatures {
+        margin: 3px auto;
+
+        a {
+            height: 100%;
+            width: 100%;
+        }
+
+        .homePageThreeFeaturePiece {
+            margin: 1px auto;
+            position: relative;
+            height: 30vh;
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+
+            .homePageFeaturedSectionsWebsitesPath,
+            .homePageFeaturedSectionsSchoolPath,
+            .homePageFeaturedSectionsFeaturedPath {
+                fill: transparent;
+                stroke-miterlimit: 10;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+            }
+        }
+    }
+
+    .homePageThreeSVG {
+        width: 50%;
+        position: absolute;
+        inset: 0;
+        height: 30%;
+        margin: auto;
+    }
+
+    &-featuredPortal,
+    &-websitesPortal {
+        background-color: var(--color-teal);
+    }
+
+    &-schoolPortal {
+        background-color: var(--color-teal-light);
+    }
+
+    &-websitesPortal {
+
+    }
+
+    &-featuredPortal,
+    &-schoolPortal,
+    &-websitesPortal {
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 100%;
+            width: 0;
+            background: transparent;
+            transition: width 1s ease, background-color 1s ease;
+            position: absolute;
+            inset: 0;
+        }
+
+        &:hover:after {
+            width: 100%;
+            background: var(--color-dark-grey);
+        }
+    }
 }
