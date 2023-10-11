@@ -1,6 +1,8 @@
 <?php $__env->startSection('content'); ?>
 <section>
-    <h1>Keith</h1>
+
+	<?php echo $__env->make('partials.home.hero-svg', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
 </section>
 
 <?php $__env->stopSection(); ?>

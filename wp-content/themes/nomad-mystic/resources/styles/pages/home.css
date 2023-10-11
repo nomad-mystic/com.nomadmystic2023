@@ -1,0 +1,25 @@
+.Home {
+    &-heroContainer {
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        #homePageHeaderHexagon,
+        #homePageHeaderTriangle {
+            opacity: 0;
+            fill: transparent;
+            stroke: #fff;
+            stroke-width: 10;
+            stroke-miterlimit: 10;
+        }
+
+        .headerMysticTextPath {
+            fill: transparent;
+            stroke-miterlimit: 10;
+            stroke-width: 2.5;
+        }
+    }
+
+    &-heroSVG {
+
+    }
+}

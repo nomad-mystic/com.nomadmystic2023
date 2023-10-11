@@ -2,7 +2,9 @@
 
 @section('content')
 <section>
-    <h1>Keith</h1>
+
+	@include('partials.home.hero-svg')
+
 </section>
 
 @endsection
