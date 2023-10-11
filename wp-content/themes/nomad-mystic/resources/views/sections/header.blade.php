@@ -1,5 +1,5 @@
 <header class="Header">
-    <section class="flex justify-around">
+    <section class="flex justify-around items-center h-full">
         <a class="Header-logo" href="{{ home_url('/') }}">
             <img src="@asset('images/nav-logo-dark.png')">
         </a>

@@ -1,5 +1,5 @@
 <header class="Header">
-    <section class="flex justify-around">
+    <section class="flex justify-around items-center h-full">
         <a class="Header-logo" href="<?php echo e(home_url('/')); ?>">
             <img src="<?= \Roots\asset('images/nav-logo-dark.png'); ?>">
         </a>
