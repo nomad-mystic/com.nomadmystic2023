@@ -28,12 +28,12 @@
           "slug": "transparent"
         },
         {
-          "color": "#000",
+          "color": "var(--color-black)",
           "name": "Black",
           "slug": "black"
         },
         {
-          "color": "#fff",
+          "color": "var(--color-white)",
           "name": "White",
           "slug": "white"
         },
@@ -698,59 +698,9 @@
           "slug": "emerald-950"
         },
         {
-          "color": "#f0fdfa",
-          "name": "Teal 50",
-          "slug": "teal-50"
-        },
-        {
-          "color": "#ccfbf1",
-          "name": "Teal 100",
-          "slug": "teal-100"
-        },
-        {
-          "color": "#99f6e4",
-          "name": "Teal 200",
-          "slug": "teal-200"
-        },
-        {
-          "color": "#5eead4",
-          "name": "Teal 300",
-          "slug": "teal-300"
-        },
-        {
-          "color": "#2dd4bf",
-          "name": "Teal 400",
-          "slug": "teal-400"
-        },
-        {
-          "color": "#14b8a6",
-          "name": "Teal 500",
-          "slug": "teal-500"
-        },
-        {
-          "color": "#0d9488",
-          "name": "Teal 600",
-          "slug": "teal-600"
-        },
-        {
-          "color": "#0f766e",
-          "name": "Teal 700",
-          "slug": "teal-700"
-        },
-        {
-          "color": "#115e59",
-          "name": "Teal 800",
-          "slug": "teal-800"
-        },
-        {
-          "color": "#134e4a",
-          "name": "Teal 900",
-          "slug": "teal-900"
-        },
-        {
-          "color": "#042f2e",
-          "name": "Teal 950",
-          "slug": "teal-950"
+          "color": "var(--color-teal)",
+          "name": "Teal",
+          "slug": "teal"
         },
         {
           "color": "#ecfeff",
@@ -1028,59 +978,9 @@
           "slug": "violet-950"
         },
         {
-          "color": "#faf5ff",
-          "name": "Purple 50",
-          "slug": "purple-50"
-        },
-        {
-          "color": "#f3e8ff",
-          "name": "Purple 100",
-          "slug": "purple-100"
-        },
-        {
-          "color": "#e9d5ff",
-          "name": "Purple 200",
-          "slug": "purple-200"
-        },
-        {
-          "color": "#d8b4fe",
-          "name": "Purple 300",
-          "slug": "purple-300"
-        },
-        {
-          "color": "#c084fc",
-          "name": "Purple 400",
-          "slug": "purple-400"
-        },
-        {
-          "color": "#a855f7",
-          "name": "Purple 500",
-          "slug": "purple-500"
-        },
-        {
-          "color": "#9333ea",
-          "name": "Purple 600",
-          "slug": "purple-600"
-        },
-        {
-          "color": "#7e22ce",
-          "name": "Purple 700",
-          "slug": "purple-700"
-        },
-        {
-          "color": "#6b21a8",
-          "name": "Purple 800",
-          "slug": "purple-800"
-        },
-        {
-          "color": "#581c87",
-          "name": "Purple 900",
-          "slug": "purple-900"
-        },
-        {
-          "color": "#3b0764",
-          "name": "Purple 950",
-          "slug": "purple-950"
+          "color": "var(--color-purple)",
+          "name": "Purple",
+          "slug": "purple"
         },
         {
           "color": "#fdf4ff",
@@ -1248,29 +1148,19 @@
           "slug": "rose-950"
         },
         {
-          "color": "var(--color-teal)",
-          "name": "Color-teal",
-          "slug": "color-teal"
-        },
-        {
           "color": "var(--color-teal-light)",
-          "name": "Color-teal-light",
-          "slug": "color-teal-light"
-        },
-        {
-          "color": "var(--color-purple)",
-          "name": "Color-purple",
-          "slug": "color-purple"
+          "name": "Teal-light",
+          "slug": "teal-light"
         },
         {
           "color": "var(--color-purple-light)",
-          "name": "Color-purple-light",
-          "slug": "color-purple-light"
+          "name": "Purple-light",
+          "slug": "purple-light"
         },
         {
           "color": "var(--color-dark-grey)",
-          "name": "Color-dark-grey",
-          "slug": "color-dark-grey"
+          "name": "Dark-grey",
+          "slug": "dark-grey"
         }
       ]
     },

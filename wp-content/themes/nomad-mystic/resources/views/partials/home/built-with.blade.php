@@ -2,7 +2,7 @@
          style="background-image: url(@asset('images/background-built-with.jpg'))">
 
     <header class="header">
-        <h2>Custom Theme Built with...</h2>
+        <h2 class="text-2xl text-black mb-4">Custom Theme Built with...</h2>
     </header>
 
     <section class="icons flex justify-between">

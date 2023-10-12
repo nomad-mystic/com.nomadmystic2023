@@ -1,5 +1,5 @@
 {{-- style="background-image: url('http://localhost:3000/nomadmystic/wordpress/wp-content/themes/nomadmystic/dist/images/<?php echo $lower_header_background_image_path;?>')">--}}
-<section class="Home-heroContainer bg-black py-12 flex justify-center items-center h-[60vh]" style="background-image: url(@asset('images/home-header-background.jpg'))">
+<section class="Home-heroContainer Hero bg-black py-12 flex justify-center items-center h-[60vh]" style="background-image: url(@asset('images/home-header-background.jpg'))">
     <div class="Home-heroSVG mx-auto w-2/4">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px"

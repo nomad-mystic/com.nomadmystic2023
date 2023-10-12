@@ -3,6 +3,7 @@
     --header-color: var(--color-white);
 
     background-color: var(--header-color);
+    font-family: var(--font-stack);
 
     @media (min-width: 1024px) {
         height: var(--lg-header-height);
