@@ -54,6 +54,9 @@ return [
 
              'disk' => '',
 
+             // @todo This broke the site
+             // wp acorn optimize:clear
+             // wp acorn package:discover
              /*
              |-----------------------------------------------------------------
              | Default Prefix

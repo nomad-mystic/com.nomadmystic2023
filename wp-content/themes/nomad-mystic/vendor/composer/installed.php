@@ -3,7 +3,7 @@
         'name' => 'nomad-mystic/nomad-mystic',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6941f4d1dd2df47314d8d267e9649183a406339c',
+        'reference' => '3b1cba3e16ab933b267967982c8eafadb8570a6d',
         'type' => 'wordpress-theme',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -292,7 +292,7 @@
         'nomad-mystic/nomad-mystic' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6941f4d1dd2df47314d8d267e9649183a406339c',
+            'reference' => '3b1cba3e16ab933b267967982c8eafadb8570a6d',
             'type' => 'wordpress-theme',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
