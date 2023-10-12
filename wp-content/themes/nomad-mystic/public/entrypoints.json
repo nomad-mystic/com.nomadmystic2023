@@ -1,8 +1,8 @@
 {
   "app": {
     "js": [
-      "js/runtime.af507b.js",
-      "js/app.0e60b0.js"
+      "js/runtime.b74049.js",
+      "js/app.00f2f5.js"
     ],
     "css": [
       "css/app.93333c.css"
@@ -11,8 +11,8 @@
   },
   "editor": {
     "js": [
-      "js/runtime.af507b.js",
-      "js/editor.4d0f5c.js"
+      "js/runtime.b74049.js",
+      "js/editor.eefcb0.js"
     ],
     "css": [
       "css/editor.ef46db.css"
