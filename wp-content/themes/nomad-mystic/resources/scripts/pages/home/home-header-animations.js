@@ -26,6 +26,8 @@ export default class HomeHeaderAnimations extends AnimationMethods {
      * @return {void}
      */
     homePageHeaderAnimations = () => {
+        console.log(this);
+
         // animating Nomad Mystic letters in home page header
         const headerMysticTextPaths = window.document.getElementsByClassName('headerMysticTextPath');
         this.textPathAnimation(headerMysticTextPaths, '5s');

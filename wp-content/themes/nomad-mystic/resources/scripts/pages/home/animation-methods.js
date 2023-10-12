@@ -8,10 +8,10 @@ export default class AnimationMethods {
      * @param {string} duration
      * @return {void}
      */
-    textPathAnimation = (paths, duration = '3s') => {
+    textPathAnimation = (paths, duration = '3s', stokeColor = 'var(--color-animation-stroke)') => {
         for (let path= 0; path < paths.length; path++) {
             // Adds color back into the shape
-            paths[path].style.stroke = 'var(--color-animation-stroke)';
+            paths[path].style.stroke = stokeColor;
 
             const length = paths[path].getTotalLength();
 
@@ -77,16 +77,17 @@ export default class AnimationMethods {
      * @author Keith Murphy | nomadmystics@gmail.com
      * @param {HTMLCollection} paths
      * @param {string} duration
+     * @param {string} fillColor
      * @return {void}
      */
-    fillPathAnimation = (paths, duration = '3s') => {
+    fillPathAnimation = (paths, duration = '3s', fillColor = 'var(--color-animation-stroke)') => {
 
         if (paths && typeof paths !== 'undefined' && paths.length > 0) {
             for (let path = 0; path < paths.length; path++) {
 
                 if (paths[path] && typeof paths[path] !== 'undefined') {
 
-                    paths[path].style.fill = 'var(--color-animation-stroke)';
+                    paths[path].style.fill = fillColor;
                     paths[path].style.transition = 'fill ' + duration;
 
                 }
