@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_roots_bud_sage_sage=self.webpackChunk_roots_bud_sage_sage||[]).push([[143],{"./styles/app.css":()=>{},"./scripts/app.js":()=>{(s=>{window.requestAnimationFrame((async function a(){document.body?await s():window.requestAnimationFrame(a)}))})((async()=>{}))}},s=>{var a=a=>s(s.s=a);a("./scripts/app.js"),a("./styles/app.css")}]);

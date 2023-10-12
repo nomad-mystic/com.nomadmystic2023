@@ -1,0 +1,25 @@
+.Home-builtWith {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    .header {
+
+    }
+
+    .icons {
+
+    }
+
+    .icon {
+        a {
+            display: block;
+        }
+
+        svg {
+            width: 80px;
+            height: 80px;
+            fill: var(--color-animation-fill);
+        }
+    }
+}
