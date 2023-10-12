@@ -16,6 +16,7 @@ jobs:
 
     env:
       EMAIL: ${{ secrets.EMAIL }}
+      GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
       SSH_AUTH_SOCK: /tmp/ssh_agent.sock
 
     strategy:
@@ -30,9 +31,6 @@ jobs:
 #          GITHUB_CONTEXT: ${{ toJSON(github) }}
 #        run: |
 #          # echo "$GITHUB_CONTEXT"
-#
-#          echo "----------"
-#          cd ./wp-content/themes/nomad-mystic && ls -al
 
       - name: SSH Setup
         run: |
@@ -44,11 +42,11 @@ jobs:
       - name: Setup Git
         run: |
           git config --global user.email "$EMAIL"
-          git config --global user.name "nomad"
+          git config --global user.name "$GIT_USERNAME"
           echo git remote -v
 
       - name: Deploy to Hostgator
         run: |
           git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
           git fetch --unshallow
-          git push -u hostgator staging
+          git push -u hostgator "${{ secrets.STAGING_BRANCH }}"
