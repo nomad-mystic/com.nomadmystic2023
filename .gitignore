@@ -1,6 +1,10 @@
 ### IDE
 .idea
-/.htaccess
+
+### Roots
+.budfiles
+npm-debug.log
+yarn-error.log
 
 ### WordPress template
 # ignore these plugins
