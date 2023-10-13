@@ -61,6 +61,15 @@ add_action('after_setup_theme', function () {
     ]);
 
     /**
+     * Register the navigation menus.
+     *
+     * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
+     */
+    register_nav_menus([
+        'footer_navigation' => __('Footer Navigation', 'sage'),
+    ]);
+
+    /**
      * Disable the default block patterns.
      *
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#disabling-the-default-block-patterns
