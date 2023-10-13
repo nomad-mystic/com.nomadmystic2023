@@ -1,7 +1,9 @@
 /* https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports */
 @import './common/base.css';
+@import './common/icons.css';
 @import './sections/header.css';
 @import 'sections/hero.css';
+@import 'sections/footer.css';
 @import 'pages/home/home.css';
 
 @tailwind base;
