@@ -22,9 +22,11 @@ return array(
     '25072dd6e2470089de65ae7bf11d3109' => $vendorDir . '/symfony/polyfill-php72/bootstrap.php',
     'f598d06aa772fa33d905e87be6398fb1' => $vendorDir . '/symfony/polyfill-intl-idn/bootstrap.php',
     '35a6ad97d21e794e7e22a17d806652e4' => $vendorDir . '/nunomaduro/termwind/src/Functions.php',
+    '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
     '29ffe97919493792170d47eb03a68da9' => $vendorDir . '/blade-ui-kit/blade-icons/src/helpers.php',
     'e39a8b23c42d4e1452234d762b03835a' => $vendorDir . '/ramsey/uuid/src/functions.php',
     '7018e3dbeb54682c59da60bb2ff4f971' => $vendorDir . '/roots/support/helpers.php',
+    '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
     '1d3e394e13b0f60fc9509fa2e09fa96e' => $vendorDir . '/roots/acorn/src/Roots/helpers.php',
     '343d14c26e6742d3d4650d589923312e' => $vendorDir . '/roots/acorn/src/Roots/globals.php',
 );

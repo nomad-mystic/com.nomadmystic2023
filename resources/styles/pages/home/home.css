@@ -158,16 +158,6 @@
             width: 50%;
         }
 
-        .font-stack {
-            .fa-circle {
-                color: var(--color-white);
-            }
-
-            &:nth-child(1) {
-                color: var(--color-white);
-            }
-        }
-
         .hexagon {
             fill: transparent;
             stroke: var(--color-white);
