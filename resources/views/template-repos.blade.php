@@ -2,7 +2,7 @@
   Template Name: Repos Template
 --}}
 
-@extends('layouts.app')
+@extends('layouts.app-dark-theme')
 
 @section('content')
 

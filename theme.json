@@ -1161,6 +1161,11 @@
           "color": "var(--color-dark-grey)",
           "name": "Dark-grey",
           "slug": "dark-grey"
+        },
+        {
+          "color": "var(--color-black-full)",
+          "name": "Black-full",
+          "slug": "black-full"
         }
       ]
     },

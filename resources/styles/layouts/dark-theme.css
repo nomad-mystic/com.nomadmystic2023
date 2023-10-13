@@ -1,0 +1,21 @@
+.DarkTheme {
+    &.Header {
+        background-color: var(--color-dark-theme-black);
+        color: var(--color-dark-theme-white);
+
+        li {
+            /*color: var(--color-dark-theme-white);*/
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-white);
+            }
+        }
+    }
+
+    &.main {
+        background-color: var(--color-dark-theme-black);
+        color: var(--color-dark-theme-white);
+    }
+}

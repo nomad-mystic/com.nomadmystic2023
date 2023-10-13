@@ -1,0 +1,36 @@
+.Card {
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius);
+
+    &.Repos {
+        .title {
+            text-transform: capitalize;
+        }
+
+        .meta {
+            span {
+                background: var(--color-teal);
+                border-radius: 4px;
+                color: var(--color-dark-theme-black);
+                font-size: 12px;
+
+                &:not(.topic) {
+                    padding: 0.25rem 0.5rem;
+                }
+            }
+
+            .topic {
+                text-transform: capitalize;
+            }
+        }
+
+        .link {
+            /*padding: 24px 0 24px 24px;*/
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

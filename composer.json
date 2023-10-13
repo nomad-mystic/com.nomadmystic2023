@@ -28,6 +28,7 @@
         "blade-ui-kit/blade-icons": "^1.5",
         "codeat3/blade-simple-icons": "^1.90",
         "guzzlehttp/guzzle": "^7.0",
+        "owenvoke/blade-fontawesome": "^2.4",
         "roots/acorn": "^3.2",
         "vlucas/phpdotenv": "^5.5"
     },

@@ -5,6 +5,7 @@ h4,
 h5,
 h6,
 a,
-p {
+p,
+span {
     font-family: var(--font-stack);
 }

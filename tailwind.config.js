@@ -11,6 +11,7 @@ const config = {
             'dark-grey': 'var(--color-dark-grey)',
             'white': 'var(--color-white)',
             'black': 'var(--color-black)',
+            'black-full': 'var(--color-black-full)',
         }
     },
   },
