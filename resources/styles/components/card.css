@@ -15,21 +15,27 @@
                 font-size: 12px;
 
                 &:not(.topic) {
-                    padding: 0.25rem 0.5rem;
+                    padding: 0.25rem 0;
                 }
             }
 
             .topic {
                 text-transform: capitalize;
             }
+
+            .stars,
+            .watchers,
+            .issues-count {
+                svg {
+                    width: 16px;
+                    margin-inline-end: 8px;
+                }
+            }
         }
 
         .link {
-            /*padding: 24px 0 24px 24px;*/
-
             img {
                 width: 40px;
-                /*height: 24px;*/
             }
         }
 

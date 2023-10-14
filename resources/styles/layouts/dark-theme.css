@@ -1,11 +1,10 @@
 .DarkTheme {
-    &.Header {
+    &.Header,
+    &.Footer {
         background-color: var(--color-dark-theme-black);
         color: var(--color-dark-theme-white);
 
         li {
-            /*color: var(--color-dark-theme-white);*/
-
             &:hover,
             &:active,
             &:focus {
@@ -14,8 +13,16 @@
         }
     }
 
+    &.Header {}
+
     &.main {
         background-color: var(--color-dark-theme-black);
         color: var(--color-dark-theme-white);
+    }
+
+    &.Footer {
+        h4 {
+            color: var(--color-dark-theme-white);
+        }
     }
 }

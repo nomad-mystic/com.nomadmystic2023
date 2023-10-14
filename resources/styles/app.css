@@ -29,6 +29,7 @@
 
     /* Common */
     --font-stack: 'Playfair Display', Arial, Hevetica, sans-serif;
+    --font-secondary-stack: 'Ubuntu', Arial, Hevetica, sans-serif;
     --radius: 12px;
 
     /* Card */

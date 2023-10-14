@@ -2,7 +2,6 @@
 
 .Home {
     /* Hero */
-
     &-heroContainer {
         background-repeat: no-repeat;
         background-size: cover;
@@ -23,9 +22,7 @@
         }
     }
 
-    &-heroSVG {
-
-    }
+    &-heroSVG {}
 
     /* Aspirations */
 

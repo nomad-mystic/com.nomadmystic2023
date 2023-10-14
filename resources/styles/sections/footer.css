@@ -4,6 +4,10 @@
             padding: 0 0.5rem;
             color: var(--color-black);
         }
+
+        a {
+            font-family: var(--font-stack);
+        }
     }
 
     &-links {
