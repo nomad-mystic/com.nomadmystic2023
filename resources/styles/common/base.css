@@ -3,8 +3,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
-a,
-p {
+h6 {
     font-family: var(--font-stack);
+}
+
+a,
+p,
+span {
+    font-family: var(--font-secondary-stack);
 }

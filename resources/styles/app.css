@@ -1,6 +1,8 @@
 /* https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports */
 @import './common/base.css';
 @import './common/icons.css';
+@import './layouts/dark-theme.css';
+@import './components/card.css';
 @import './sections/header.css';
 @import 'sections/hero.css';
 @import 'sections/footer.css';
@@ -16,11 +18,20 @@
     --color-purple: rgba(173, 0, 173, 1);
     --color-purple-light: rgba(195, 15, 160, 1);
     --color-dark-grey: rgba(0, 0, 0, .10);
-    --color-black: #4a4a4a;
+    --color-black: #888888;
     --color-white: #ffffff;
-
     --color-animation-fill: #4a4a4a;
     --color-animation-stroke: #4a4a4a;
 
-    --font-stack: "Playfair Display", Arial, Hevetica, sans-serif;
+    /* Dark theme */
+    --color-dark-theme-white: hsla(0, 0%, 93%, 1);
+    --color-dark-theme-black: hsla(0, 0%, 0%, 1);
+
+    /* Common */
+    --font-stack: 'Playfair Display', Arial, Hevetica, sans-serif;
+    --font-secondary-stack: 'Ubuntu', Arial, Hevetica, sans-serif;
+    --radius: 12px;
+
+    /* Card */
+    --color-card-border: #333333;
 }

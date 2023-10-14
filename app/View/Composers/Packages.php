@@ -20,7 +20,7 @@ class Packages extends Composer
      * @var string[]
      */
     protected static $views = [
-        //
+
     ];
 
     /**

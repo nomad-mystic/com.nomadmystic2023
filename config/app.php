@@ -194,7 +194,7 @@ return [
          * Application Service Providers...
          */
         // App\Providers\ThemeServiceProvider::class,
-
+//        App\Providers\GitHub::class,
     ],
 
     /*

@@ -10,14 +10,22 @@
         top: calc(0px + var(--wp-admin--admin-bar--height))
     }
 
-    &-logo {
-
-    }
+    &-logo {}
 
     &-navigation {
         li {
-            padding: 0 .5rem;
+            padding: 1rem 0.5rem;
             color: var(--color-black);
+            cursor: pointer;
+            transition: all .25s linear;
+
+            &:hover {
+                transition: all .25s linear;
+            }
+        }
+
+        a {
+            font-family: var(--font-stack);
         }
     }
 }
