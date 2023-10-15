@@ -12,19 +12,19 @@
 
     <section class="Footer-links flex">
         <a href="https://github.com/nomad-mystic/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-github')
             </figure>
         </a>
 
         <a href="https://www.npmjs.com/~nomadmystic" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-npm')
             </figure>
         </a>
 
         <a href="https://www.linkedin.com/in/keith-p-murphy/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-linkedin')
             </figure>
         </a>

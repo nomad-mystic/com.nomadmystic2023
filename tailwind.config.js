@@ -12,6 +12,8 @@ const config = {
             'white': 'var(--color-white)',
             'black': 'var(--color-black)',
             'black-full': 'var(--color-black-full)',
+            'dark-theme-white': 'var(--color-dark-theme-white)',
+            'dark-theme-black': 'var(--color-dark-theme-black)',
         }
     },
   },

@@ -7,37 +7,37 @@
 
     <section class="Icons flex justify-between">
         <a href="https://roots.io/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-roots')
             </figure>
         </a>
 
         <a href="https://wordpress.org/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-wordpress')
             </figure>
         </a>
 
         <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-tailwindcss')
             </figure>
         </a>
 
         <a href="https://nodejs.org/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-nodedotjs')
             </figure>
         </a>
 
         <a href="https://laravel.com/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-laravel')
             </figure>
         </a>
 
         <a href="https://vuejs.org/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="con">
+            <figure class="Icon">
                 @svg('si-vuedotjs')
             </figure>
         </a>

@@ -33,23 +33,26 @@
                                 @endif
                             </section><!-- End .meta -->
 
-                            <section class="languages">
+                            <section class="languages mt-4">
+
+                                <github-languages owner-repo="@php echo $individual->full_name ?? '' @endphp"/></github-languages>
+
                                 {{-- https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-languages --}}
-                                <span class="language block mr-4">
-                                    @php
-                                    $icon_path = get_stylesheet_directory_uri() . '/public/images/icons/languages/' . strtolower($individual->language) . '.svg';
+{{--                                <span class="language block mr-4">--}}
+{{--                                    @php--}}
+{{--                                    $icon_path = get_stylesheet_directory_uri() . '/public/images/icons/languages/' . strtolower($individual->language) . '.svg';--}}
 
-                                    if (!empty($icon_path) || file_exists($icon_path)) {
-                                    @endphp
+{{--                                    if (!empty($icon_path) || file_exists($icon_path)) {--}}
+{{--                                    @endphp--}}
 
-                                    <img src="@php echo $icon_path @endphp"
-                                         alt="Language Icon for @php echo $individual->language @endphp">
+{{--                                    <img src="@php echo $icon_path @endphp"--}}
+{{--                                         alt="Language Icon for @php echo $individual->language @endphp">--}}
 
-                                    @php
-                                    }
-                                    @endphp
+{{--                                    @php--}}
+{{--                                    }--}}
+{{--                                    @endphp--}}
 
-                                </span>
+{{--                                </span>--}}
                             </section>
                         </div>
                         <div class="external-link">

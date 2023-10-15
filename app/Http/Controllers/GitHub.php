@@ -5,17 +5,38 @@ namespace App\Http\Controllers;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Routing\Controller;
+use Illuminate\Http\Request;
 use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Utils;
+use WP_REST_Request;
+use WP_REST_Response as WP_REST_Response;
 
 class GitHub extends Controller
 {
-    /**
-     * @description
-     *
 
+    /**
+     * @throws GuzzleException
      */
+    static public function getLanguagesRequest(WP_REST_Request $request): ?WP_REST_Response
+    {
+
+        try {
+            $ownerRepo = $request->get_param('ownerRepo');
+
+            $response = GitHub::getGitHubEndpoint("https://api.github.com/repos/{$ownerRepo}/languages");
+
+            return new WP_REST_Response($response);
+
+        } catch (ClientException $exception) {
+
+            $response = $exception->getResponse();
+            echo Utils::jsonEncode($response->getBody()->getContents());
+
+        }
+
+        return new WP_REST_Response(json_encode(''));
+    }
 
     /**
      * @description

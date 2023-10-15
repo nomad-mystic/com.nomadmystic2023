@@ -1166,6 +1166,16 @@
           "color": "var(--color-black-full)",
           "name": "Black-full",
           "slug": "black-full"
+        },
+        {
+          "color": "var(--color-dark-theme-white)",
+          "name": "Dark-theme-white",
+          "slug": "dark-theme-white"
+        },
+        {
+          "color": "var(--color-dark-theme-black)",
+          "name": "Dark-theme-black",
+          "slug": "dark-theme-black"
         }
       ]
     },

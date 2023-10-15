@@ -1,13 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.app-dark-theme')
 
 @section('content')
-  @include('partials.page-header')
 
-  @if (! have_posts())
-    <x-alert type="warning">
-      {!! __('Sorry, but the page you are trying to view does not exist.', 'sage') !!}
-    </x-alert>
+    <section class="page-404 h-screen flex items-center justify-center">
+        <h1 class="text-dark-theme-white text-8xl">404</h1>
+    </section>
 
-    {!! get_search_form(false) !!}
-  @endif
 @endsection
