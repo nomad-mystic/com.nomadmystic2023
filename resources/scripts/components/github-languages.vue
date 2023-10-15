@@ -61,8 +61,6 @@ export default {
         this.languages = await this.getGitHubLanguages();
 
         this.langKeys = await this.extractKeys();
-
-        // console.log(Object.keys(JSON.parse(this.languages)));
     },
 };
 </script>

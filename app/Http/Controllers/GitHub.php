@@ -14,28 +14,53 @@ use WP_REST_Response as WP_REST_Response;
 
 class GitHub extends Controller
 {
-
     /**
      * @throws GuzzleException
      */
-    static public function getLanguagesRequest(WP_REST_Request $request): ?WP_REST_Response
+    public static function getLanguagesRequest(WP_REST_Request $request): ?WP_REST_Response
     {
+        $languagesList = [];
 
         try {
+            $themeUrl = get_stylesheet_directory_uri();
+            $themePath = get_stylesheet_directory();
+            $filesPath = '/public/images/icons/languages/';
+            $fileType = '.svg';
+
+            // Build our REST call
             $ownerRepo = $request->get_param('ownerRepo');
 
+            // Get our response
             $response = GitHub::getGitHubEndpoint("https://api.github.com/repos/{$ownerRepo}/languages");
 
-            return new WP_REST_Response($response);
+            if (!empty($response)) {
+                $languages_response = json_decode($response, true);
+
+                foreach (array_keys($languages_response) as $langKey) {
+                    if (!empty($langKey)) {
+                        // File names are in lowercase
+                        $lowerCaseKey = strtolower($langKey);
+
+                        // Build paths
+                        $urlToIcon = "{$themeUrl}{$filesPath}{$lowerCaseKey}{$fileType}";
+                        $pathToIcon = "{$themePath}{$filesPath}{$lowerCaseKey}{$fileType}";
+
+                        // Make sure we have an icon
+                        if (file_exists($pathToIcon)) {
+                            $languagesList[] = $urlToIcon;
+                        }
+                    }
+                }
+            }
+
+            return new WP_REST_Response($languagesList);
 
         } catch (ClientException $exception) {
-
             $response = $exception->getResponse();
             echo Utils::jsonEncode($response->getBody()->getContents());
-
         }
 
-        return new WP_REST_Response(json_encode(''));
+        return new WP_REST_Response($languagesList);
     }
 
     /**
@@ -43,14 +68,15 @@ class GitHub extends Controller
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      * @link https://github.com/vlucas/phpdotenv
-     * @todo Checkout pagination: https://docs.github.com/en/rest/guides/using-pagination-in-the-rest-api?apiVersion=2022-11-28
+     * @todo Checkout pagination:
+     *      https://docs.github.com/en/rest/guides/using-pagination-in-the-rest-api?apiVersion=2022-11-28
      *
      * @throws GuzzleException
      *
      * @param string $query
      * @return string|null
      */
-    static public function getGitHubEndpoint(string $query): ?string
+    public static function getGitHubEndpoint(string $query): ?string
     {
         try {
             $client = new Client();
@@ -73,12 +99,9 @@ class GitHub extends Controller
             // echo $response->getBody(); // '{"id": 1420053, "name": "guzzle", ...}'
 
             return $response->getBody()->getContents();
-
         } catch (ClientException $exception) {
-
             $response = $exception->getResponse();
             echo Utils::jsonEncode($response->getBody()->getContents());
-
         }
 
         return null;

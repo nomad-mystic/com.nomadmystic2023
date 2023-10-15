@@ -1,5 +1,5 @@
 {
-  "app.css": "css/app.24d8e0.css",
+  "app.css": "css/app.afcd98.css",
   "app.js": "js/app.e5b476.js",
   "editor.css": "css/editor.ef46db.css",
   "editor.js": "js/editor.eefcb0.js",
@@ -455,6 +455,7 @@
   "images/icons/languages/mercurial.svg": "images/icons/languages/mercurial.e07987.svg",
   "images/icons/languages/folder-connection-open.svg": "images/icons/languages/folder-connection-open.f7a883.svg",
   "images/icons/languages/folder-guard-open.svg": "images/icons/languages/folder-guard-open.c6ef57.svg",
+  "images/icons/languages/apacheconf.svg": "images/icons/languages/apacheconf.064534.svg",
   "images/icons/languages/settings.svg": "images/icons/languages/settings.064534.svg",
   "images/icons/languages/gradle.svg": "images/icons/languages/gradle.2a7a14.svg",
   "images/icons/languages/robots.svg": "images/icons/languages/robots.3d24dd.svg",
