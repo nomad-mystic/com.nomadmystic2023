@@ -1,6 +1,6 @@
 {
-  "app.css": "css/app.ce0693.css",
-  "app.js": "js/app.a915c7.js",
+  "app.css": "css/app.24d8e0.css",
+  "app.js": "js/app.e5b476.js",
   "editor.css": "css/editor.ef46db.css",
   "editor.js": "js/editor.eefcb0.js",
   "runtime.js": "js/runtime.b74049.js",
@@ -874,6 +874,7 @@
   "images/icons/languages/folder-vercel.svg": "images/icons/languages/folder-vercel.30ac89.svg",
   "images/icons/languages/html.svg": "images/icons/languages/html.41808e.svg",
   "images/icons/languages/console.svg": "images/icons/languages/console.2cfdf2.svg",
+  "images/icons/languages/shell.svg": "images/icons/languages/shell.2cfdf2.svg",
   "images/icons/languages/word.svg": "images/icons/languages/word.91ebf8.svg",
   "images/icons/languages/nunjucks.svg": "images/icons/languages/nunjucks.6247f6.svg",
   "images/icons/languages/key.svg": "images/icons/languages/key.a08d34.svg",

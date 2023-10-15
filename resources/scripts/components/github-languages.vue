@@ -3,7 +3,12 @@
 
         <skeleton-languages-placeholder />
 
-        <slot />
+        <div class="flex">
+            <span v-for="lang in this.langKeys" class="language block mr-4">
+                <img :src="this.buildString(lang)"
+                     alt="Language Icon for {{ lang }}">
+            </span>
+        </div>
 
     </section>
 </template>
@@ -25,6 +30,10 @@ export default {
     data() {
         return {
             languages: {},
+            langKeys: [],
+            location: window.location.origin,
+            iconsPath: '/wp-content/themes/nomad-mystic/public/images/icons/languages/',
+            suffix: '.svg',
         };
     },
     methods: {
@@ -39,11 +48,21 @@ export default {
                 .then(data => data)
                 .catch(err => console.err(err));
         },
+        async extractKeys() {
+
+            return Object.keys(JSON.parse(this.languages));
+
+        },
+        buildString(lang) {
+            return `${this.location}${this.iconsPath}${lang.toLowerCase()}${this.suffix}`
+        },
     },
     async mounted() {
         this.languages = await this.getGitHubLanguages();
 
-        console.log(this.languages);
+        this.langKeys = await this.extractKeys();
+
+        // console.log(Object.keys(JSON.parse(this.languages)));
     },
 };
 </script>

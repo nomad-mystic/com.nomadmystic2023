@@ -1,8 +1,8 @@
 .Skeleton {
     .placeholder {
         background-color: var(--color-light-grey);
-        height: var( --logo-height);
-        width: var(--logo-width);
+        height: var(--logo-height);
+        width: 100%;
         border-radius: var(--radius);
         display: block;
         animation: placeholder 1.5s linear infinite alternate;

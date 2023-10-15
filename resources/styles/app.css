@@ -33,9 +33,9 @@
     /* Common */
     --font-stack: 'Playfair Display', Arial, Hevetica, sans-serif;
     --font-secondary-stack: 'Ubuntu', Arial, Hevetica, sans-serif;
-    --radius: 12px;
-    --logo-width: 40px;
-    --logo-height: 40px;
+    --radius: 8px;
+    --logo-width: 24px;
+    --logo-height: 24px;
 
     /* Card */
     --color-card-border: #333333;
