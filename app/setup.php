@@ -15,7 +15,7 @@ use function Roots\bundle;
  */
 add_action('wp_enqueue_scripts', function () {
     bundle('app')->enqueue();
-}, 100);
+},         100);
 
 /**
  * Register the theme assets with the block editor.
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_action('enqueue_block_editor_assets', function () {
     bundle('editor')->enqueue();
-}, 100);
+},         100);
 
 /**
  * Register the initial theme setup.
@@ -57,8 +57,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage'),
-    ]);
+                           'primary_navigation' => __('Primary Navigation', 'sage'),
+                       ]);
 
     /**
      * Register the navigation menus.
@@ -66,8 +66,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'footer_navigation' => __('Footer Navigation', 'sage'),
-    ]);
+                           'footer_navigation' => __('Footer Navigation', 'sage'),
+                       ]);
 
     /**
      * Disable the default block patterns.
@@ -118,7 +118,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#customize-selective-refresh-widgets
      */
     add_theme_support('customize-selective-refresh-widgets');
-}, 20);
+},         20);
 
 /**
  * Register the theme sidebars.
@@ -133,13 +133,25 @@ add_action('widgets_init', function () {
         'after_title' => '</h3>',
     ];
 
-    register_sidebar([
-        'name' => __('Primary', 'sage'),
-        'id' => 'sidebar-primary',
-    ] + $config);
+    register_sidebar(
+        [
+            'name' => __('Primary', 'sage'),
+            'id' => 'sidebar-primary',
+        ] + $config
+    );
 
-    register_sidebar([
-        'name' => __('Footer', 'sage'),
-        'id' => 'sidebar-footer',
-    ] + $config);
+    register_sidebar(
+        [
+            'name' => __('Footer', 'sage'),
+            'id' => 'sidebar-footer',
+        ] + $config
+    );
 });
+
+add_action('rest_api_init', function() {
+    register_rest_route('api/v1', 'get-github-endpoint', [
+        'methods' => 'GET',
+        'callback' => array('App\Http\Controllers\GitHub', 'getLanguagesRequest')
+    ]);
+});
+

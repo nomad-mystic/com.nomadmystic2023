@@ -2,10 +2,16 @@
     {{ __('Skip to content') }}
 </a>
 
-@include('sections.header')
+@include('sections.header', [
+  'classes' => '',
+])
 
 <main id="main" class="main">
     @yield('content')
 </main>
 
-@include('sections.footer')
+@include('sections.footer',
+    [
+      'classes' => '',
+    ]
+)

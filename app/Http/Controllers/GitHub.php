@@ -9,22 +9,33 @@ use Illuminate\Http\Request;
 use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Utils;
-
-use Illuminate\Support\Facades\Log;
+use WP_REST_Request;
+use WP_REST_Response as WP_REST_Response;
 
 class GitHub extends Controller
 {
 
-    static public function getEndpointRequest(Request $request)
+    /**
+     * @throws GuzzleException
+     */
+    static public function getLanguagesRequest(WP_REST_Request $request): ?WP_REST_Response
     {
 
-//        die(var_dump($request));
+        try {
+            $ownerRepo = $request->get_param('ownerRepo');
 
+            $response = GitHub::getGitHubEndpoint("https://api.github.com/repos/{$ownerRepo}/languages");
 
+            return new WP_REST_Response($response);
 
-        Log::debug('👋 Howdy');
+        } catch (ClientException $exception) {
 
+            $response = $exception->getResponse();
+            echo Utils::jsonEncode($response->getBody()->getContents());
 
+        }
+
+        return new WP_REST_Response(json_encode(''));
     }
 
     /**
