@@ -5,17 +5,27 @@ namespace App\Http\Controllers;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Routing\Controller;
+use Illuminate\Http\Request;
 use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Utils;
 
+use Illuminate\Support\Facades\Log;
+
 class GitHub extends Controller
 {
-    /**
-     * @description
-     *
 
-     */
+    static public function getEndpointRequest(Request $request)
+    {
+
+//        die(var_dump($request));
+
+
+
+        Log::debug('👋 Howdy');
+
+
+    }
 
     /**
      * @description

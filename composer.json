@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "blade-ui-kit/blade-icons": "^1.5",
         "codeat3/blade-simple-icons": "^1.90",
         "guzzlehttp/guzzle": "^7.0",

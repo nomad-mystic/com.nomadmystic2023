@@ -33,7 +33,12 @@
                                 @endif
                             </section><!-- End .meta -->
 
-                            <section class="languages">
+                            <section class="languages mt-4">
+
+                                <github-languages
+                                    full-name="@php echo $individual->full_name ?? '' @endphp"
+                                />
+
                                 {{-- https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-languages --}}
                                 <span class="language block mr-4">
                                     @php

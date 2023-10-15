@@ -6,6 +6,7 @@ import { createApp } from 'vue';
 import Root from '../scripts/components/root.vue';
 import Page from '../scripts/components/page.vue';
 import HomePage from '../scripts/components/home-page.vue';
+import GitHubLanguages from '../scripts/components/github-languages.vue';
 
 /**
  * Application entrypoint
@@ -14,8 +15,9 @@ domReady(async () => {
     const app = createApp(Root);
 
     // Create Components
-    app.component('page', Page);
-    app.component('home-page', HomePage);
+    app.component(Page.name, Page);
+    app.component(HomePage.name, HomePage);
+    app.component(GitHubLanguages.name, GitHubLanguages);
 
     app.mount('#app');
 });
