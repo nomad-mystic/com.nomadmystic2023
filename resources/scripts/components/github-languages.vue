@@ -4,9 +4,9 @@
         <skeleton-languages-placeholder />
 
         <div class="flex">
-            <span v-for="lang in this.langKeys" class="language block mr-4">
-                <img :src="this.buildString(lang)"
-                     alt="Language Icon for {{ lang }}">
+            <span v-for="(lang, index) in this.languages" class="language block mr-4">
+                <img :src="lang"
+                     :alt="this.buildAlt(index)">
             </span>
         </div>
 
@@ -37,6 +37,13 @@ export default {
         };
     },
     methods: {
+        /**
+         * @description Call our endpoint for the language icons
+         * @public
+         * @author Keith Murphy | nomadmystics@gmail.com
+         *
+         * @return {Promise<Record<number, string>>}
+         */
         async getGitHubLanguages() {
             return fetch(`/wp-json/api/v1/get-github-endpoint?ownerRepo=${this.ownerRepo}`, {
                     method: 'GET',
@@ -48,19 +55,20 @@ export default {
                 .then(data => data)
                 .catch(err => console.err(err));
         },
-        async extractKeys() {
-
-            return Object.keys(JSON.parse(this.languages));
-
-        },
-        buildString(lang) {
-            return `${this.location}${this.iconsPath}${lang.toLowerCase()}${this.suffix}`
+        /**
+         * @description Build our alt strings
+         * @public
+         * @author Keith Murphy | nomadmystics@gmail.com
+         *
+         * @param {string} langName
+         * @return {string}
+         */
+        buildAlt(langName = '') {
+            return `Icon for ${langName} language`;
         },
     },
     async mounted() {
         this.languages = await this.getGitHubLanguages();
-
-        this.langKeys = await this.extractKeys();
     },
 };
 </script>

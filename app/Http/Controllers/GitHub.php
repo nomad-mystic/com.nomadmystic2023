@@ -47,7 +47,7 @@ class GitHub extends Controller
 
                         // Make sure we have an icon
                         if (file_exists($pathToIcon)) {
-                            $languagesList[] = $urlToIcon;
+                            $languagesList[$lowerCaseKey] = $urlToIcon;
                         }
                     }
                 }
