@@ -4,7 +4,7 @@
         <skeleton-languages-placeholder />
 
         <div class="flex">
-            <span v-for="(lang, index) in this.languages" class="language block mr-4">
+            <span v-for="(lang, index) in this.languages" class="language block mr-4" v-cloak>
                 <img :src="lang"
                      :alt="this.buildAlt(index)">
             </span>
@@ -45,7 +45,7 @@ export default {
          * @return {Promise<Record<number, string>>}
          */
         async getGitHubLanguages() {
-            return fetch(`/wp-json/api/v1/get-github-endpoint?ownerRepo=${this.ownerRepo}`, {
+            return fetch(`/wp-json/api/v1/get-github-languages?ownerRepo=${this.ownerRepo}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -67,8 +67,29 @@ export default {
             return `Icon for ${langName} language`;
         },
     },
+    updated() {
+
+        // if (this.languages) {
+        //     const skeleton = this.$el.querySelector('.Skeleton');
+        //
+        //     skeleton.style.display = 'none';
+        // }
+
+    },
     async mounted() {
         this.languages = await this.getGitHubLanguages();
+
+        console.dir(this.$el);
+
+        console.log('called');
+        const skeleton = this.$el.querySelector('.Skeleton');
+
+        skeleton.style.display = 'none';
+
+        // await window.addEventListener('load', () => {
+        //
+        //
+        // });
     },
 };
 </script>

@@ -39,4 +39,5 @@
 
     /* Card */
     --color-card-border: #333333;
+    --color-card-hover: rgba(255, 255, 255, .05);
 }

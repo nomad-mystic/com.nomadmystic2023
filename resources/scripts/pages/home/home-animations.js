@@ -3,7 +3,8 @@ import HomeHeaderAnimations from '@scripts/pages/home/home-header-animations.js'
 
 
 export default class HomeAnimations {
-    constructor() {
+    constructor()
+    {
         if (HomeAnimations.instance) {
             return HomeAnimations.instance;
         }

@@ -2,7 +2,8 @@ import AnimationMethods from '@scripts/pages/home/animation-methods.js';
 
 
 export default class HomeAspirationsAnimations extends AnimationMethods {
-    constructor() {
+    constructor()
+    {
         super();
 
         if (HomeAspirationsAnimations.instance) {
