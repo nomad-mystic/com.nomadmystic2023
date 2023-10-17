@@ -81,15 +81,9 @@ export default {
 
         console.dir(this.$el);
 
-        console.log('called');
         const skeleton = this.$el.querySelector('.Skeleton');
 
         skeleton.style.display = 'none';
-
-        // await window.addEventListener('load', () => {
-        //
-        //
-        // });
     },
 };
 </script>
