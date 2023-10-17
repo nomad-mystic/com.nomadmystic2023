@@ -57,7 +57,11 @@ class Packages extends Composer
         try {
             $query = '@nomadmystic/github-dependencies-next';
 
-            return NPM::getPackageMetadata($query);
+            $response = NPM::getPackageMetadata($query);
+
+            $array = Utils::jsonDecode($response, true);
+
+            return Utils::jsonDecode($response, true);
 
         } catch (ClientException $exception) {
             $response = $exception->getResponse();

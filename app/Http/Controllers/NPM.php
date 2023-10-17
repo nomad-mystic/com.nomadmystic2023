@@ -34,7 +34,7 @@ class NPM extends Controller
 
             $response = $client->request('GET', "https://registry.npmjs.org/{$package}", [
                 'headers' => [
-                    'Accept' => 'application/vnd.npm.install-v1+json'
+                    'Accept' => 'application/json',
                 ],
             ]);
 
