@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Http\\Controllers\\GitHub' => $baseDir . '/app/Http/Controllers/GitHub.php',
+    'App\\Http\\Controllers\\NPM' => $baseDir . '/app/Http/Controllers/NPM.php',
     'App\\Providers\\ThemeServiceProvider' => $baseDir . '/app/Providers/ThemeServiceProvider.php',
     'App\\Utils' => $baseDir . '/app/Utils.php',
     'App\\View\\Components\\Alert' => $baseDir . '/app/View/Components/Alert.php',

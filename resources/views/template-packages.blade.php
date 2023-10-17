@@ -8,6 +8,8 @@
 
     @include('partials.repos.hero')
 
-    @include('partials.packages.packages')
+    @include('partials.packages.packages', [
+        'packages' => $packages,
+    ])
 
 @endsection
