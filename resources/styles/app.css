@@ -8,6 +8,7 @@
 @import 'sections/hero.css';
 @import 'sections/footer.css';
 @import 'pages/home/home.css';
+@import 'pages/repos.css';
 @import 'pages/page-404.css';
 
 @tailwind base;
@@ -29,6 +30,8 @@
     /* Dark theme */
     --color-dark-theme-white: hsla(0, 0%, 93%, 1);
     --color-dark-theme-black: hsla(0, 0%, 0%, 1);
+    --color-dark-theme-black-trans: hsla(0, 0%, 0%, .75);
+    --color-border-colors: #333333;
 
     /* Common */
     --font-stack: 'Playfair Display', Arial, Hevetica, sans-serif;
@@ -38,5 +41,6 @@
     --logo-height: 24px;
 
     /* Card */
-    --color-card-border: #333333;
+    --color-card-border: var(--color-border-colors);
+    --color-card-hover: rgba(255, 255, 255, .05);
 }

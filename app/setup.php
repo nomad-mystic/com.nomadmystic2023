@@ -15,7 +15,7 @@ use function Roots\bundle;
  */
 add_action('wp_enqueue_scripts', function () {
     bundle('app')->enqueue();
-},         100);
+}, 100);
 
 /**
  * Register the theme assets with the block editor.
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_action('enqueue_block_editor_assets', function () {
     bundle('editor')->enqueue();
-},         100);
+}, 100);
 
 /**
  * Register the initial theme setup.
@@ -118,7 +118,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#customize-selective-refresh-widgets
      */
     add_theme_support('customize-selective-refresh-widgets');
-},         20);
+}, 20);
 
 /**
  * Register the theme sidebars.
@@ -148,10 +148,14 @@ add_action('widgets_init', function () {
     );
 });
 
-add_action('rest_api_init', function() {
-    register_rest_route('api/v1', 'get-github-endpoint', [
+add_action('rest_api_init', function () {
+    register_rest_route('api/v1', 'get-github-languages', [
         'methods' => 'GET',
         'callback' => array('App\Http\Controllers\GitHub', 'getLanguagesRequest')
     ]);
-});
 
+    register_rest_route('api/v1', 'get-github-repos', [
+        'methods' => 'GET',
+        'callback' => array('App\Http\Controllers\GitHub', 'getReposRequest')
+    ]);
+});

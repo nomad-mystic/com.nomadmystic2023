@@ -3,7 +3,7 @@
 namespace App\View\Composers;
 
 use App\Http\Controllers\GitHub;
-
+use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Utils;
 use Roots\Acorn\View\Composer;
@@ -12,7 +12,6 @@ use Roots\Acorn\View\Composer;
  * @classdesc
  * @class Repos
  * @extends Composer
- * @todo Call GitHub API for information on repos and inject data into views (Use "topics")
  * @author Keith Murphy | nomadmystics@gmail.com
  */
 class Repos extends Composer
@@ -23,7 +22,7 @@ class Repos extends Composer
      * @var string[]
      */
     protected static $views = [
-        'partials.common.repos',
+        'template-repos',
     ];
 
     /**
@@ -52,14 +51,18 @@ class Repos extends Composer
     {
         $repos = [];
 
-        $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
+        try {
+            $ignoredTopics = [
+                'school-project',
+            ];
 
-        $response = GitHub::getGitHubEndpoint($query);
+            $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
 
-        if (!empty($response)) {
+            return GitHub::getReposAndIgnore($query, $ignoredTopics);
 
-            return Utils::jsonDecode($response);
-
+        } catch (ClientException $exception) {
+            $response = $exception->getResponse();
+            echo Utils::jsonEncode($response->getBody()->getContents());
         }
 
         return $repos;
