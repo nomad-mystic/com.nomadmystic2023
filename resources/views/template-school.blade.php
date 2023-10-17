@@ -1,5 +1,5 @@
 {{--
-  Template Name: Repos Template
+  Template Name: School Template
 --}}
 
 @extends('layouts.app-dark-theme')

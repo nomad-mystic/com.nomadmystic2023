@@ -3,19 +3,15 @@
 namespace App\View\Composers;
 
 use App\Http\Controllers\GitHub;
-
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Utils;
 use Roots\Acorn\View\Composer;
-use WP_REST_Request;
-use WP_REST_Response;
 
 /**
  * @classdesc
  * @class Repos
  * @extends Composer
- * @todo Call GitHub API for information on repos and inject data into views (Use "topics")
  * @author Keith Murphy | nomadmystics@gmail.com
  */
 class Repos extends Composer
@@ -26,7 +22,7 @@ class Repos extends Composer
      * @var string[]
      */
     protected static $views = [
-        'partials.common.repos',
+        'template-repos',
     ];
 
     /**
@@ -54,31 +50,19 @@ class Repos extends Composer
     private function getGitHubRepos(): ?array
     {
         $repos = [];
-        $ignoredTopics = [
-            'school-project',
-        ];
 
-        $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
+        try {
+            $ignoredTopics = [
+                'school-project',
+            ];
 
-        $response = GitHub::getGitHubEndpoint($query);
+            $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
 
-        if (!empty($response)) {
-            $data = Utils::jsonDecode($response, true);
+            return GitHub::getReposAndIgnore($query, $ignoredTopics);
 
-            foreach ($data as $key => $value) {
-                if (!empty($key) && !empty($value)) {
-                    $topics = $value['topics'];
-
-                    $selectedRepos = array_intersect($topics, $ignoredTopics);
-
-                    if (empty($selectedRepos)) {
-                        $repos[] = $value;
-                    }
-
-                }
-            }
-
-            return $repos;
+        } catch (ClientException $exception) {
+            $response = $exception->getResponse();
+            echo Utils::jsonEncode($response->getBody()->getContents());
         }
 
         return $repos;
