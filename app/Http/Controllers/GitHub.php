@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Routing\Controller;
-use Illuminate\Http\Request;
-use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Utils;
 use WP_REST_Request;

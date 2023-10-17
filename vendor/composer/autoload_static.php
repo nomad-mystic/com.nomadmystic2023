@@ -532,6 +532,7 @@ class ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2
 
     public static $classMap = array (
         'App\\Http\\Controllers\\GitHub' => __DIR__ . '/../..' . '/app/Http/Controllers/GitHub.php',
+        'App\\Http\\Controllers\\NPM' => __DIR__ . '/../..' . '/app/Http/Controllers/NPM.php',
         'App\\Providers\\ThemeServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ThemeServiceProvider.php',
         'App\\Utils' => __DIR__ . '/../..' . '/app/Utils.php',
         'App\\View\\Components\\Alert' => __DIR__ . '/../..' . '/app/View/Components/Alert.php',
