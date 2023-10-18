@@ -20,7 +20,7 @@ use Roots\Acorn\View\Composer;
 class Packages extends Composer
 {
     /**
-     * List of views served by this composer.
+     * @description List of views served by this composer.
      *
      * @var string[]
      */
@@ -29,12 +29,12 @@ class Packages extends Composer
     ];
 
     /**
-     * Data to be passed to view before rendering.
+     * @description Data to be passed to view before rendering.
+     * @throws GuzzleException
      *
      * @return array
-     * @throws GuzzleException
      */
-    public function with()
+    public function with(): array
     {
         return [
             'packages' => $this->getPackages(),
@@ -42,9 +42,15 @@ class Packages extends Composer
     }
 
     /**
+     * @description
+     * @public
+     * @author Keith Murphy | nomadmystics@gmail.com
+     *
      * @throws GuzzleException
+     *
+     * @return mixed
      */
-    private function getPackages()
+    private function getPackages(): mixed
     {
         $packages = [];
         $packagesToQuery = [
@@ -58,8 +64,6 @@ class Packages extends Composer
             $query = '@nomadmystic/github-dependencies-next';
 
             $response = NPM::getPackageMetadata($query);
-
-            $array = Utils::jsonDecode($response, true);
 
             return Utils::jsonDecode($response, true);
 
