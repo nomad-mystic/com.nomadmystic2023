@@ -1,6 +1,4 @@
 .Hero {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     height: 60vh;
-    margin-top: calc(0px + var(--wp-admin--admin-bar--height))
+    padding-top: calc(var(--lg-header-height) + var(--wp-admin--admin-bar--height, 0px));
 }

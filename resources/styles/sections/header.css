@@ -1,5 +1,4 @@
 .Header {
-    --lg-header-height: 60px;
     --header-color: var(--color-white);
 
     background-color: var(--header-color);

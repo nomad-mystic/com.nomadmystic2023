@@ -6,7 +6,7 @@
 
 @section('content')
 
-    @include('partials.repos.hero')
+    @include('partials.school.hero')
 
     @include('partials.common.repos', [
         'repos' => $repos
