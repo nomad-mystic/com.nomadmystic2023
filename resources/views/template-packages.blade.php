@@ -6,7 +6,7 @@
 
 @section('content')
 
-    @include('partials.repos.hero')
+    @include('partials.packages.hero')
 
     @include('partials.packages.packages', [
         'packages' => $packages,
