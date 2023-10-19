@@ -3,7 +3,9 @@
     <div>{{  $package['description'] ?? '' }}</div>
 
     <!-- https://prismjs.com/ -->
-    <div>{{  $package['readme'] ?? '' }}</div>
+    <pre>
+        <code class="language-markdown">{{  $package['readme'] ?? '' }}</code>
+    </pre>
 
     <div>{{  $package['homepage'] ?? '' }}</div>
     <div>{{  $package['repository']['url'] ?? '' }}</div>

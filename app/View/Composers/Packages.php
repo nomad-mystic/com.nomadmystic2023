@@ -2,7 +2,6 @@
 
 namespace App\View\Composers;
 
-use App\Http\Controllers\GitHub;
 use App\Http\Controllers\NPM;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
@@ -13,8 +12,6 @@ use Roots\Acorn\View\Composer;
  * @classdesc
  * @class Packages
  * @extends Composer
- * @implements
- * @todo Call GitHub/NPM API for information on packages and inject data into views (Use "topics"?)
  * @author Keith Murphy | nomadmystics@gmail.com
  */
 class Packages extends Composer
