@@ -79,7 +79,7 @@ export default {
     async mounted() {
         this.languages = await this.getGitHubLanguages();
 
-        console.dir(this.$el);
+        // console.dir(this.$el);
 
         const skeleton = this.$el.querySelector('.Skeleton');
 
