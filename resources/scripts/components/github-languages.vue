@@ -31,8 +31,6 @@ export default {
         return {
             languages: {},
             langKeys: [],
-            location: window.location.origin,
-            iconsPath: '/wp-content/themes/nomad-mystic/public/images/icons/languages/',
             suffix: '.svg',
         };
     },
@@ -55,6 +53,7 @@ export default {
                 .then(data => data)
                 .catch(err => console.err(err));
         },
+
         /**
          * @description Build our alt strings
          * @public
@@ -79,7 +78,7 @@ export default {
     async mounted() {
         this.languages = await this.getGitHubLanguages();
 
-        console.dir(this.$el);
+        // console.dir(this.$el);
 
         const skeleton = this.$el.querySelector('.Skeleton');
 

@@ -18,9 +18,7 @@
 
         .meta {
             span {
-                /*background: var(--color-teal);*/
                 border-radius: 4px;
-                /*color: var(--color-dark-theme-black);*/
                 font-size: 12px;
 
                 &:not(.topic) {

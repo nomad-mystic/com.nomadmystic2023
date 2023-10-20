@@ -1,5 +1,8 @@
-<section class="">
-    <ul class="Repos w-[90%] xl:w-full flex flex-col flex-wrap flex-auto gap-5 justify-center lg:justify-start sm:flex-row max-w-6xl py-6 mx-auto">
+<section class="Repos w-[90%] xl:w-full max-w-6xl mx-auto py-6">
+
+    <h4 class="text-4xl pb-4 capitalize">{{ $topicName ?? '' }}</h4>
+
+    <ul class="flex flex-col flex-wrap flex-auto gap-5 justify-center lg:justify-start sm:flex-row">
         @if(count($repos) > 0)
             @foreach($repos as $repo => $individual)
             <li class="Repos Card w-auto sm:w-[48%] lg:w-[31%] xl:[32%] h-auto mx-0 my-auto">
