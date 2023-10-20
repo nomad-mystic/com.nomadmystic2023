@@ -57,8 +57,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-                           'primary_navigation' => __('Primary Navigation', 'sage'),
-                       ]);
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+    ]);
 
     /**
      * Register the navigation menus.
@@ -66,8 +66,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-                           'footer_navigation' => __('Footer Navigation', 'sage'),
-                       ]);
+        'footer_navigation' => __('Footer Navigation', 'sage'),
+    ]);
 
     /**
      * Disable the default block patterns.
@@ -149,13 +149,19 @@ add_action('widgets_init', function () {
 });
 
 add_action('rest_api_init', function () {
-    register_rest_route('api/v1', 'get-github-languages', [
+    register_rest_route('/api/v1', 'get-github-languages', [
         'methods' => 'GET',
-        'callback' => array('App\Http\Controllers\GitHub', 'getLanguagesRequest')
+        'callback' => array('App\Http\Controllers\GitHub', 'getLanguagesRequest'),
+        'permission_callback' => function () {
+            return '__true';
+        }
     ]);
 
-    register_rest_route('api/v1', 'get-github-repos', [
+    register_rest_route('/api/v1', 'get-github-repos', [
         'methods' => 'GET',
-        'callback' => array('App\Http\Controllers\GitHub', 'getReposRequest')
+        'callback' => array('App\Http\Controllers\GitHub', 'getReposRequest'),
+        'permission_callback' => function () {
+            return '__true';
+        }
     ]);
 });
