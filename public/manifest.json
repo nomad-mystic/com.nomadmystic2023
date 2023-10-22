@@ -1,6 +1,6 @@
 {
-  "app.css": "css/app.8be7e9.css",
-  "app.js": "js/app.a1160a.js",
+  "app.css": "css/app.6e125e.css",
+  "app.js": "js/app.babcb7.js",
   "editor.css": "css/editor.ef46db.css",
   "editor.js": "js/editor.eefcb0.js",
   "runtime.js": "js/runtime.b74049.js",
@@ -745,6 +745,7 @@
   "images/icons/languages/folder-cluster-open.svg": "images/icons/languages/folder-cluster-open.6fedee.svg",
   "images/icons/languages/folder-download-open.svg": "images/icons/languages/folder-download-open.1747a9.svg",
   "images/icons/languages/folder-error-open.svg": "images/icons/languages/folder-error-open.7f508e.svg",
+  "images/icons/caret-down.svg": "images/icons/caret-down.085e66.svg",
   "images/icons/languages/folder-home-open.svg": "images/icons/languages/folder-home-open.089468.svg",
   "images/icons/languages/folder-template-open.svg": "images/icons/languages/folder-template-open.ba4764.svg",
   "images/icons/languages/tailwindcss.svg": "images/icons/languages/tailwindcss.768af5.svg",

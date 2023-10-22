@@ -1,0 +1,51 @@
+.SinglePackage {
+    border-radius: var(--radius);
+    border: 1px solid var(--color-black);
+
+    &-title {}
+    &-description {}
+
+    &-homepage {
+        //width: 24px;
+    }
+
+    &-github,
+    &-created,
+    &-modified {
+        svg {
+            width: 24px;
+            margin-inline-end: 8px;
+        }
+    }
+
+    &-github {}
+    &-created {}
+    &-modified {}
+
+    details {
+        summary {
+            list-style: none;
+            cursor: pointer;
+            position: relative;
+            height: 32px;
+        }
+
+        summary::after {
+            content: '';
+            background-image: url('../images/icons/caret-down.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    details[open] summary:after {
+        content: '';
+        background-image: url('../images/icons/caret-down.svg');
+
+    }
+}

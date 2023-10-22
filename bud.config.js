@@ -1,17 +1,17 @@
 /**
- * Compiler configuration
+ * @descripton Compiler configuration
  *
- * @see {@link https://roots.io/docs/sage sage documentation}
- * @see {@link https://bud.js.org/guides/configure bud.js configuration guide}
+ * @link https://roots.io/docs/sage sage documentation
+ * @link https://bud.js.org/guides/configure bud.js configuration guide
  *
  * @type {import('@roots/bud').Config}
  */
 export default async (app) => {
     /**
-     * Application assets & entrypoints
+     * @descripton Application assets & entrypoints
      *
-     * @see {@link https://bud.js.org/docs/bud.entry}
-     * @see {@link https://bud.js.org/docs/bud.assets}
+     * @link https://bud.js.org/docs/bud.entry
+     * @link https://bud.js.org/docs/bud.assets
      */
     app
         .entry('app', ['@scripts/app', '@styles/app'])
@@ -19,18 +19,18 @@ export default async (app) => {
         .assets(['images']);
 
     /**
-     * Set public path
+     * @descripton Set public path
      *
-     * @see {@link https://bud.js.org/docs/bud.setPublicPath}
+     * @link https://bud.js.org/docs/bud.setPublicPath
      */
     app.setPublicPath('/wp-content/themes/nomad-mystic/public/');
 
     /**
-     * Development server settings
+     * @description Development server settings
      *
-     * @see {@link https://bud.js.org/docs/bud.setUrl}
-     * @see {@link https://bud.js.org/docs/bud.setProxyUrl}
-     * @see {@link https://bud.js.org/docs/bud.watch}
+     * @link https://bud.js.org/docs/bud.setUrl
+     * @link https://bud.js.org/docs/bud.setProxyUrl
+     * @link https://bud.js.org/docs/bud.watch
      */
     app
         .setUrl('http://localhost:9000')
@@ -38,24 +38,31 @@ export default async (app) => {
         .watch(['resources/views', 'app', 'tailwind.config.js']);
 
 
-    // https://bud.js.org/reference/bud.define
+    // @link https://bud.js.org/reference/bud.define
     app.define({
         __VUE_OPTIONS_API__: true,
         __VUE_PROD_DEVTOOLS__: false,
     });
 
-    // https://discourse.roots.io/t/once-i-mount-vue-to-app-content-disappears/23602
-    // app.alias('vue', app.path('@modules/vue/dist/vue.esm-bundler.js'));
-
     app.vue.set('runtimeOnly', false);
 
+    // @link https://github.com/mAAdhaTTah/babel-plugin-prismjs
+    app.babel.setPlugin(['babel-plugin-css-in-js']);
+
+    app.babel.setPlugin(['prismjs', {
+        'languages': ['javascript', 'css', 'markdown'],
+        "plugins": ['line-numbers'],
+        // "theme": 'default',
+        "css": false,
+    }])
+
     /**
-     * Generate WordPress `theme.json`
+     * @description Generate WordPress `theme.json`
      *
      * @note This overwrites `theme.json` on every build.
      *
-     * @see {@link https://bud.js.org/extensions/sage/theme.json}
-     * @see {@link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json}
+     * @link https://bud.js.org/extensions/sage/theme.json
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json
      */
     app.wpjson
         .setSettings({

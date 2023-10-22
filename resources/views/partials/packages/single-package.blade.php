@@ -1,11 +1,46 @@
-<article>
+<section class="SinglePackage w-full p-6">
+    <article>
+        <header>
+            <h2 class="SinglePackage-title">{{  $package['name'] ?? '' }}</h2>
+            <p class="SinglePackage-description">{{  $package['description'] ?? '' }}</p>
+        </header>
 
-    <div>{{  $package['description'] ?? '' }}</div>
+        <section class="flex items-center flex-wrap gap-3 justify-between pt-4 w-[45%]">
+            <div class="SinglePackage-homepage">
+                <a href="{{ $package['homepage'] ?? '' }}" target="_blank" rel="noreferrer" class="flex">
+                    <figure class="SinglePackage-github">
+                        {{ svg('si-github') }}
+                    </figure>
+                    <p>Homepage</p>
+                </a>
+            </div>
 
-    <!-- https://prismjs.com/ -->
-    <div>{{  $package['readme'] ?? '' }}</div>
+            <div class="SinglePackage-created" title="NPM Created Date">
+                <div class="flex items-center">
+                    <figure>
+                        {{ svg('fas-heartbeat') }}
+                    </figure>
+                    <time>{{ Carbon\Carbon::parse($package['time']['created'] ?? '')->format('F d, Y') }}</time>
+                </div>
+            </div>
 
-    <div>{{  $package['homepage'] ?? '' }}</div>
-    <div>{{  $package['repository']['url'] ?? '' }}</div>
+            <div class="SinglePackage-modified" title="NPM Modified Date">
+                <div class="flex items-center">
+                    <figure>
+                        {{ svg('fas-heartbeat') }}
+                    </figure>
+                    <time>{{ Carbon\Carbon::parse($package['time']['modified'] ?? '')->format('F d, Y') }}</time>
+                </div>
+            </div>
+        </section>
 
-</article>
+        <details>
+            <summary></summary>
+             <pre>
+                <code class="language-markdown">{{  $package['readme'] ?? '' }}</code>
+            </pre>
+        </details>
+        <!-- https://prismjs.com/ -->
+    </article>
+</section>
+

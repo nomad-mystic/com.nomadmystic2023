@@ -1,0 +1,9 @@
+.GitHub {
+    &-languages {
+
+    }
+
+    &-language {
+        width: var(--logo-width);
+    }
+}
