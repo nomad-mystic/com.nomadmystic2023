@@ -3,6 +3,7 @@
 namespace App\View\Composers;
 
 use App\Http\Controllers\GitHub;
+use App\Helpers\ReposHelpers;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Utils;
@@ -26,6 +27,37 @@ class Repos extends Composer
     ];
 
     /**
+     * @var array[]
+     */
+    protected static array $finalReposList = [
+        'featured' => [],
+        'projects' => [],
+        'websites' => [],
+        'learning' => [],
+        'mentoring' => [],
+        'interviews' => [],
+    ];
+
+    /**
+     * @var string[]
+     */
+    protected static array $availableTopics = [
+        'learning',
+        'mentoring',
+        'websites',
+        'projects',
+        'interviews',
+        'featured',
+    ];
+
+    /**
+     * @var string[]
+     */
+    protected static array $ignoredTopics = [
+        'school-project',
+    ];
+
+    /**
      * @description Data to be passed to view before rendering.
      *
      * @return array
@@ -40,7 +72,7 @@ class Repos extends Composer
 
     /**
      * @description
-     * @public
+     * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *
      * @throws GuzzleException
@@ -50,72 +82,16 @@ class Repos extends Composer
     private function getGitHubRepos(): ?array
     {
         $repos = [];
-        $sortedRepos = [];
 
         try {
-            $ignoredTopics = [
-                'school-project',
-            ];
-
             $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
 
-            $unsortedRepos = GitHub::getReposAndIgnore($query, $ignoredTopics);
+            $unsortedRepos = GitHub::getReposAndIgnore($query, Repos::$ignoredTopics);
 
-            $repos = $this->sortRepos($unsortedRepos);
+            $repos = ReposHelpers::sortRepos($unsortedRepos, Repos::$finalReposList, Repos::$availableTopics);
 
             return $repos;
 
-        } catch (ClientException $exception) {
-            $response = $exception->getResponse();
-            echo Utils::jsonEncode($response->getBody()->getContents());
-        }
-
-        return $repos;
-    }
-
-    /**
-     * @description
-     * @public
-     * @author Keith Murphy | nomadmystics@gmail.com
-     *
-     * @param null | array $unsortedRepos
-     * @return null | array
-     */
-    private function sortRepos(?array $unsortedRepos): ?array
-    {
-        $repos = [
-            'featured' => [],
-            'projects' => [],
-            'websites' => [],
-            'learning' => [],
-            'mentoring' => [],
-            'interviews' => [],
-        ];
-
-        $availableTopics = [
-            'learning',
-            'mentoring',
-            'websites',
-            'projects',
-            'interviews',
-            'featured',
-        ];
-
-        try {
-            if (!empty($unsortedRepos)) {
-                foreach ($unsortedRepos as $key => $value) {
-                    if (!empty($key) && !empty($value)) {
-                        $topics = $value['topics'];
-
-                        $selectedRepos = array_intersect($topics, $availableTopics);
-
-                        if (!empty($selectedRepos) && !empty($selectedRepos[0])) {
-                            $repos[$selectedRepos[0]][] = $value;
-                        }
-
-                    }
-                }
-            }
         } catch (ClientException $exception) {
             $response = $exception->getResponse();
             echo Utils::jsonEncode($response->getBody()->getContents());

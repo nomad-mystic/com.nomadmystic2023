@@ -9,7 +9,7 @@ use Dotenv;
  * @class Utils
  * @author Keith Murphy | nomadmystics@gmail.com
  */
-class Utils
+class UtilsHelpers
 {
     public function __construct()
     {
@@ -30,4 +30,4 @@ class Utils
     }
 }
 
-new Utils();
+new UtilsHelpers();
