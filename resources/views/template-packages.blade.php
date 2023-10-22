@@ -8,8 +8,13 @@
 
     @include('partials.packages.hero')
 
-    @include('partials.packages.packages', [
-        'packages' => $packages,
-    ])
+    <section class="Packages w-[60%] flex justify-center mx-auto">
+
+        <!-- Create loop -->
+        @include('partials.packages.single-package', [
+            'package' => $packages,
+        ])
+
+    </section>
 
 @endsection

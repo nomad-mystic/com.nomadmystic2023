@@ -1,0 +1,23 @@
+.SinglePackage {
+    border-radius: var(--radius);
+
+    &-title {
+
+    }
+
+    &-description {
+
+    }
+
+    &-homepage {
+
+    }
+
+    &-created {
+
+    }
+
+    &-modified {
+
+    }
+}

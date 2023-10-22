@@ -1,13 +1,30 @@
-<article>
+<section class="SinglePackage w-full">
+    <article>
+        <header>
+            <h2 class="SinglePackage-title">{{  $package['name'] ?? '' }}</h2>
+            <p class="SinglePackage-description">{{  $package['description'] ?? '' }}</p>
+        </header>
 
-    <div>{{  $package['description'] ?? '' }}</div>
+        <section>
+            <div class="SinglePackage-homepage">
+                {{  $package['homepage'] ?? '' }}
+            </div>
 
-    <!-- https://prismjs.com/ -->
-    <pre>
-        <code class="language-markdown">{{  $package['readme'] ?? '' }}</code>
-    </pre>
+            <div class="SinglePackage-created">
+                {{  $package['created'] ?? '' }}
+            </div>
 
-    <div>{{  $package['homepage'] ?? '' }}</div>
-    <div>{{  $package['repository']['url'] ?? '' }}</div>
+            <div class="SinglePackage-modified">
+                {{  $package['modified'] ?? '' }}
+            </div>
+        </section>
 
-</article>
+        <section>
+             <pre>
+                <code class="language-markdown">{{  $package['readme'] ?? '' }}</code>
+            </pre>
+        </section>
+        <!-- https://prismjs.com/ -->
+    </article>
+</section>
+

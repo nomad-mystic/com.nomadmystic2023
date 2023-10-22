@@ -6,8 +6,17 @@
 
 <script>
 export default {
-    name: 'packages-page',
+    name: 'single-package',
+    props: {
+        package: {
+            type: String,
+            default: '',
+        },
+    },
     mounted() {
+
+        console.log(this.packages);
+
         console.log('testing');
     }
 };

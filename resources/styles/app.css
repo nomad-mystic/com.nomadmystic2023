@@ -7,6 +7,7 @@
 @import './layouts/dark-theme.css';
 @import './components/card.css';
 @import './components/skeleton.css';
+@import './components/single-package.css';
 @import './sections/header.css';
 @import 'sections/hero.css';
 @import 'sections/footer.css';

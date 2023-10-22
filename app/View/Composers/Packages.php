@@ -62,7 +62,9 @@ class Packages extends Composer
 
             $response = NPM::getPackageMetadata($query);
 
-            return Utils::jsonDecode($response, true);
+            $package = Utils::jsonDecode($response, true);
+
+            return $package;
 
         } catch (ClientException $exception) {
             $response = $exception->getResponse();

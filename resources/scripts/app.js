@@ -4,8 +4,6 @@ import domReady from '@roots/sage/client/dom-ready';
 import { createApp } from 'vue';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-markdown';
-// import 'prismjs/plugins/line-numbers';
-// import 'prismjs/plugins/match-braces';
 
 Prism.highlightAll();
 
