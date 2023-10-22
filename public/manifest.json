@@ -1,5 +1,5 @@
 {
-  "app.css": "css/app.3eff1a.css",
+  "app.css": "css/app.009f2c.css",
   "app.js": "js/app.8417b0.js",
   "editor.css": "css/editor.ef46db.css",
   "editor.js": "js/editor.eefcb0.js",
@@ -745,6 +745,7 @@
   "images/icons/languages/folder-cluster-open.svg": "images/icons/languages/folder-cluster-open.6fedee.svg",
   "images/icons/languages/folder-download-open.svg": "images/icons/languages/folder-download-open.1747a9.svg",
   "images/icons/languages/folder-error-open.svg": "images/icons/languages/folder-error-open.7f508e.svg",
+  "images/icons/caret-down.svg": "images/icons/caret-down.085e66.svg",
   "images/icons/languages/folder-home-open.svg": "images/icons/languages/folder-home-open.089468.svg",
   "images/icons/languages/folder-template-open.svg": "images/icons/languages/folder-template-open.ba4764.svg",
   "images/icons/languages/tailwindcss.svg": "images/icons/languages/tailwindcss.768af5.svg",
