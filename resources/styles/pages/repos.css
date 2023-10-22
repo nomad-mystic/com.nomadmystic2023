@@ -18,6 +18,11 @@
             }
 
             &-meta {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 0.25rem;
+
                 span {
                     border-radius: 4px;
                     font-size: 12px;
@@ -34,7 +39,8 @@
 
             &-stars,
             &-watchers,
-            &-issues-count {
+            &-issues-count,
+            &-topics {
                 svg {
                     width: 16px;
                     margin-inline-end: 8px;

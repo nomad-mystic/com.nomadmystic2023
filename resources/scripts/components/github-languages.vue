@@ -1,9 +1,9 @@
 <template>
-    <section class="GitHub-languages">
+    <section class="GitHub-languages" title="GitHub Repo Languages">
 
         <skeleton-languages-placeholder />
 
-        <div class="flex">
+        <div class="flex flex-wrap">
             <span v-for="(lang, index) in this.languages" class="GitHub-language block mr-4" v-cloak>
                 <img :src="lang"
                      :alt="this.buildAlt(index)">

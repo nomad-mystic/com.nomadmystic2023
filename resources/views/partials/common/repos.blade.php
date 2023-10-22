@@ -6,25 +6,37 @@
         @if(count($repos) > 0)
             @foreach($repos as $repo => $individual)
             <li class="Repos Card w-auto sm:w-[48%] lg:w-[31%] xl:[32%] h-auto mx-0 my-auto">
-                <a href="{{ $individual['html_url'] ?? '' }}" target="_blank" rel="noreferrer" class="link block min-h-[200px]">
-                    <article class="flex justify-between items-start p-6 h-[200px]">
+                <a href="{{ $individual['html_url'] ?? '' }}" target="_blank" rel="noreferrer" class="link block min-h-[200px] p-6">
+                    <article class="flex justify-between items-start h-[200px]">
                         <div>
                             <header>
                                 <p class="Repos-title mb-1">{{ str_replace('-', ' ', $individual['name'] ?? '') }}</p>
                             </header>
 
-                            <section class="Repos-meta flex mt-3">
+                            <section class="Repos-meta mt-3">
 
-                                <span class="Repos-stars mr-4 flex">{{ svg('fas-grin-stars') }}{{ $individual['stargazers_count'] ?? 0  }}</span>
+                                <span class="Repos-stars flex"
+                                      title="GitHub Stars"
+                                >
+                                    {{ svg('fas-grin-stars') }}{{ $individual['stargazers_count'] ?? 0  }}
+                                </span>
 
-                                <span class="Repos-watchers mr-4 flex">{{ svg('fas-people-group') }}{{ $individual['watchers_count'] ?? 0  }}</span>
+                                <span class="Repos-watchers flex"
+                                      title="GitHub Watchers"
+                                >
+                                    {{ svg('fas-people-group') }}{{ $individual['watchers_count'] ?? 0  }}
+                                </span>
 
-                                <span class="Repos-issues-count mr-4 flex">Open Issues: {{ $individual['open_issues_count'] ?? 0  }}</span>
+                                <span class="Repos-issues-count flex"
+                                      title="GitHub Issues"
+                                >
+                                    {{ svg('fas-folder-open') }}{{ $individual['open_issues_count'] ?? 0  }}
+                                </span>
 
                                 @if(!empty($individual['topics']))
 
-                                <span class="Repos-topics block">
-                                    <span>Topics:</span>
+                                <span class="Repos-topics flex" title="GitHub Topics">
+                                    <span>{{ svg('fas-tags') }}</span>
 
                                     @foreach($individual['topics'] as $topic)
 
