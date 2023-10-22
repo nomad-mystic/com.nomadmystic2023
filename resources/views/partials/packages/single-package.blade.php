@@ -5,23 +5,32 @@
             <p class="SinglePackage-description">{{  $package['description'] ?? '' }}</p>
         </header>
 
-        <section class="flex items-center">
+        <section class="flex items-center flex-wrap gap-3 justify-between pt-4 w-[45%]">
             <div class="SinglePackage-homepage">
-                <a href="{{ $package['homepage'] ?? '' }}" target="_blank" rel="noreferrer" class="p-4 mx-2">
-                    <figure class="SinglePackage-icon">
-                        @svg('si-github')
+                <a href="{{ $package['homepage'] ?? '' }}" target="_blank" rel="noreferrer" class="flex">
+                    <figure class="SinglePackage-github">
+                        {{ svg('si-github') }}
                     </figure>
+                    <p>Homepage</p>
                 </a>
             </div>
 
-            <div class="SinglePackage-created">
-                <time>
-                    <span>Created: {{ Carbon\Carbon::parse($package['time']['created'] ?? '')->format('F d, Y') }}</span>
-                </time>
+            <div class="SinglePackage-created" title="NPM Created Date">
+                <div class="flex items-center">
+                    <figure>
+                        {{ svg('fas-heartbeat') }}
+                    </figure>
+                    <time>{{ Carbon\Carbon::parse($package['time']['created'] ?? '')->format('F d, Y') }}</time>
+                </div>
             </div>
 
-            <div class="SinglePackage-modified">
-                <span>Modified: {{ Carbon\Carbon::parse($package['time']['modified'] ?? '')->format('F d, Y') }}</span>
+            <div class="SinglePackage-modified" title="NPM Modified Date">
+                <div class="flex items-center">
+                    <figure>
+                        {{ svg('fas-heartbeat') }}
+                    </figure>
+                    <time>{{ Carbon\Carbon::parse($package['time']['modified'] ?? '')->format('F d, Y') }}</time>
+                </div>
             </div>
         </section>
 

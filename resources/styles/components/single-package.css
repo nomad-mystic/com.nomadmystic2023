@@ -2,29 +2,25 @@
     border-radius: var(--radius);
     border: 1px solid var(--color-black);
 
-    &-title {
-
-    }
-
-    &-description {
-
-    }
+    &-title {}
+    &-description {}
 
     &-homepage {
-        width: 24px;
+        //width: 24px;
     }
 
-    &-created {
-
-    }
-
+    &-github,
+    &-created,
     &-modified {
-
+        svg {
+            width: 24px;
+            margin-inline-end: 8px;
+        }
     }
 
-    &-icon {
-
-    }
+    &-github {}
+    &-created {}
+    &-modified {}
 
     details {
         summary {
