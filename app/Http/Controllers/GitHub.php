@@ -71,9 +71,6 @@ class GitHub extends Controller
         $languagesList = [];
 
         try {
-            $themeUrl = get_stylesheet_directory_uri();
-            $themePath = get_stylesheet_directory();
-            $filesPath = '/public/images/icons/languages/';
             $fileType = '.svg';
 
             // Build our REST call
@@ -90,13 +87,11 @@ class GitHub extends Controller
                         // File names are in lowercase
                         $lowerCaseKey = strtolower($langKey);
 
-                        // Build paths
-                        $urlToIcon = "{$themeUrl}{$filesPath}{$lowerCaseKey}{$fileType}";
-                        $pathToIcon = "{$themePath}{$filesPath}{$lowerCaseKey}{$fileType}";
+                        $image = \Roots\asset("images/icons/languages/{$lowerCaseKey}{$fileType}");
 
                         // Make sure we have an icon
-                        if (file_exists($pathToIcon)) {
-                            $languagesList[$lowerCaseKey] = $urlToIcon;
+                        if (!empty($image->path()) && file_exists($image->path())) {
+                            $languagesList[$lowerCaseKey] = $image->uri();
                         }
                     }
                 }

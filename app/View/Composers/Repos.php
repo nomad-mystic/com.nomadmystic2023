@@ -34,7 +34,7 @@ class Repos extends Composer
     public function with(): array
     {
         return [
-            'repos' => $this->getGitHubRepos(),
+            'allRepos' => $this->getGitHubRepos(),
         ];
     }
 
@@ -50,6 +50,7 @@ class Repos extends Composer
     private function getGitHubRepos(): ?array
     {
         $repos = [];
+        $sortedRepos = [];
 
         try {
             $ignoredTopics = [
@@ -58,8 +59,63 @@ class Repos extends Composer
 
             $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
 
-            return GitHub::getReposAndIgnore($query, $ignoredTopics);
+            $unsortedRepos = GitHub::getReposAndIgnore($query, $ignoredTopics);
 
+            $repos = $this->sortRepos($unsortedRepos);
+
+            return $repos;
+
+        } catch (ClientException $exception) {
+            $response = $exception->getResponse();
+            echo Utils::jsonEncode($response->getBody()->getContents());
+        }
+
+        return $repos;
+    }
+
+    /**
+     * @description
+     * @public
+     * @author Keith Murphy | nomadmystics@gmail.com
+     *
+     * @param null | array $unsortedRepos
+     * @return null | array
+     */
+    private function sortRepos(?array $unsortedRepos): ?array
+    {
+        $repos = [
+            'featured' => [],
+            'projects' => [],
+            'websites' => [],
+            'learning' => [],
+            'mentoring' => [],
+            'interviews' => [],
+        ];
+
+        $availableTopics = [
+            'learning',
+            'mentoring',
+            'websites',
+            'projects',
+            'interviews',
+            'featured',
+        ];
+
+        try {
+            if (!empty($unsortedRepos)) {
+                foreach ($unsortedRepos as $key => $value) {
+                    if (!empty($key) && !empty($value)) {
+                        $topics = $value['topics'];
+
+                        $selectedRepos = array_intersect($topics, $availableTopics);
+
+                        if (!empty($selectedRepos) && !empty($selectedRepos[0])) {
+                            $repos[$selectedRepos[0]][] = $value;
+                        }
+
+                    }
+                }
+            }
         } catch (ClientException $exception) {
             $response = $exception->getResponse();
             echo Utils::jsonEncode($response->getBody()->getContents());
