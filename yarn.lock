@@ -2046,7 +2046,7 @@
     "@roots/bud-support" "6.16.1"
     tslib "2.6.2"
 
-"@roots/bud@6.17.0", "@roots/bud@^6.17.0":
+"@roots/bud@6.17.0", "@roots/bud@^6.16.1":
   version "6.17.0"
   resolved "https://registry.yarnpkg.com/@roots/bud/-/bud-6.17.0.tgz#47cffc103b4f9b3741b6f4dfa64f1ae60aa398c8"
   integrity sha512-vWDP6av1TqUqIeItfvaw1fYbjglkbrJ2+r0Ll2aufkRX9XuS+mrSMIaGeC+htcyybZSqZ8cW4D9lrbMT2djXtw==
@@ -2994,9 +2994,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001464, caniuse-lite@^1.0.30001517, caniuse-lite@^1.0.30001538, caniuse-lite@^1.0.30001541:
-  version "1.0.30001547"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001547.tgz"
-  integrity sha512-W7CrtIModMAxobGhz8iXmDfuJiiKg1WADMO/9x7/CLNin5cpSbuBjooyoIUVB5eyCc36QuTVlkVa1iB2S5+/eA==
+  version "1.0.30001551"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001551.tgz"
+  integrity sha512-vtBAez47BoGMMzlbYhfXrMV1kvRF2WP/lqiMuDu1Sb4EE4LKEgjopFDSRtZfdVnslNRpOqV/woE+Xgrwj6VQlg==
 
 ccount@^2.0.0:
   version "2.0.1"

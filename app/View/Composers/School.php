@@ -2,6 +2,7 @@
 
 namespace App\View\Composers;
 
+use App\Helpers\ReposHelpers;
 use App\Http\Controllers\GitHub;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
@@ -24,6 +25,32 @@ class School extends Composer
      */
     protected static $views = [
         'template-school',
+    ];
+
+    /**
+     * @var string[]
+     */
+    protected static array $ignoredTopics = [
+        'websites',
+        'learning',
+        'featured',
+        'projects',
+        'interviews',
+        'mentoring',
+    ];
+
+    /**
+     * @var array[]
+     */
+    protected static array $finalReposList = [
+        'school-project' => [],
+    ];
+
+    /**
+     * @var string[]
+     */
+    protected static array $availableTopics = [
+        'school-project',
     ];
 
     /**
@@ -53,18 +80,13 @@ class School extends Composer
         $repos = [];
 
         try {
-            $ignoredTopics = [
-                'websites',
-                'learning',
-                'featured',
-                'projects',
-                'interviews',
-                'mentoring',
-            ];
-
             $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
 
-            return GitHub::getReposAndIgnore($query, $ignoredTopics);
+            $unsortedRepos = GitHub::getReposAndIgnore($query, School::$ignoredTopics);
+
+            $repos = ReposHelpers::sortRepos($unsortedRepos, School::$finalReposList, School::$availableTopics);
+
+            return $repos;
 
         } catch (ClientException $exception) {
             $response = $exception->getResponse();
