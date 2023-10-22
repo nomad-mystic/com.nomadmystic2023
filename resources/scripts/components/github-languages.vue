@@ -3,7 +3,7 @@
 
         <skeleton-languages-placeholder />
 
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap gap-y-2">
             <span v-for="(lang, index) in this.languages" class="GitHub-language block mr-4" v-cloak>
                 <img :src="lang"
                      :alt="this.buildAlt(index)">
