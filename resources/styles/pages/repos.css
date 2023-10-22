@@ -1,3 +1,55 @@
 .Repos {
     background-color: var(--color-dark-theme-black);
+
+    .Card {
+        border: 1px solid var(--color-card-border);
+        border-radius: var(--radius);
+
+        .Repos {
+            &:hover {
+                background-color: var(--color-card-hover);
+                transition: background-color .25s linear;
+            }
+
+            &-link {}
+
+            &-title {
+                text-transform: capitalize;
+            }
+
+            &-meta {
+                span {
+                    border-radius: 4px;
+                    font-size: 12px;
+
+                    &:not(.topic) {
+                        padding: 0.25rem 0;
+                    }
+                }
+            }
+
+            &-topic {
+                text-transform: capitalize;
+            }
+
+            &-stars,
+            &-watchers,
+            &-issues-count {
+                svg {
+                    width: 16px;
+                    margin-inline-end: 8px;
+                }
+            }
+
+            &-link {
+                img {
+                    width: var(--logo-width);
+                }
+            }
+
+            &-external-link {
+                width: 24px;
+            }
+        }
+    }
 }

@@ -50,6 +50,6 @@
     details[open] summary:after {
         content: '';
         background-image: url('../images/icons/caret-down.svg');
-        
+
     }
 }

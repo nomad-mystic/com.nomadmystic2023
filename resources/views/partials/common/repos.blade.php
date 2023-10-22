@@ -10,25 +10,25 @@
                     <article class="flex justify-between items-start p-6 h-[200px]">
                         <div>
                             <header>
-                                <p class="title mb-1">{{ str_replace('-', ' ', $individual['name'] ?? '') }}</p>
+                                <p class="Repos-title mb-1">{{ str_replace('-', ' ', $individual['name'] ?? '') }}</p>
                             </header>
 
-                            <section class="meta flex mt-3">
+                            <section class="Repos-meta flex mt-3">
 
-                                <span class="stars mr-4 flex">{{ svg('fas-grin-stars') }}{{ $individual['stargazers_count'] ?? 0  }}</span>
+                                <span class="Repos-stars mr-4 flex">{{ svg('fas-grin-stars') }}{{ $individual['stargazers_count'] ?? 0  }}</span>
 
-                                <span class="watchers mr-4 flex">{{ svg('fas-people-group') }}{{ $individual['watchers_count'] ?? 0  }}</span>
+                                <span class="Repos-watchers mr-4 flex">{{ svg('fas-people-group') }}{{ $individual['watchers_count'] ?? 0  }}</span>
 
-                                <span class="issues-count mr-4 flex">Open Issues: {{ $individual['open_issues_count'] ?? 0  }}</span>
+                                <span class="Repos-issues-count mr-4 flex">Open Issues: {{ $individual['open_issues_count'] ?? 0  }}</span>
 
                                 @if(!empty($individual['topics']))
 
-                                <span class="topics block">
+                                <span class="Repos-topics block">
                                     <span>Topics:</span>
 
                                     @foreach($individual['topics'] as $topic)
 
-                                       <span class="topic">{{ $topic ?? ''}}</span>
+                                       <span class="Repos-topic">{{ $topic ?? ''}}</span>
 
                                     @endforeach
                                 </span>
@@ -36,13 +36,13 @@
                                 @endif
                             </section><!-- End .meta -->
 
-                            <section class="languages mt-4">
+                            <section class="Repos-languages mt-4">
 
                                 <github-languages owner-repo="@php echo $individual['full_name'] ?? '' @endphp"/></github-languages>
 
                             </section>
                         </div>
-                        <div class="external-link">
+                        <div class="Repos-external-link">
                             {{ svg('fas-link') }}
                         </div>
                     </article>

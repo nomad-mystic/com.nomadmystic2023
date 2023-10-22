@@ -8,7 +8,7 @@
 
     @include('partials.packages.hero')
 
-    <section class="Packages w-[60%] flex justify-center mx-auto">
+    <section class="Packages w-[90%] flex justify-center xl:w-full max-w-6xl mx-auto py-6">
 
         <!-- Create loop -->
         @include('partials.packages.single-package', [

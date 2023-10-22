@@ -4,7 +4,7 @@
         <skeleton-languages-placeholder />
 
         <div class="flex">
-            <span v-for="(lang, index) in this.languages" class="language block mr-4" v-cloak>
+            <span v-for="(lang, index) in this.languages" class="GitHub-language block mr-4" v-cloak>
                 <img :src="lang"
                      :alt="this.buildAlt(index)">
             </span>
@@ -30,8 +30,6 @@ export default {
     data() {
         return {
             languages: {},
-            langKeys: [],
-            suffix: '.svg',
         };
     },
     methods: {
