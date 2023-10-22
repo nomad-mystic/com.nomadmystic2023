@@ -62,7 +62,7 @@ class School extends Composer
     public function with(): array
     {
         return [
-            'repos' => $this->getGitHubRepos(),
+            'allRepos' => $this->getGitHubRepos(),
         ];
     }
 
