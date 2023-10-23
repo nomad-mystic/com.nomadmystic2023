@@ -20,12 +20,13 @@
 
 :root {
     --color-teal: rgba(60, 192, 204, 1);
+    --color-teal-dark: rgb(2, 146, 159);
     --color-teal-light: rgba(60, 192, 204, .5);
     --color-purple: rgba(173, 0, 173, 1);
     --color-purple-light: rgba(195, 15, 160, 1);
     --color-dark-grey: rgba(0, 0, 0, .10);
     --color-light-grey: rgb(183, 183, 183);
-    --color-black: #888888;
+    --color-black: #4a4a4a;
     --color-white: #ffffff;
     --color-animation-fill: #4a4a4a;
     --color-animation-stroke: #4a4a4a;

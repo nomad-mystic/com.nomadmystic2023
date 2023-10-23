@@ -27,8 +27,6 @@ export default {
     },
     mounted() {
         this.markdown = this.parseMarkdown();
-
-        // console.log(this.packageMarkdown);
     },
 };
 </script>
