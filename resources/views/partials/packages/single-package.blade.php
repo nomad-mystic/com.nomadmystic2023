@@ -36,9 +36,12 @@
 
         <details>
             <summary></summary>
-             <pre>
-                <code class="language-markdown">{{  $package['readme'] ?? '' }}</code>
-            </pre>
+
+            <single-package package-markdown="@php echo $package['readme'] ?? '' @endphp"></single-package>
+
+{{--             <pre>--}}
+{{--                <code class="SinglePackage-markdown">{{  $package['readme'] ?? '' }}</code>--}}
+{{--            </pre>--}}
         </details>
         <!-- https://prismjs.com/ -->
     </article>
