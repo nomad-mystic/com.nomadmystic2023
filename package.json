@@ -20,10 +20,13 @@
     },
     "devDependencies": {
         "@roots/bud": "^6.17.0",
+        "@roots/bud-babel": "^6.17.0",
         "@roots/bud-tailwindcss": "^6.17.0",
         "@roots/bud-vue": "^6.17.0",
         "@roots/sage": "^6.17.0",
         "autoprefixer": "^10.4.16",
+        "babel-core": "^6.26.3",
+        "babel-plugin-css-in-js": "^1.5.1",
         "postcss-import": "^15.1.0",
         "postcss-nested": "^6.0.1",
         "postcss-nesting": "^12.0.1"

@@ -6,7 +6,6 @@
 
 <script>
 import { marked } from 'marked';
-// import 'github-markdown-dark.css'
 
 export default {
     name: 'single-package',
