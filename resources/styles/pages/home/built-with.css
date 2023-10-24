@@ -3,5 +3,7 @@
     background-position: center bottom;
     background-size: cover;
 
-    .header {}
+    .Header {
+        background-color: transparent;
+    }
 }
