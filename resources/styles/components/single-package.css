@@ -53,7 +53,7 @@
 
         summary::after {
             content: '';
-            background-image: url('../images/icons/caret-down.svg');
+            background-image: url('../images/icons/chevron-down.svg');
             background-repeat: no-repeat;
             background-size: contain;
             display: block;
@@ -61,14 +61,16 @@
             height: 100%;
             position: absolute;
             right: 0;
+            transform-origin: center;
+            transition: transform .10s linear;
         }
     }
 
     details[open] summary:after {
         content: '';
-        background-image: url('../images/icons/caret-down.svg');
+        background-image: url('../images/icons/chevron-down.svg');
         transform: rotate(180deg);
-        transform-origin: center;
+        transition: transform .10s linear;
     }
 
     &-bugs {}
