@@ -5,22 +5,43 @@
     &-title {}
     &-description {}
 
-    &-homepage {
-        //width: 24px;
-    }
-
-    &-github,
+    &-package,
+    &-homepage,
     &-created,
-    &-modified {
+    &-modified,
+    &-bugs {
+        p {
+            font-size: 12px;
+        }
+
         svg {
             width: 24px;
+            height: 24px;
             margin-inline-end: 8px;
+        }
+
+        a {
+            &:hover {
+                color: var(--color-teal-dark);
+            }
         }
     }
 
+    &-package {}
+    &-npm {}
+
+    &-homepage {}
     &-github {}
+
     &-created {}
     &-modified {}
+
+    &-created,
+    &-modified {
+        time {
+            font-size: 12px;
+        }
+    }
 
     details {
         summary {
@@ -36,8 +57,8 @@
             background-repeat: no-repeat;
             background-size: contain;
             display: block;
-            width: 32px;
-            height: 32px;
+            width: 24px;
+            height: 100%;
             position: absolute;
             right: 0;
         }
@@ -46,6 +67,21 @@
     details[open] summary:after {
         content: '';
         background-image: url('../images/icons/caret-down.svg');
+        transform: rotate(180deg);
+        transform-origin: center;
+    }
 
+    &-bugs {}
+    &-issues {}
+
+    &-markdownBody {
+        ul {
+            list-style: disc;
+        }
+
+        pre {
+            color: var(--color-white);
+            background-color: #282936;
+        }
     }
 }

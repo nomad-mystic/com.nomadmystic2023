@@ -18,7 +18,7 @@
                                 <span class="Repos-stars flex"
                                       title="GitHub Stars"
                                 >
-                                    {{ svg('fas-grin-stars') }}{{ $individual['stargazers_count'] ?? 0  }}
+                                    {{ svg('fas-star') }}{{ $individual['stargazers_count'] ?? 0  }}
                                 </span>
 
                                 <span class="Repos-watchers flex"

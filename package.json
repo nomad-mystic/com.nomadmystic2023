@@ -20,18 +20,22 @@
     },
     "devDependencies": {
         "@roots/bud": "^6.17.0",
+        "@roots/bud-babel": "^6.17.0",
         "@roots/bud-tailwindcss": "^6.17.0",
         "@roots/bud-vue": "^6.17.0",
         "@roots/sage": "^6.17.0",
         "autoprefixer": "^10.4.16",
-        "postcss-import": "^15.1.0",
-        "postcss-nested": "^6.0.1",
-        "postcss-nesting": "^12.0.1",
         "babel-core": "^6.26.3",
         "babel-plugin-css-in-js": "^1.5.1",
-        "babel-plugin-prismjs": "^2.1.0"
+        "dompurify": "^3.0.6",
+        "postcss-import": "^15.1.0",
+        "postcss-nested": "^6.0.1",
+        "postcss-nesting": "^12.0.1"
     },
     "dependencies": {
-        "prismjs": "^1.29.0"
+        "github-markdown-css": "^5.3.0",
+        "highlight.js": "^11.9.0",
+        "marked": "^9.1.2",
+        "marked-highlight": "^2.0.6"
     }
 }

@@ -46,15 +46,8 @@ export default async (app) => {
 
     app.vue.set('runtimeOnly', false);
 
-    // @link https://github.com/mAAdhaTTah/babel-plugin-prismjs
-    app.babel.setPlugin(['babel-plugin-css-in-js']);
-
-    app.babel.setPlugin(['prismjs', {
-        'languages': ['javascript', 'css', 'markdown'],
-        "plugins": ['line-numbers'],
-        // "theme": 'default',
-        "css": false,
-    }])
+    // Babel configs
+    // app.babel.setPlugin(['babel-plugin-css-in-js']);
 
     /**
      * @description Generate WordPress `theme.json`

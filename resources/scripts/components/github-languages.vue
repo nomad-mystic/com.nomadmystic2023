@@ -19,7 +19,7 @@ import SkeletonLanguagesPlaceholder from '@scripts/components/skeleton-languages
 export default {
     name: 'github-languages',
     components: {
-        SkeletonLanguagesPlaceholder
+        SkeletonLanguagesPlaceholder,
     },
     props: {
         ownerRepo: {
@@ -63,24 +63,23 @@ export default {
         buildAlt(langName = '') {
             return `Icon for ${langName} language`;
         },
-    },
-    updated() {
 
-        // if (this.languages) {
-        //     const skeleton = this.$el.querySelector('.Skeleton');
-        //
-        //     skeleton.style.display = 'none';
-        // }
-
+        /**
+         * @description Hide skeleton after the languages have been fetched
+         * @public
+         * @author Keith Murphy | nomadmystics@gmail.com
+         *
+         * @return {void}
+         */
+        removeSkeleton() {
+            const skeleton = this.$el.querySelector('.Skeleton');
+            skeleton.style.display = 'none';
+        },
     },
     async mounted() {
         this.languages = await this.getGitHubLanguages();
 
-        // console.dir(this.$el);
-
-        const skeleton = this.$el.querySelector('.Skeleton');
-
-        skeleton.style.display = 'none';
+        this.removeSkeleton();
     },
 };
 </script>

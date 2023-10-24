@@ -2,10 +2,6 @@ import domReady from '@roots/sage/client/dom-ready';
 
 // Community
 import { createApp } from 'vue';
-import Prism from 'prismjs';
-import 'prismjs/components/prism-markdown';
-
-Prism.highlightAll();
 
 // Custom
 import Root from '../scripts/components/root.vue';
