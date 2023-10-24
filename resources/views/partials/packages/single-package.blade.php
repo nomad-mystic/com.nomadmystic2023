@@ -1,4 +1,4 @@
-<section class="SinglePackage w-full p-6">
+<section class="SinglePackage w-full p-6 mb-6">
     <article>
         <header>
             <h2 class="SinglePackage-title text-3xl pb-2">{{  $package['name'] ?? '' }}</h2>
@@ -7,7 +7,11 @@
 
         <section class="flex items-center flex-wrap gap-3 justify-start pt-4" title="NPM Homepage">
             <div class="SinglePackage-package">
-                <a href="https://www.npmjs.com/package/{{  $package['name'] ?? '' }}" target="_blank" rel="noreferrer" class="flex items-center">
+                <a href="https://www.npmjs.com/package/{{ $package['name'] ?? '' }}"
+                   target="_blank"
+                   rel="noreferrer"
+                   class="flex items-center"
+                >
                     <figure class="SinglePackage-npm">
                         {{ svg('si-npm') }}
                     </figure>
@@ -16,7 +20,11 @@
             </div>
 
             <div class="SinglePackage-homepage" title="NPM GitHub Homepage">
-                <a href="{{ $package['homepage'] ?? '' }}" target="_blank" rel="noreferrer" class="flex items-center">
+                <a href="{{ $package['homepage'] ?? '' }}"
+                   target="_blank"
+                   rel="noreferrer"
+                   class="flex items-center"
+                >
                     <figure class="SinglePackage-github">
                         {{ svg('si-github') }}
                     </figure>
@@ -25,7 +33,11 @@
             </div>
 
             <div class="SinglePackage-bugs" title="NPM GitHub issues">
-                <a href="{{ $package['bugs']['url'] ?? '' }}" target="_blank" rel="noreferrer" class="flex items-center">
+                <a href="{{ $package['bugs']['url'] ?? '' }}"
+                   target="_blank"
+                   rel="noreferrer"
+                   class="flex items-center"
+                >
                     <figure class="SinglePackage-issues">
                         {{ svg('fas-bugs') }}
                     </figure>
@@ -55,7 +67,7 @@
         <details>
             <summary></summary>
 
-            <single-package package-markdown="@php echo $package['readme'] ?? '' @endphp"></single-package>
+{{--            <single-package package-markdown="@php echo $package['readme'] ?? '' @endphp"></single-package>--}}
 
         </details>
         <!-- https://prismjs.com/ -->

@@ -45,26 +45,28 @@ class Packages extends Composer
      *
      * @throws GuzzleException
      *
-     * @return mixed
+     * @return array
      */
-    private function getPackages(): mixed
+    private function getPackages(): array
     {
         $packages = [];
         $packagesToQuery = [
             '@nomadmystic/github-dependencies-next',
-//            '@nomadmystic/css-grid-package',
-//            '@nomadmystic/wordpress-scaffold-cli',
-//            '@nomadmystic/drupal-scaffold-module',
+            '@nomadmystic/css-grid-package',
+            '@nomadmystic/wordpress-scaffold-cli',
+            '@nomadmystic/drupal-scaffold-module',
         ];
 
         try {
-            $query = '@nomadmystic/github-dependencies-next';
+            foreach ($packagesToQuery as $query => $package) {
+                if (!empty($query)) {
+                    $packages[] = Utils::jsonDecode(NPM::getPackageMetadata($package), true);
+                }
+            }
 
-            $response = NPM::getPackageMetadata($query);
+            $testing = $packages;
 
-            $package = Utils::jsonDecode($response, true);
-
-            return $package;
+            return $packages;
 
         } catch (ClientException $exception) {
             $response = $exception->getResponse();

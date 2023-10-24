@@ -8,13 +8,22 @@
 
     @include('partials.packages.hero')
 
-    <section class="Packages w-[90%] flex justify-center xl:w-full max-w-6xl mx-auto py-6">
+    @if(!empty($packages) && count($packages) > 0)
+        <section class="Packages w-[90%] flex flex-col justify-center xl:w-full max-w-6xl mx-auto py-6">
 
-        <!-- Create loop -->
-        @include('partials.packages.single-package', [
-            'package' => $packages,
-        ])
+            <!-- Create loop -->
+            @foreach($packages as $key => $package)
 
-    </section>
+                @if(!empty($package))
 
+                    @include('partials.packages.single-package', [
+                        'package' => $package,
+                    ])
+
+                @endif
+
+            @endforeach
+
+        </section>
+    @endif
 @endsection

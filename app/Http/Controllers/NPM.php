@@ -25,7 +25,7 @@ class NPM extends Controller
      * @throws GuzzleException
      *
      * @param string $package
-     * @return null | string
+     * @return null | string[]
      */
     public static function getPackageMetadata(string $package): ?string
     {
