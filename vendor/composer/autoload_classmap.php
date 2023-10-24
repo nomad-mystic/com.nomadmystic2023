@@ -7,12 +7,14 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Helpers\\ReposHelpers' => $baseDir . '/app/Helpers/ReposHelpers.php',
+    'App\\Helpers\\SchemaHelpers' => $baseDir . '/app/Helpers/SchemaHelpers.php',
     'App\\Http\\Controllers\\GitHub' => $baseDir . '/app/Http/Controllers/GitHub.php',
     'App\\Http\\Controllers\\NPM' => $baseDir . '/app/Http/Controllers/NPM.php',
     'App\\Providers\\ThemeServiceProvider' => $baseDir . '/app/Providers/ThemeServiceProvider.php',
     'App\\UtilsHelpers' => $baseDir . '/app/UtilsHelpers.php',
     'App\\View\\Components\\Alert' => $baseDir . '/app/View/Components/Alert.php',
     'App\\View\\Composers\\App' => $baseDir . '/app/View/Composers/App.php',
+    'App\\View\\Composers\\Featured' => $baseDir . '/app/View/Composers/Featured.php',
     'App\\View\\Composers\\Packages' => $baseDir . '/app/View/Composers/Packages.php',
     'App\\View\\Composers\\Post' => $baseDir . '/app/View/Composers/Post.php',
     'App\\View\\Composers\\Repos' => $baseDir . '/app/View/Composers/Repos.php',
