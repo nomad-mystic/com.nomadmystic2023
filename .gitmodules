@@ -1,0 +1,3 @@
+[submodule "website-featured"]
+	path = website-featured
+	url = git@github.com:nomad-mystic/website-featured.git
