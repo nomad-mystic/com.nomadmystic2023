@@ -1,8 +1,12 @@
 [
     {
-        "url": "wp-content/themes/nomad-mystic/website-featured/midterm-2015/index.html",
+        "name": "The History of Human Space Travel",
+        "description": "This is the midterm project I created for CAS222 at Portland Community College. The theme for the site is the history of space exploration by humans.",
+        "url": "website-featured/midterm-2015/index.html",
         "path": "wp-content/themes/nomad-mystic/website-featured/midterm-2015",
         "static": true,
+        "thumbnail": "schemas/static/images/featured-the-history-of-human-space-travel.jpg",
+        "thumbnailAlt": "Image of Hubble telescope large field render",
         "githubURL": "https://github.com/nomad-mystic/midterm-spring-2015-CAS222"
     }
 ]

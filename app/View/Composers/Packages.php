@@ -9,7 +9,7 @@ use GuzzleHttp\Utils;
 use Roots\Acorn\View\Composer;
 
 /**
- * @classdesc
+ * @classdesc Expose data to the packages template
  * @class Packages
  * @extends Composer
  * @author Keith Murphy | nomadmystics@gmail.com
@@ -39,7 +39,7 @@ class Packages extends Composer
     }
 
     /**
-     * @description
+     * @description Use the NPM registry to get package information
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      *

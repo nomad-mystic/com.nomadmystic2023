@@ -1,0 +1,36 @@
+.SingleFeature {
+    border-radius: var(--radius);
+    border: 1px solid var(--color-black);
+
+    &-title {}
+    &-description {}
+
+    &-thumbnail {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-github {}
+    &-production {}
+
+    &-github,
+    &-production {
+        margin-block-start: 16px;
+
+        p {
+            font-size: 12px;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        a {
+            &:hover {
+                color: var(--color-teal-dark);
+            }
+        }
+    }
+}

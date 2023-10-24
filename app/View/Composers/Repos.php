@@ -10,7 +10,7 @@ use GuzzleHttp\Utils;
 use Roots\Acorn\View\Composer;
 
 /**
- * @classdesc
+ * @classdesc Expose data to the repos template
  * @class Repos
  * @extends Composer
  * @author Keith Murphy | nomadmystics@gmail.com
@@ -71,7 +71,7 @@ class Repos extends Composer
     }
 
     /**
-     * @description
+     * @description Use the GitHub API to get public repos by topic
      * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *

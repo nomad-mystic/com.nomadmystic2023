@@ -4,12 +4,17 @@ namespace App\View\Composers;
 
 use App\Helpers\SchemaHelpers;
 use Roots\Acorn\View\Composer;
-use Safe\Exceptions\FilesystemException;
 
+/**
+ * @classdesc Expose data to the featured template
+ * @class Featured
+ * @extends Composer
+ * @author Keith Murphy | nomadmystics@gmail.com
+ */
 class Featured extends Composer
 {
     /**
-     * List of views served by this composer.
+     * @description List of views served by this composer.
      *
      * @var string[]
      */
@@ -18,7 +23,7 @@ class Featured extends Composer
     ];
 
     /**
-     * Data to be passed to view before rendering.
+     * @description Data to be passed to view before rendering.
      *
      * @return array
      */
@@ -30,12 +35,21 @@ class Featured extends Composer
     }
 
     /**
-     * @throws FilesystemException
+     * @description Extract our features JSON schema
+     * @private
+     * @author Keith Murphy | nomadmystics@gmail.com
+     *
+     * @return object
      */
-    public function buildFeatures()
+    private function buildFeatures(): mixed
     {
+        $features = (object) [];
 
-        $features = SchemaHelpers::getSchemaJson('featured');
+        $json = SchemaHelpers::getSchemaJson('featured');
+
+        if (!empty($json)) {
+            return $json;
+        }
 
         return $features;
     }
