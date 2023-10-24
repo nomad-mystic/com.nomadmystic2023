@@ -78,5 +78,10 @@
         ul {
             list-style: disc;
         }
+
+        pre {
+            color: var(--color-white);
+            background-color: #282936;
+        }
     }
 }
