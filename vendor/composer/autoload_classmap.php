@@ -19,6 +19,7 @@ return array(
     'App\\View\\Composers\\Post' => $baseDir . '/app/View/Composers/Post.php',
     'App\\View\\Composers\\Repos' => $baseDir . '/app/View/Composers/Repos.php',
     'App\\View\\Composers\\School' => $baseDir . '/app/View/Composers/School.php',
+    'App\\View\\Composers\\Websites' => $baseDir . '/app/View/Composers/Websites.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'BladeUI\\Icons\\BladeIconsServiceProvider' => $vendorDir . '/blade-ui-kit/blade-icons/src/BladeIconsServiceProvider.php',
     'BladeUI\\Icons\\Components\\Icon' => $vendorDir . '/blade-ui-kit/blade-icons/src/Components/Icon.php',
