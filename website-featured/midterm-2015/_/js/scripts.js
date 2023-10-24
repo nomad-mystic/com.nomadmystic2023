@@ -349,9 +349,9 @@ $(document).ready(function () {
 
         return music.currentTime;
     }; // End music Method
-/////////////////////////////////////////////////////////////////
-// THis going to be the get JSON data from external files for populating the DOM
-// This is going to be the hisotry JSON File GET
+    /////////////////////////////////////////////////////////////////
+    // THis going to be the get JSON data from external files for populating the DOM
+    // This is going to be the hisotry JSON File GET
     let historyJSON = function () {
         let fillSpace = document.getElementById('fillSpace');
 
