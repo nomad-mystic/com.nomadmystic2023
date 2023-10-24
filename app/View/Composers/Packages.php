@@ -52,19 +52,17 @@ class Packages extends Composer
         $packages = [];
         $packagesToQuery = [
             '@nomadmystic/github-dependencies-next',
-            '@nomadmystic/css-grid-package',
             '@nomadmystic/wordpress-scaffold-cli',
             '@nomadmystic/drupal-scaffold-module',
+            '@nomadmystic/css-grid-package',
         ];
 
         try {
             foreach ($packagesToQuery as $query => $package) {
-                if (!empty($query)) {
+                if (!empty($package)) {
                     $packages[] = Utils::jsonDecode(NPM::getPackageMetadata($package), true);
                 }
             }
-
-            $testing = $packages;
 
             return $packages;
 

@@ -24,3 +24,8 @@ Helpful commands for dealing with broken packages
 * https://github.com/markedjs/marked
 * https://github.com/roots/bud
 * https://bud.js.org/learn/getting-started
+
+* Markdown Packages
+  * https://highlightjs.org/
+  * https://github.com/markedjs/marked
+  * https://www.npmjs.com/package/marked-highlight

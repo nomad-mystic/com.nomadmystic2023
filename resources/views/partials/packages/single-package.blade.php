@@ -67,10 +67,9 @@
         <details>
             <summary></summary>
 
-{{--            <single-package package-markdown="@php echo $package['readme'] ?? '' @endphp"></single-package>--}}
+            <single-package data-markdown="@php echo htmlentities($package['readme']) ?? '' @endphp"></single-package>
 
         </details>
-        <!-- https://prismjs.com/ -->
     </article>
 </section>
 

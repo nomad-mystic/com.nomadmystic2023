@@ -73,4 +73,10 @@
 
     &-bugs {}
     &-issues {}
+
+    &-markdownBody {
+        ul {
+            list-style: disc;
+        }
+    }
 }
