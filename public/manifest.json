@@ -1,5 +1,5 @@
 {
-  "app.css": "css/app.c82d04.css",
+  "app.css": "css/app.da5d71.css",
   "app.js": "js/app.c8a968.js",
   "editor.css": "css/editor.ef46db.css",
   "editor.js": "js/editor.fa37d9.js",
@@ -737,6 +737,7 @@
   "images/icons/languages/test-js.svg": "images/icons/languages/test-js.ae172f.svg",
   "images/icons/languages/test-ts.svg": "images/icons/languages/test-ts.41ac3d.svg",
   "images/icons/languages/folder-components-open.svg": "images/icons/languages/folder-components-open.af99fd.svg",
+  "images/icons/chevron-down.svg": "images/icons/chevron-down.ba640c.svg",
   "images/icons/languages/folder-home.svg": "images/icons/languages/folder-home.6c1237.svg",
   "images/icons/languages/esbuild.svg": "images/icons/languages/esbuild.e9aeff.svg",
   "images/icons/languages/folder-template.svg": "images/icons/languages/folder-template.80bb34.svg",
@@ -745,7 +746,6 @@
   "images/icons/languages/folder-cluster-open.svg": "images/icons/languages/folder-cluster-open.6fedee.svg",
   "images/icons/languages/folder-download-open.svg": "images/icons/languages/folder-download-open.1747a9.svg",
   "images/icons/languages/folder-error-open.svg": "images/icons/languages/folder-error-open.7f508e.svg",
-  "images/icons/caret-down.svg": "images/icons/caret-down.085e66.svg",
   "images/icons/languages/folder-home-open.svg": "images/icons/languages/folder-home-open.089468.svg",
   "images/icons/languages/folder-template-open.svg": "images/icons/languages/folder-template-open.ba4764.svg",
   "images/icons/languages/tailwindcss.svg": "images/icons/languages/tailwindcss.768af5.svg",
