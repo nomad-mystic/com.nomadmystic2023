@@ -10,10 +10,9 @@ use GuzzleHttp\Utils;
 use Roots\Acorn\View\Composer;
 
 /**
- * @classdesc
- * @class
- * @extends
- * @implements
+ * @classdesc Expose data to the school template
+ * @class School
+ * @extends Composer
  * @author Keith Murphy | nomadmystics@gmail.com
  */
 class School extends Composer
@@ -67,8 +66,8 @@ class School extends Composer
     }
 
     /**
-     * @description
-     * @public
+     * @description Use the GitHub API to get public repos by topic
+     * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *
      * @throws GuzzleException
