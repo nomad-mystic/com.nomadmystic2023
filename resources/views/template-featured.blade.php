@@ -8,4 +8,6 @@
 
     @include('partials.featured.hero')
 
+{{--    @dump($features)--}}
+
 @endsection

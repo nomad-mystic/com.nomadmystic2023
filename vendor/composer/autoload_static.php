@@ -532,12 +532,14 @@ class ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2
 
     public static $classMap = array (
         'App\\Helpers\\ReposHelpers' => __DIR__ . '/../..' . '/app/Helpers/ReposHelpers.php',
+        'App\\Helpers\\SchemaHelpers' => __DIR__ . '/../..' . '/app/Helpers/SchemaHelpers.php',
         'App\\Http\\Controllers\\GitHub' => __DIR__ . '/../..' . '/app/Http/Controllers/GitHub.php',
         'App\\Http\\Controllers\\NPM' => __DIR__ . '/../..' . '/app/Http/Controllers/NPM.php',
         'App\\Providers\\ThemeServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ThemeServiceProvider.php',
         'App\\UtilsHelpers' => __DIR__ . '/../..' . '/app/UtilsHelpers.php',
         'App\\View\\Components\\Alert' => __DIR__ . '/../..' . '/app/View/Components/Alert.php',
         'App\\View\\Composers\\App' => __DIR__ . '/../..' . '/app/View/Composers/App.php',
+        'App\\View\\Composers\\Featured' => __DIR__ . '/../..' . '/app/View/Composers/Featured.php',
         'App\\View\\Composers\\Packages' => __DIR__ . '/../..' . '/app/View/Composers/Packages.php',
         'App\\View\\Composers\\Post' => __DIR__ . '/../..' . '/app/View/Composers/Post.php',
         'App\\View\\Composers\\Repos' => __DIR__ . '/../..' . '/app/View/Composers/Repos.php',
