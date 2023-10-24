@@ -41,7 +41,7 @@ class Featured extends Composer
      *
      * @return object
      */
-    private function buildFeatures(): object
+    private function buildFeatures(): mixed
     {
         $features = (object) [];
 

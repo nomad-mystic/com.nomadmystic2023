@@ -8,6 +8,18 @@
 
     @include('partials.featured.hero')
 
-{{--    @dump($features)--}}
+    @if(!empty($features) && is_array($features) && count($features) > 0)
+        <section class="Featured w-[90%] flex flex-col justify-center xl:w-full max-w-6xl mx-auto py-6">
+
+        @foreach($features as $key => $feature)
+
+            @include('partials.featured.single-feature', [
+                'feature' => $feature,
+            ])
+
+        @endforeach
+
+        </section>
+    @endif
 
 @endsection

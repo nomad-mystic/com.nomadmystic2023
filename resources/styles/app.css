@@ -6,6 +6,7 @@
 @import './common/icons.css';
 @import './layouts/dark-theme.css';
 @import './components/skeleton.css';
+@import './components/single-feature.css';
 @import './components/single-package.css';
 @import './components/github-languages.css';
 @import './sections/header.css';

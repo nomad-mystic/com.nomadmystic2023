@@ -1,0 +1,31 @@
+.SingleFeature {
+    border-radius: var(--radius);
+    border: 1px solid var(--color-black);
+
+    &-title {}
+    &-description {}
+
+    &-homepage {}
+    &-production {}
+
+    &-homepage,
+    &-production {
+        margin-block-start: 8px;
+
+        p {
+            font-size: 12px;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            margin-inline: 8px;
+        }
+
+        a {
+            &:hover {
+                color: var(--color-teal-dark);
+            }
+        }
+    }
+}

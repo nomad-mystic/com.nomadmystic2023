@@ -25,7 +25,7 @@ class SchemaHelpers
             if (file_exists("{$themeDir}/{$schemasDir}/{$name}.json")) {
                 $file = \Safe\file_get_contents("{$themeDir}/{$schemasDir}/{$name}.json");
 
-                return Utils::jsonDecode($file);
+                return Utils::jsonDecode($file, true);
             }
         } catch (FilesystemException $exception) {
             $response = $exception->getMessage();
