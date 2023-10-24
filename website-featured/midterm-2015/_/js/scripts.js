@@ -1,8 +1,3 @@
-/*  Prgrammer = Keith Murphy
-	File = scripts.js
-	Date Created = 4-2-2015
-	Last Mod = 5-4-2015
-*/
 $(document).ready(function () {
 //////////////////////////////////////////////////////////////////////
     /* Code from Codepen
@@ -160,18 +155,17 @@ $(document).ready(function () {
 
     // Define Canvas and Initialize
     if (isCanvasSupported()) {
-        var c = document.createElement('canvas');
+        let c = document.createElement('canvas');
         c.width = 400;
         c.height = 400;
-        var cw = c.width;
-        var ch = c.height;
+        let cw = c.width;
+        let ch = c.height;
 
-        console.log(document.body.childNodes[3]);
-        console.log(document.body.childNodes[3].childNodes[4]);
-        console.log(document.body.childNodes[3].childNodes[4].childNodes[9]);
+        const canvas = window.document.getElementById('site-canvas');
 
-        document.body.childNodes[3].childNodes[4].childNodes[9].appendChild(c);
-        var cl = new smoothTrail(c, cw, ch);
+        canvas.appendChild(c);
+
+        let cl = new smoothTrail(c, cw, ch);
 
         setupRAF();
         cl.init();
@@ -188,7 +182,7 @@ $(document).ready(function () {
         $('#openSplash').fadeOut(2000);
 
         // Start up the video
-        var openVideo = document.getElementById('openVideo');
+        let openVideo = document.getElementById('openVideo');
         playVideo();
 
         // Start Up the Music
@@ -206,8 +200,8 @@ $(document).ready(function () {
 
 // Create Click event to stop and start the audio
     $('.soundControl').on('click', function (evnt) {
-        var soundCheckImage = $('.soundControlSpan');
-        var music = evnt.view.document.body.childNodes[18];
+        let soundCheckImage = $('.soundControlSpan');
+        let music = window.document.getElementById('musicplayer');
 
         if (soundCheckImage.hasClass('glyphicon-volume-up')) {
             music.pause();
@@ -224,9 +218,9 @@ $(document).ready(function () {
 // This is going to be the function that starts and stops audio and video
     $('.videoAudioControl').on('click', function (evnt) {
         console.log(evnt);
-        var videoAudioImage = $('.videoAudioControlSpan');
-        var music = evnt.view.document.body.childNodes[18];
-        var video = evnt.view.document.body.childNodes[3].childNodes[4].childNodes[9].childNodes[1];
+        let videoAudioImage = $('.videoAudioControlSpan');
+        let music = window.document.getElementById('musicplayer');
+        let video = window.document.getElementById('openVideo');
 
         if (videoAudioImage.hasClass('glyphicon-play')) {
             video.pause();
@@ -240,7 +234,8 @@ $(document).ready(function () {
             videoAudioImage.addClass('glyphicon-play');
         } // End if
     }); // End videoAudioControl Click Event
-// This starts and stops the music when the Nav its toggled
+
+    // This starts and stops the music when the Nav its toggled
     // THis for the off-canvas menu
     $(function () {
         $('.toggle-nav').on('click', function (evnt) {
@@ -248,9 +243,9 @@ $(document).ready(function () {
         }); // End toggle-nav
     }); // End IIFE
 
-    var toggleNav = function (evnt) {
-        var music = evnt.view.document.body.childNodes[18];
-        var video = evnt.view.document.body.childNodes[3].childNodes[4].childNodes[9].childNodes[1];
+    let toggleNav = function (evnt) {
+        let music = window.document.getElementById('musicplayer');
+        let video = window.document.getElementById('openVideo');
 
         if ($('#site-wrapper').hasClass('show-nav')) {
             // Do things on Nav Close
@@ -268,71 +263,74 @@ $(document).ready(function () {
     // JSON Click Events
     $('#history').on('click', function () {
         $('.current').removeClass('current');
-        $(this).addClass('current');
-        historyJSON();
 
+        $(this).addClass('current');
+
+        historyJSON();
     }); // End History JSON
 
     // UnmannedSpacecraft
     $('#unmanned').on('click', function (evnt) {
         $('.current').removeClass('current');
         $(this).addClass('current');
-        unmannedSpacecraft();
 
+        unmannedSpacecraft();
     }); // End unmanned
 
     // spaceStations
     $('#spaceStations').on('click', function () {
         $('.current').removeClass('current');
         $(this).addClass('current');
-        spaceStations();
 
+        spaceStations();
     }); // End spaceStations JSON
 
     // Telescopes
     $('#telescopes').on('click', function () {
         $('.current').removeClass('current');
         $(this).addClass('current');
-        telescopes();
 
+        telescopes();
     }); // End Telescopes
 
     // Credits
     $('#credits').on('click', function (evnt) {
         $('.current').removeClass('current');
         $(this).addClass('current');
-        credits();
 
+        credits();
     }); // End contact form click
 
     // Contact
     $('#contact').on('click', function () {
         $('.current').removeClass('current');
         $(this).addClass('current');
-        contact();
 
+        contact();
     }); // End contact form click
-/////////////////////////// End Click events
-//////////////////////////////////////////////////////////////////////////////
-// THis is going to set the timeing for the video to fade in the position fixed
-    var fixedVideo = function () {
+    /////////////////////////// End Click events
+
+    //////////////////////////////////////////////////////////////////////////////
+    // THis is going to set the timeing for the video to fade in the position fixed
+    let fixedVideo = function () {
         setTimeout(function () {
             $('video').addClass('addFixed');
         }, 2000); // setTimeout
     };// End fixedTime
 
-// Start the loading time button
-    var startButton = function () {
+    // Start the loading time button
+    let startButton = function () {
         setTimeout(function () {
             // $('#openingClick').fadeOut('slow').html();
             $('#openingClick').fadeIn(2000).html('<a>' + 'Enter' + '</a>');
         }, 3000);// setTimeout
     };// End startButton
-/// This starts up the loading button animation
+
+    /// This starts up the loading button animation
     startButton();
 
-// Create play video stop start
-    var playVideo = function () {
+    // Create play video stop start
+    let playVideo = function () {
         if (openVideo.paused) {
             openVideo.play();
         } else {
@@ -341,10 +339,10 @@ $(document).ready(function () {
     }; // End Play Video
 
 // THis is going to be the audio on start up
-    var music = function () {
-        var music = document.createElement('audio');
+    let music = function () {
+        let music = window.document.createElement('audio');
 
-        document.body.appendChild(music);
+        window.document.body.appendChild(music);
         music.id = 'musicplayer';
         music.src = '_/audio/music.mp3';
         music.play();
@@ -354,13 +352,13 @@ $(document).ready(function () {
 /////////////////////////////////////////////////////////////////
 // THis going to be the get JSON data from external files for populating the DOM
 // This is going to be the hisotry JSON File GET
-    var historyJSON = function () {
-        var fillSpace = document.getElementById('fillSpace');
+    let historyJSON = function () {
+        let fillSpace = document.getElementById('fillSpace');
 
         $.getJSON('_/json/history.json', function (data) {
-            var output = '';
+            let output = '';
 
-            for (var key in data) {
+            for (let key in data) {
                 if (data.hasOwnProperty(key)) {
                     output += '<h1 class="historyH1">' + data[0].historyTitle + '</h1>';
                     output += '<div class="flexhistoryImg">' + '<img src="' + data[0].historyPicture + '">';
@@ -382,14 +380,14 @@ $(document).ready(function () {
         }); // end history GET JSON
     };// End history JSON Method
 
-// This is going to be the unmanned Carft JSON file GET
-    var unmannedSpacecraft = function () {
-        var fillSpace = document.getElementById('fillSpace');
+    // This is going to be the unmanned craft JSON file GET
+    let unmannedSpacecraft = function () {
+        let fillSpace = document.getElementById('fillSpace');
 
         $.getJSON('_/json/unmannedSpacecraft.json', function (data) {
-            var output = '';
+            let output = '';
 
-            for (var key in data) {
+            for (let key in data) {
                 if (data.hasOwnProperty(key)) {
                     output += '<div class="spaceStationFlex">';
                     output += '<img src="' + data[key].picture + '">';
@@ -408,13 +406,13 @@ $(document).ready(function () {
     };// End unmannedSpacecraft
 
 // This is going to be the Space Stations JSON file GET
-    var spaceStations = function () {
-        var fillSpace = document.getElementById('fillSpace');
+    let spaceStations = function () {
+        let fillSpace = document.getElementById('fillSpace');
 
         $.getJSON('_/json/spaceStations.json', function (data) {
-            var output = '';
+            let output = '';
 
-            for (var key in data) {
+            for (let key in data) {
                 if (data.hasOwnProperty(key)) {
                     output += '<div class="spaceStationFlex">';
                     output += '<img src="' + data[key].picture + '">';
@@ -433,13 +431,13 @@ $(document).ready(function () {
     }; // end Space Stations method
 
 // This is going to be the Telescopes JSON file GET
-    var telescopes = function () {
-        var fillSpace = document.getElementById('fillSpace');
+    let telescopes = function () {
+        let fillSpace = document.getElementById('fillSpace');
 
         $.getJSON('_/json/telescopes.json', function (data) {
-            var output = '';
+            let output = '';
 
-            for (var key in data) {
+            for (let key in data) {
                 if (data.hasOwnProperty(key)) {
                     output += '<div class="spaceStationFlex">';
                     output += '<img src="' + data[key].picture + '">';
@@ -458,34 +456,34 @@ $(document).ready(function () {
     }; // End telescopes Method
 
 // This is going to be the credit JSON file GET
-    var credits = function () {
+    let credits = function () {
         $.getJSON('_/json/credits.json', function (data) {
-            var output = '';
+            let output = '';
 
-            for (var key in data) {
+            for (let key in data) {
                 if (data.hasOwnProperty(key)) {
                     output += '<div class="creditsFlex">';
-                    output += '<a href="http://kurokawawonderland.jp/" target="_blank">' + '<img src="' + data[0].inspirePicture + '">' + '</a>';
+                    output += '<a href="https://kurokawawonderland.jp/" target="_blank">' + '<img src="' + data[0].inspirePicture + '">' + '</a>';
                     output += '<p class="creditsPara">' + data[0].inspire + '</p>';
                     output += '</div>'; // End creditsFlex
 
                     output += '<div class="creditsFlex">';
-                    output += '<a href="http://www.discovery.com/" target="_blank">' + '<img src="' + data[0].videoPicture + '">' + '</a>';
+                    output += '<a href="https://www.discovery.com/" target="_blank">' + '<img src="' + data[0].videoPicture + '">' + '</a>';
                     output += '<p class="creditsPara">' + data[0].video + '</p>';
                     output += '</div>'; // End creditsFlex
 
                     output += '<div class="creditsFlex">';
-                    output += '<a href="http://locirecords.com/news/d-v-s-comfort-zone-ep-119" target="_blank">' + '<img src="' + data[0].musicPicture + '">' + '</a>';
+                    output += '<a href="https://dvsmusic.bandcamp.com/track/elbow-from-the-sky" target="_blank">' + '<img src="' + data[0].musicPicture + '">' + '</a>';
                     output += '<p class="creditsPara">' + data[0].music + '</p>';
                     output += '</div>'; // End creditsFlex
 
                     output += '<div class="creditsFlex">';
-                    output += '<a href="http://codepen.io/jackrugile/" target="_blank">' + '<img src="' + data[0].codePenPicture + '">' + '</a>';
+                    output += '<a href="https://codepen.io/jackrugile/" target="_blank">' + '<img src="' + data[0].codePenPicture + '">' + '</a>';
                     output += '<p class="creditsPara">' + data[0].codePen + '</p>';
                     output += '</div>'; // End creditsFlex
 
                     output += '<div class="creditsFlex">';
-                    output += '<a href="http://www.wikipedia.org/" target="_blank">' + '<img src="' + data[0].wikiPicture + '">' + '</a>';
+                    output += '<a href="https://www.wikipedia.org/" target="_blank">' + '<img src="' + data[0].wikiPicture + '">' + '</a>';
                     output += '<p class="creditsPara">' + data[0].wiki + '</p>';
                     output += '</div>'; // End creditsFlex
 
@@ -496,10 +494,10 @@ $(document).ready(function () {
     }; // End credits Method
 
 // THis is going to be the Contact AJAX
-    var contact = function () {
+    let contact = function () {
         // $("#contactForm").validate();
-        var fillSpace = document.getElementById('fillSpace');
-        var output = '';
+        let fillSpace = document.getElementById('fillSpace');
+        let output = '';
 
         output += '<form id="contactForm">';
         output += '<h2>Contact Us here at Nomad Mystic\'s Study of Space</h2>' + '<br>';
@@ -518,16 +516,16 @@ $(document).ready(function () {
 ////////////////////////////////////////////////////////
 // Start SVG anitmations
     // Setting up timing var
-    var fast = 50000,
+    let fast = 50000,
         mid = 60000,
         slow = 80000,
         slower = 90000;
-    var lineSlow = 90000;
+    let lineSlow = 90000;
 
     // Create Context for Snap
-    var s = Snap('#starSVG');
+    let s = Snap('#starSVG');
     // Animation Machine
-    var animation = {
+    let animation = {
         starAni1: function (star, speed) {
             setTimeout(function () {
                 star.animate({
@@ -586,7 +584,7 @@ $(document).ready(function () {
         } // End lineAni4
     };// End animations
     // Seting up the timing functions for onClick
-    var starTime = function () {
+    let starTime = function () {
         // rightStar Ani
         animation.starAni3(rightStar1, slow);
         animation.starAni2(rightStar2, slow);
@@ -699,7 +697,7 @@ $(document).ready(function () {
         animation.starAni4(leftStar53, slow);
         animation.starAni1(leftStar54, slow);
     }; // End starTime
-    var lineTime = function () {
+    let lineTime = function () {
         animation.lineAni3(leftLine1, slow);
         animation.lineAni1(leftLine2, slow);
         animation.lineAni3(leftLine3, lineSlow);
@@ -951,13 +949,13 @@ $(document).ready(function () {
 
     // Creating the Variables
     // Groups
-    var leftLines = $('#leftLines'),
+    let leftLines = $('#leftLines'),
         rightLines = $('#rightLines'),
         rightStars = $('#rightStars'),
         leftStars = $('#leftStars');
 
     // THis is the handlers for the rightStar Shapes
-    var rightStar1 = s.select('#rightStar1'),
+    let rightStar1 = s.select('#rightStar1'),
         rightStar2 = s.select('#rightStar2'),
         rightStar3 = s.select('#rightStar3'),
         rightStar4 = s.select('#rightStar4'),
@@ -1013,7 +1011,7 @@ $(document).ready(function () {
         rightStar54 = s.select('#rightStar54'),
         rightStar55 = s.select('#rightStar55');
     // THis is going to be for the leftLines
-    var leftStar1 = s.select('#leftStar1'),
+    let leftStar1 = s.select('#leftStar1'),
         leftStar2 = s.select('#leftStar2'),
         leftStar3 = s.select('#leftStar3'),
         leftStar4 = s.select('#leftStar4'),
@@ -1068,7 +1066,7 @@ $(document).ready(function () {
         leftStar53 = s.select('#leftStar53'),
         leftStar54 = s.select('#leftStar54');
     // THis is going to be the handlers for the leftLines
-    var leftLine1 = s.select('#leftLine1'),
+    let leftLine1 = s.select('#leftLine1'),
         leftLine2 = s.select('#leftLine2'),
         leftLine3 = s.select('#leftLine3'),
         leftLine4 = s.select('#leftLine4'),
@@ -1198,7 +1196,7 @@ $(document).ready(function () {
         leftLine123 = s.select('#leftLine123'),
         leftLine124 = s.select('#leftLine124');
     // THis is going to be the handlers for the rightLines
-    var rightLine1 = s.select('#rightLine1'),
+    let rightLine1 = s.select('#rightLine1'),
         rightLine2 = s.select('#rightLine2'),
         rightLine3 = s.select('#rightLine3'),
         rightLine4 = s.select('#rightLine4'),
