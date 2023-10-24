@@ -20,7 +20,7 @@
                         <figure class="SingleFeature-github">
                             {{ svg('si-github') }}
                         </figure>
-                        <p>Homepage</p>
+                        <p>Code</p>
                     </a>
                 </div>
 
