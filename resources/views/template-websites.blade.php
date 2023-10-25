@@ -13,8 +13,8 @@
 
             @foreach($websites as $key => $website)
 
-                @include('partials.featured.single-feature', [
-                    'feature' => $website,
+                @include('partials.websites.single-website', [
+                    'website' => $website,
                 ])
 
             @endforeach

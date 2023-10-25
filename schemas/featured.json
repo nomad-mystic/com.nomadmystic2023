@@ -1,6 +1,7 @@
 [
     {
-        "name": "The History of Human Space Travel",
+        "safeName": "The History of Human Space Travel",
+        "name": "space-travel",
         "description": "This is the midterm project I created for CAS222 at Portland Community College. The theme for the site is the history of space exploration by humans.",
         "url": "website-featured/midterm-2015/index.html",
         "path": "wp-content/themes/nomad-mystic/website-featured/midterm-2015",

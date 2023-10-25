@@ -6,13 +6,14 @@
 @import './common/icons.css';
 @import './layouts/dark-theme.css';
 @import './components/skeleton.css';
-@import './components/single-feature.css';
 @import './components/single-package.css';
 @import './components/github-languages.css';
 @import './sections/header.css';
 @import 'sections/hero.css';
 @import 'sections/footer.css';
 @import 'pages/home/home.css';
+@import 'pages/featured/single-feature.css';
+@import 'pages/websites/single-website.css';
 @import 'pages/repos.css';
 @import 'pages/page-404.css';
 
