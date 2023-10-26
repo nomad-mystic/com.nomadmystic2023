@@ -3,7 +3,7 @@
         <nav class="Footer-navigation py-8" aria-label="{{ wp_get_nav_menu_name('footer_navigation') }}">
             {!! wp_nav_menu([
                     'theme_location' => 'footer_navigation',
-                    'menu_class' => 'nav flex',
+                    'menu_class' => 'nav flex flex-col md:flex-row Footer-navigation',
                     'echo' => false
                 ]
               ) !!}
@@ -30,7 +30,7 @@
         </a>
     </section>
 
-    <section class="Footer-contact flex pt-4">
+    <section class="Footer-contact flex flex-col md:flex-row items-center pt-4">
         <h4>Contact the Nomad:</h4>
         <a href="mailto:nomadmystics@gmail.com?subject=This is from the footer of nomadmystic.com" class="ml-2 text-teal">keith@nomadmystic.com</a>
     </section>

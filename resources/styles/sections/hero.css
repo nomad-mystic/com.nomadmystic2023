@@ -1,8 +1,12 @@
 .Hero {
-    height: 60vh;
+    height: 40vh;
     padding-top: calc(var(--lg-header-height) + var(--wp-admin--admin-bar--height, 0px));
 
     background: rgb(255,255,255);
     background: linear-gradient(145deg, rgba(255, 255, 255, 1) 0%, rgba(60, 192, 204, 0.5) 75%);
     color: var(--color-black);
+
+    @media screen('lg') {
+        height: 60vh;
+    }
 }

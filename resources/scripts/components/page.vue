@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="Page relative">
         <slot />
     </div>
 </template>
@@ -15,14 +15,13 @@ export default {
                 hamburger.addEventListener('click', (event) => {
                     const target = event.target;
 
-                    console.dir(target);
-
                     if (target &&
                         typeof target !== 'undefined' &&
                         target.tagName === 'SVG' &&
                         target.tagName === 'path' &&
                         target.id === 'Header-hamburger'
                     ) {
+                        console.dir(target);
                     }
 
                 }, true);

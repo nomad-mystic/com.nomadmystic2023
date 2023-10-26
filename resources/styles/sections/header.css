@@ -8,13 +8,49 @@
 
     &-logo {}
 
+
+    &-navigation-footer {
+        position: fixed;
+        top: 12px;
+        right: 24px;
+        width: 80vw;
+        border-radius: var(--radius);
+        z-index: 30;
+        height: fit-content;
+
+        /** Dark theme */
+        background-color: var(--color-dark-theme-black);
+        box-shadow: 0 0 3px 0 var(--color-dark-theme-black-text);
+    }
+
+    &-close-icon {
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+
+        /** Dark theme */
+        svg {
+            fill: var(--color-dark-theme-black-text);
+        }
+    }
+
     &-navigation {
         display: none;
 
         @media screen('lg') {
             display: block;
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%;
         }
+    }
 
+    /** Common */
+    .Primary-navigation {
         li {
             padding: 1rem 0.5rem;
             color: var(--color-black);

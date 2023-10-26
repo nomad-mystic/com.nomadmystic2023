@@ -8,14 +8,14 @@
             <nav class="Header-navigation" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
                 {!! wp_nav_menu([
                         'theme_location' => 'primary_navigation',
-                        'menu_class' => 'nav flex',
+                        'menu_class' => 'nav flex flex-col lg:flex-row Primary-navigation',
                         'echo' => false
                     ]
                   ) !!}
             </nav>
 
             <div class="Header-hamburger lg:hidden flex items-center" id="Header-hamburger">
-                <button class="outline-none mobile-menu-button">
+                <button class="outline-none">
                     <svg
                         class="w-6 h-6 text-gray-500"
                         fill="none"
