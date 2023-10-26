@@ -2,8 +2,18 @@
     border-radius: var(--radius);
     border: 1px solid var(--color-black);
 
+    &:last-of-type {
+        margin-block-end: 0;
+    }
+
     &-title {}
-    &-description {}
+    &-description {
+        font-size: 12px;
+
+        @media screen('sm') {
+            font-size: 16px;
+        }
+    }
 
     &-package,
     &-homepage,

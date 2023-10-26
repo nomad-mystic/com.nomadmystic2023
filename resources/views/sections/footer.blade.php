@@ -3,7 +3,7 @@
         <nav class="Footer-navigation py-8" aria-label="{{ wp_get_nav_menu_name('footer_navigation') }}">
             {!! wp_nav_menu([
                     'theme_location' => 'footer_navigation',
-                    'menu_class' => 'nav flex flex-col md:flex-row Footer-navigation',
+                    'menu_class' => 'Footer-navigation flex flex-col md:flex-row items-center',
                     'echo' => false
                 ]
               ) !!}
