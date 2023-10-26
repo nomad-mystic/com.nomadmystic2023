@@ -1,19 +1,26 @@
 <section class="SingleWebsite SingleWebsite-{{ $website['name'] ?? '' }} w-full p-4">
-    <article class="flex flex-col md:flex-row">
-        <figure class="SingleWebsite-thumbnail">
-            <a href="{{ get_stylesheet_directory_uri() }}/{{ $website['url'] ?? '' }}"
-               target="_blank"
-               rel="noreferrer"
-               class="flex items-center"
-            >
+    <article class="flex flex-col lg:flex-row">
+        <a href="{{ $website['url'] ?? '' }}"
+           target="_blank"
+           rel="noreferrer"
+           class="flex items-center SingleWebsite-thumbnail"
+        >
+            <figure>
                 <img src="{{ get_stylesheet_directory_uri() }}/{{ $website['thumbnail'] ?? '' }}"
                      alt="{{  $website['thumbnailAlt'] ?? '' }}">
-            </a>
-        </figure>
+            </figure>
+        </a>
 
-        <section class="pt-4 md:pt-0 md:pl-4">
+        <section class="pt-4 lg:pt-0 lg:pl-4">
             <header>
-                <h2 class="SingleWebsite-title text-3xl pb-2">{{ $website['safeName'] ?? '' }}</h2>
+
+                <a href="{{ $website['url'] ?? '' }}"
+                   target="_blank"
+                   rel="noreferrer"
+                >
+                    <h2 class="SingleWebsite-title text-3xl pb-2">{{ $website['safeName'] ?? '' }}</h2>
+                </a>
+
                 <p class="SingleWebsite-description">{{ $website['description'] ?? '' }}</p>
             </header>
 

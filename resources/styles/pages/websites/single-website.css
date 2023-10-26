@@ -2,20 +2,15 @@
     border-radius: var(--radius);
     border: 1px solid var(--color-border-colors);
 
-    &-title {}
-    &-description {}
-
-    &-thumbnail {
-        max-width: 25%;
-
-        @media screen and (min-width: 768px) {
-            width: 100%;
-        }
-
-        img {
-            width: 100%;
+    &-title {
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: underline;
         }
     }
+
+    &-description {}
 
     &-github {}
     &-production {}
@@ -40,21 +35,46 @@
         }
     }
 
-    /** HotFixes */
-    &-puppet-docs,
-    &-puppet-com,
-    &-airship-com,
-    &-okta-com,
-    &-oktane-com,
-    &-gong-io {
-        .SingleWebsite-thumbnail {
-            background-color: var(--color-white);
+    &-thumbnail {
+        background-color: var(--color-white);
+        height: 180px;
+        justify-content: center;
+        width: 100%;
 
-            a {
-                display: flex;
-                align-items: center;
-                height: 100%;
-                padding: 8px;
+        @media screen('md') {
+
+        }
+
+        @media screen('lg') {
+            width: auto;
+            height: auto;
+            min-width: 232px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 8px;
+        }
+
+        figure {
+            max-width: 180px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    /** HotFixes */
+    &-stitchfix-women,
+    &-stitchfix-men,
+    &-stitchfix-newsroom,
+    &-stitchfix-impact {
+        .SingleWebsite-thumbnail {
+            figure {
+                max-width: 224px;
             }
         }
     }
