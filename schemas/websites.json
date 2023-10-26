@@ -83,7 +83,7 @@
         "url": "https://www.stitchfix.com/women/blog/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -94,7 +94,7 @@
         "url": "https://www.stitchfix.com/men/blog/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -105,7 +105,7 @@
         "url": "https://newsroom.stitchfix.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -116,7 +116,7 @@
         "url": "https://impact.stitchfix.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -127,7 +127,7 @@
         "url": "https://www.gong.io/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-gong-logo.png",
         "thumbnailAlt": "Image of Gong logo",
         "githubURL": ""
     },
@@ -138,7 +138,7 @@
         "url": "https://www.carta.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-carta-logo.png",
         "thumbnailAlt": "Image of Carta logo",
         "githubURL": ""
     },
@@ -149,7 +149,7 @@
         "url": "https://www.firstround.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-firstround-logo.png",
         "thumbnailAlt": "Image of First Round Capital logo",
         "githubURL": ""
     },
@@ -160,7 +160,7 @@
         "url": "https://www.crossbeam.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-crossbeam-logo.png",
         "thumbnailAlt": "Image of Crossbeam logo",
         "githubURL": ""
     },
@@ -171,7 +171,7 @@
         "url": "https://www.kindredpartners.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-kindredpartners-logo.png",
         "thumbnailAlt": "Image of Kindred Partners logo",
         "githubURL": ""
     },
@@ -182,7 +182,7 @@
         "url": "https://bluehexagon.ai/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-bluehexagon-logo.png",
         "thumbnailAlt": "Image of Blue Hexagon logo",
         "githubURL": ""
     },
@@ -193,7 +193,7 @@
         "url": "https://www.samsungnext.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-samsungnext-logo.png",
         "thumbnailAlt": "Image of Samsung Next logo",
         "githubURL": ""
     },
@@ -204,18 +204,18 @@
         "url": "https://www.rezilion.com/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-rezilion-logo.png",
         "thumbnailAlt": "Image of Rezilion logo",
         "githubURL": ""
     },
     {
         "safeName": "Instacart.careers",
-        "name": "rezilion-careers",
+        "name": "instacart-careers",
         "description": "",
         "url": "https://instacart.careers/",
         "path": "",
         "static": true,
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/website-instacart-logo.png",
         "thumbnailAlt": "Image of Instacart logo",
         "githubURL": ""
     }

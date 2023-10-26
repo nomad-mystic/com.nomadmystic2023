@@ -43,7 +43,10 @@
     /** HotFixes */
     &-puppet-docs,
     &-puppet-com,
-    &-airship-com {
+    &-airship-com,
+    &-okta-com,
+    &-oktane-com,
+    &-gong-io {
         .SingleWebsite-thumbnail {
             background-color: var(--color-white);
 

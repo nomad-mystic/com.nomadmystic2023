@@ -1,4 +1,4 @@
-<section class="SingleWebsite SingleWebsite-{{ $website['name'] ?? '' }} w-full p-4 mb-6">
+<section class="SingleWebsite SingleWebsite-{{ $website['name'] ?? '' }} w-full p-4">
     <article class="flex flex-col md:flex-row">
         <figure class="SingleWebsite-thumbnail">
             <a href="{{ get_stylesheet_directory_uri() }}/{{ $website['url'] ?? '' }}"
