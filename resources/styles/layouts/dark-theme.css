@@ -38,10 +38,3 @@
         }
     }
 }
-
-.LayoutDark-bodyBackground {
-    position: absolute;
-    background: rgba(0,0,0, .5);
-    inset: 0;
-    z-index: 20;
-}

@@ -16,11 +16,19 @@
         width: 80vw;
         border-radius: var(--radius);
         z-index: 30;
-        height: fit-content;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
 
         /** Dark theme */
         background-color: var(--color-dark-theme-black);
         box-shadow: 0 0 3px 0 var(--color-dark-theme-black-text);
+
+        &.is-visible {
+            visibility: visible;
+            opacity: 1;
+            height: fit-content;
+        }
     }
 
     &-close-icon {
