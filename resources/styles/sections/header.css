@@ -27,6 +27,12 @@
             visibility: visible;
             opacity: 1;
             height: fit-content;
+
+            @media (min-width: 1024px) {
+                visibility: hidden;
+                opacity: 0;
+                height: 0;
+            }
         }
     }
 

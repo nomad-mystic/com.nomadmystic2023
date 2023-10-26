@@ -39,6 +39,10 @@ export default {
             if (this.closeIcon && typeof this.closeIcon !== 'undefined') {
                 this.closeIcon.addEventListener('click', this.closeHandler, true);
             }
+
+            if (this.bodyBackground && typeof this.bodyBackground !== 'undefined') {
+                this.bodyBackground.addEventListener('click', this.closeHandler, true);
+            }
         },
         /**
          * @description Handle our event for showing the mobile nav
@@ -50,8 +54,6 @@ export default {
          */
         showHandler(event) {
             const target = event.target;
-
-            console.dir(target);
 
             if (target &&
                 typeof target !== 'undefined' &&
@@ -80,7 +82,8 @@ export default {
                 typeof target !== 'undefined' &&
                 target.tagName === 'svg' ||
                 target.tagName === 'path' ||
-                target.id === 'Header-close-icon'
+                target.id === 'Header-close-icon' ||
+                target.id === 'Layout-bodyBackground'
             ) {
 
                 this.footerNav.classList.remove('is-visible');
@@ -90,7 +93,7 @@ export default {
         },
     },
     beforeUnmount() {
-       this.closeIcon.removeEventListener(this.showHandler);
+       this.hamburger.removeEventListener(this.showHandler);
        this.closeIcon.removeEventListener(this.closeHandler);
     },
     mounted() {
