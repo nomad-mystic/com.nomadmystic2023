@@ -6,6 +6,8 @@
 
 @section('content')
 
-    @include('partials.about.hero')
+    @include('partials.common.hero', [
+        'headerTitle' => 'About the Nomad',
+    ])
 
 @endsection

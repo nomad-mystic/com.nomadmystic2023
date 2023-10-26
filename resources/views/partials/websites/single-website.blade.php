@@ -13,7 +13,6 @@
 
         <section class="pt-4 lg:pt-0 lg:pl-4">
             <header>
-
                 <a href="{{ $website['url'] ?? '' }}"
                    target="_blank"
                    rel="noreferrer"

@@ -48,6 +48,7 @@
     --logo-width: 24px;
     --logo-height: 24px;
     --lg-header-height: 60px;
+    --header-text-transition: all .25s linear;
 
     /* Card */
     --color-card-border: var(--color-border-colors);
