@@ -1,0 +1,202 @@
+[
+    {
+        "safeName": "Puppet Docs",
+        "name": "puppet-docs",
+        "description": "Created a Netlify static website that directly hooked into the documentation team’s generated HTML from AWS S3 buckets. I developed custom Node.js scripts for each of the seven product lines that run several internal scripts for static asset generation; I created all front-end JavaScript and SCSS assets, deployment automation, custom generation of a standalone preview site, and custom integrations with 3rd party APIs.",
+        "url": "https://puppet.com/docs",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-puppet-logo.svg",
+        "thumbnailAlt": "Image of Puppet, Inc logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Puppet.com",
+        "name": "puppet-com",
+        "description": "",
+        "url": "https://puppet.com",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-puppet-logo.svg",
+        "thumbnailAlt": "Image of Puppet, Inc logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Airship.com",
+        "name": "airship-com",
+        "description": "",
+        "url": "https://www.airship.com",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-airship-logo.png",
+        "thumbnailAlt": "Image of Airship logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Bluejeans.com",
+        "name": "bluejeans-com",
+        "description": "",
+        "url": "https://www.bluejeans.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-bluejeans-logo.png",
+        "thumbnailAlt": "Image of Bluejeans logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Lakesidesoftware.com",
+        "name": "lakesidesoftware-com",
+        "description": "",
+        "url": "https://www.lakesidesoftware.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-lakesidesoftware-logo.png",
+        "thumbnailAlt": "Image of Lakeside Software logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Okta.com",
+        "name": "okta-com",
+        "description": "",
+        "url": "https://www.okta.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnailAlt": "Image of Okta logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Oktane",
+        "name": "oktane-com",
+        "description": "",
+        "url": "https://www.okta.com/oktane/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnailAlt": "Image of Okta logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Stitchfix.com Women",
+        "name": "stitchfix-women",
+        "description": "",
+        "url": "https://www.stitchfix.com/women/blog/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnailAlt": "Image of Stitchfix logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Stitchfix.com Men",
+        "name": "stitchfix-men",
+        "description": "",
+        "url": "https://www.stitchfix.com/men/blog/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnailAlt": "Image of Stitchfix logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Stitchfix.com Newsroom",
+        "name": "stitchfix-newsroom",
+        "description": "",
+        "url": "https://newsroom.stitchfix.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnailAlt": "Image of Stitchfix logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Stitchfix.com Impact",
+        "name": "stitchfix-impact",
+        "description": "",
+        "url": "https://impact.stitchfix.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnailAlt": "Image of Stitchfix logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Gong.io",
+        "name": "gong-io",
+        "description": "",
+        "url": "https://www.gong.io/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-gong-logo.png",
+        "thumbnailAlt": "Image of Gong logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Carta.com",
+        "name": "carta-com",
+        "description": "",
+        "url": "https://www.carta.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-carta-logo.png",
+        "thumbnailAlt": "Image of Carta logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Firstround.com",
+        "name": "firstround-com",
+        "description": "",
+        "url": "https://www.firstround.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-firstround-logo.jpeg",
+        "thumbnailAlt": "Image of First Round Capital logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Crossbeam.com",
+        "name": "crossbeam-com",
+        "description": "",
+        "url": "https://www.crossbeam.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-crossbeam-logo.png",
+        "thumbnailAlt": "Image of Crossbeam logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Kindredpartners.com",
+        "name": "kindredpartners-com",
+        "description": "",
+        "url": "https://www.kindredpartners.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-kindredpartners-logo.png",
+        "thumbnailAlt": "Image of Kindred Partners logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Bluehexagon.ai",
+        "name": "bluehexagon-ai",
+        "description": "",
+        "url": "https://bluehexagon.ai/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-bluehexagon-logo.png",
+        "thumbnailAlt": "Image of Blue Hexagon logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Samsungnext.com",
+        "name": "samsungnext-com",
+        "description": "",
+        "url": "https://www.samsungnext.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-samsungnext-logo.png",
+        "thumbnailAlt": "Image of Samsung Next logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Rezilion.com",
+        "name": "rezilion-com",
+        "description": "",
+        "url": "https://www.rezilion.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-rezilion-logo.png",
+        "thumbnailAlt": "Image of Rezilion logo",
+        "githubURL": ""
+    },
+    {
+        "safeName": "Instacart.careers",
+        "name": "instacart-careers",
+        "description": "",
+        "url": "https://instacart.careers/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/website-instacart-logo.png",
+        "thumbnailAlt": "Image of Instacart logo",
+        "githubURL": ""
+    }
+]

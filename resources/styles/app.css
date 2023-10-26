@@ -6,13 +6,14 @@
 @import './common/icons.css';
 @import './layouts/dark-theme.css';
 @import './components/skeleton.css';
-@import './components/single-feature.css';
 @import './components/single-package.css';
 @import './components/github-languages.css';
 @import './sections/header.css';
 @import 'sections/hero.css';
 @import 'sections/footer.css';
 @import 'pages/home/home.css';
+@import 'pages/featured/single-feature.css';
+@import 'pages/websites/single-website.css';
 @import 'pages/repos.css';
 @import 'pages/page-404.css';
 
@@ -35,6 +36,7 @@
 
     /* Dark theme */
     --color-dark-theme-white: hsla(0, 0%, 93%, 1);
+    --color-dark-theme-black-text: #b8b8b8; /** @todo Update text in lack theme styles */
     --color-dark-theme-black: hsla(0, 0%, 0%, 1);
     --color-dark-theme-black-trans: hsla(0, 0%, 0%, .75);
     --color-border-colors: #333333;

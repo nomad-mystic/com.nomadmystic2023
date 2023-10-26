@@ -544,6 +544,7 @@ class ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2
         'App\\View\\Composers\\Post' => __DIR__ . '/../..' . '/app/View/Composers/Post.php',
         'App\\View\\Composers\\Repos' => __DIR__ . '/../..' . '/app/View/Composers/Repos.php',
         'App\\View\\Composers\\School' => __DIR__ . '/../..' . '/app/View/Composers/School.php',
+        'App\\View\\Composers\\Websites' => __DIR__ . '/../..' . '/app/View/Composers/Websites.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'BladeUI\\Icons\\BladeIconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/BladeIconsServiceProvider.php',
         'BladeUI\\Icons\\Components\\Icon' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Components/Icon.php',

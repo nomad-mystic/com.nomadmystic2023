@@ -3,6 +3,11 @@
         li {
             padding: 0 0.5rem;
             color: var(--color-black);
+            transition: all .25s linear;
+
+            &:hover {
+                transition: all .25s linear;
+            }
         }
 
         a {

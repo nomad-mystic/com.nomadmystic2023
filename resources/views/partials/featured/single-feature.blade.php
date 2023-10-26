@@ -1,4 +1,4 @@
-<section class="SingleFeature w-full p-4 mb-6">
+<section class="SingleFeature SingleFeature-{{ $website['name'] ?? '' }} w-full p-4 mb-6">
     <article class="flex flex-col md:flex-row">
         <figure class="SingleFeature-thumbnail">
             <a href="{{ get_stylesheet_directory_uri() }}/{{ $feature['url'] ?? '' }}"
@@ -7,13 +7,13 @@
                class="flex items-center"
             >
                 <img src="{{ get_stylesheet_directory_uri() }}/{{  $feature['thumbnail'] ?? '' }}"
-                     alt="{{  $feature['thumbnailAlt'] ?? '' }}">
+                     alt="{{  $feature['thumbnailAlt'] ?? '' }}" />
             </a>
         </figure>
 
         <section class="pt-4 md:pt-0 md:pl-4">
             <header>
-                <h2 class="SingleFeature-title text-3xl pb-2">{{  $feature['name'] ?? '' }}</h2>
+                <h2 class="SingleFeature-title text-3xl pb-2">{{  $feature['safeName'] ?? '' }}</h2>
                 <p class="SingleFeature-description">{{  $feature['description'] ?? '' }}</p>
             </header>
 
@@ -46,8 +46,4 @@
             </section>
         </section>
     </article>
-<section>
-
-
-
-
+</section>
