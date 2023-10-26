@@ -14,6 +14,10 @@
 
 @include('sections.footer',
     [
-      'classes' => 'DarkTheme'
+      'classes' => 'DarkTheme',
     ]
 )
+
+@include('partials.common.footer-navigation', [
+  'type' => 'Dark',
+])

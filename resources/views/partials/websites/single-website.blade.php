@@ -7,18 +7,17 @@
         >
             <figure>
                 <img src="{{ get_stylesheet_directory_uri() }}/{{ $website['thumbnail'] ?? '' }}"
-                     alt="{{  $website['thumbnailAlt'] ?? '' }}">
+                     alt="{{ $website['thumbnailAlt'] ?? '' }}">
             </figure>
         </a>
 
         <section class="pt-4 lg:pt-0 lg:pl-4">
             <header>
-
                 <a href="{{ $website['url'] ?? '' }}"
                    target="_blank"
                    rel="noreferrer"
                 >
-                    <h2 class="SingleWebsite-title text-3xl pb-2">{{ $website['safeName'] ?? '' }}</h2>
+                    <h2 class="SingleWebsite-title text-2xl md:text-3xl pb-2">{{ $website['safeName'] ?? '' }}</h2>
                 </a>
 
                 <p class="SingleWebsite-description">{{ $website['description'] ?? '' }}</p>

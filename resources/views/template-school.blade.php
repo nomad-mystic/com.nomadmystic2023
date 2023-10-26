@@ -6,7 +6,9 @@
 
 @section('content')
 
-    @include('partials.school.hero')
+    @include('partials.common.hero', [
+        'headerTitle' => 'School',
+    ])
 
     @if(!empty($allRepos) && count($allRepos) > 0)
         @foreach($allRepos as $topicName => $repos)

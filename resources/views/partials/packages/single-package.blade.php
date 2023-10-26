@@ -1,7 +1,7 @@
 <section class="SinglePackage w-full p-6 mb-6">
     <article>
         <header>
-            <h2 class="SinglePackage-title text-3xl pb-2">{{  $package['name'] ?? '' }}</h2>
+            <h2 class="SinglePackage-title sm:text-3xl pb-2">{{  $package['name'] ?? '' }}</h2>
             <p class="SinglePackage-description">{{  $package['description'] ?? '' }}</p>
         </header>
 

@@ -5,6 +5,7 @@
 @import './common/base.css';
 @import './common/icons.css';
 @import './layouts/dark-theme.css';
+@import './layouts/body-background.css';
 @import './components/skeleton.css';
 @import './components/single-package.css';
 @import './components/github-languages.css';
@@ -48,6 +49,7 @@
     --logo-width: 24px;
     --logo-height: 24px;
     --lg-header-height: 60px;
+    --header-text-transition: all .25s linear;
 
     /* Card */
     --color-card-border: var(--color-border-colors);

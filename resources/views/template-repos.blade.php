@@ -6,7 +6,9 @@
 
 @section('content')
 
-    @include('partials.repos.hero')
+    @include('partials.common.hero', [
+        'headerTitle' => 'Repositories',
+    ])
 
 
     @if(!empty($allRepos) && count($allRepos) > 0)

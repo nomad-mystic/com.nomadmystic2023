@@ -1,0 +1,23 @@
+.Layout {
+    &-bodyBackground {
+        position: absolute;
+        background: rgba(0,0,0, .5);
+        inset: 0;
+        z-index: 20;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+
+        &.is-visible {
+            visibility: visible;
+            opacity: 1;
+            height: 100%;
+
+            @media (min-width: 1024px) {
+                visibility: hidden;
+                opacity: 0;
+                height: 0;
+            }
+        }
+    }
+}

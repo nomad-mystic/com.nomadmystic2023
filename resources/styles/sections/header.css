@@ -3,28 +3,96 @@
 
     background-color: var(--header-color);
     font-family: var(--font-stack);
-
-    @media (min-width: 1024px) {
-        height: var(--lg-header-height);
-        top: calc(0px + var(--wp-admin--admin-bar--height))
-    }
+    height: var(--lg-header-height);
+    top: calc(0px + var(--wp-admin--admin-bar--height));
 
     &-logo {}
 
+    &-navigation-footer {
+        position: fixed;
+        top: 12px;
+        right: 24px;
+        width: 80vw;
+        border-radius: var(--radius);
+        z-index: 30;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+
+        /** Dark theme */
+        background-color: var(--color-dark-theme-black);
+        box-shadow: 0 0 3px 0 var(--color-dark-theme-black-text);
+
+        &.is-visible {
+            visibility: visible;
+            opacity: 1;
+            height: fit-content;
+
+            @media (min-width: 1024px) {
+                visibility: hidden;
+                opacity: 0;
+                height: 0;
+            }
+        }
+    }
+
+    &-close-icon {
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+
+        /** Dark theme */
+        svg {
+            fill: var(--color-dark-theme-black-text);
+        }
+    }
+
     &-navigation {
+        display: none;
+
+        @media screen('lg') {
+            display: block;
+            position: relative;
+            top: 0;
+            right: 0;
+            width: auto;
+        }
+    }
+
+    /** Common */
+    .Primary-navigation {
         li {
             padding: 1rem 0.5rem;
             color: var(--color-black);
             cursor: pointer;
-            transition: all .25s linear;
+            transition: var(--header-text-transition);
 
             &:hover {
-                transition: all .25s linear;
+                transition: var(--header-text-transition);
             }
         }
 
         a {
             font-family: var(--font-stack);
+        }
+    }
+
+    &-hamburger {
+        visibility: visible;
+        height: 100%;
+        opacity: 1;
+
+        @media screen('lg') {
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+        }
+
+        &.is-active {
+
         }
     }
 }

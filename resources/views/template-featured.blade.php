@@ -6,7 +6,9 @@
 
 @section('content')
 
-    @include('partials.featured.hero')
+    @include('partials.common.hero', [
+        'headerTitle' => 'Featured',
+    ])
 
     @if(!empty($features) && is_array($features) && count($features) > 0)
         <section class="Featured w-[90%] flex flex-col justify-center xl:w-full max-w-6xl mx-auto py-6">

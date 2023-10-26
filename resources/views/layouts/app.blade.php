@@ -15,3 +15,7 @@
       'classes' => '',
     ]
 )
+
+@include('partials.common.footer-navigation', [
+  'type' => 'Light',
+])
