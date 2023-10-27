@@ -1,0 +1,36 @@
+.Home {
+    /* Aspirations */
+    &-exploreDiscoverCodeSection {
+
+    }
+
+    &-exploreDiscoverCode {
+        margin: 1px auto;
+        position: relative;
+        height: 30vh;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &-exploreDiscoverCodeExplorePath,
+    &-exploreDiscoverCodeDiscoverPath,
+    &-exploreDiscoverCodeCodePath {
+        fill: transparent;
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+    }
+
+    &-exploreDiscoverCodeExploreGroup {
+        background-color: var(--color-teal-light);
+    }
+
+    &-exploreDiscoverCodeDiscoverGroup {
+        background: var(--color-teal);
+    }
+
+    &-exploreDiscoverCodeCodeGroup {
+        background-color: var(--color-teal-light);
+    }
+}

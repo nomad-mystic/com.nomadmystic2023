@@ -3,7 +3,6 @@
 
 /* https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports */
 @import './common/base.css';
-@import './common/icons.css';
 @import './layouts/dark-theme.css';
 @import './layouts/body-background.css';
 @import './components/skeleton.css';
