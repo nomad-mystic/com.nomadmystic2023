@@ -1,0 +1,66 @@
+.Home {
+    &-featuredPortal,
+    &-schoolPortal,
+    &-websitesPortal {
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 100%;
+            width: 0;
+            background: transparent;
+            transition: width 1s ease, background-color 1s ease;
+            position: absolute;
+            inset: 0;
+        }
+
+        &:hover:after {
+            width: 100%;
+            background: var(--color-dark-grey);
+        }
+    }
+
+    &-featuredPortal,
+    &-websitesPortal {
+        background-color: var(--color-teal);
+    }
+
+    &-schoolPortal {
+        background-color: var(--color-teal-light);
+    }
+
+    &-websitesPortal {}
+
+    /* Portal */
+    &-threeFeatures {
+        margin: 3px auto;
+
+        a {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &-threeFeaturePiece {
+        margin: 1px auto;
+        position: relative;
+        height: 30vh;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+
+        &:after {
+            content: '';
+            display: block;
+        }
+    }
+
+    &-featuredSectionsWebsitesPath,
+    &-featuredSectionsSchoolPath,
+    &-featuredSectionsFeaturedPath {
+        fill: transparent;
+        stroke-miterlimit: 10;
+    }
+}

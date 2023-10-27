@@ -24,13 +24,13 @@ export default class HomePortalAnimations extends AnimationMethods {
      * @return {void}
      */
     homePortalSections = () => {
-        const featuredPaths = window.document.querySelectorAll('.homePageFeaturedSectionsFeaturedPath');
+        const featuredPaths = window.document.querySelectorAll('.Home-featuredSectionsFeaturedPath');
         this.textPathAnimation(featuredPaths);
 
-        const schoolPaths = window.document.querySelectorAll('.homePageFeaturedSectionsSchoolPath');
+        const schoolPaths = window.document.querySelectorAll('.Home-featuredSectionsSchoolPath');
         this.textPathAnimation(schoolPaths);
 
-        const websitesPaths = window.document.querySelectorAll('.homePageFeaturedSectionsWebsitesPath');
+        const websitesPaths = window.document.querySelectorAll('.Home-featuredSectionsWebsitesPath');
         this.textPathAnimation(websitesPaths);
 
         // Animations for filling three sections action words

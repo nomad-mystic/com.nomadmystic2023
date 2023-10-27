@@ -1,7 +1,11 @@
 @import 'built-with.css';
+@import 'explore-discover-code.css';
+@import 'portal.css';
+@import 'animation-area.css';
 
 .Home {
     /* Hero */
+
     &-heroContainer {
         background-repeat: no-repeat;
         background-size: cover;
@@ -24,182 +28,11 @@
 
     &-heroSVG {}
 
-    /* Aspirations */
-
-    &.homePageExploreDiscoverCodeSection {
-        .homePageExploreDiscoverCode {
-            margin: 1px auto;
-            position: relative;
-            height: 30vh;
-            width: 100%;
-            text-align: center;
-            padding-right: 0;
-            padding-left: 0;
-
-            .homePageExploreDiscoverCodeExplorePath,
-            .homePageExploreDiscoverCodeDiscoverPath,
-            .homePageExploreDiscoverCodeCodePath {
-                fill: transparent;
-                stroke-width: 2;
-                stroke-miterlimit: 10;
-            }
-        }
-
-        .exploreDiscoverCodeExploreGroup {
-            background-color: var(--color-teal-light);
-        }
-
-        .exploreDiscoverCodeDiscoverGroup {
-            background: var(--color-teal);
-        }
-
-        .exploreDiscoverCodeCodeGroup {
-            background-color: var(--color-teal-light);
-        }
-    }
-
-    /* Portal */
-
-    &.homePageThreeFeatures {
-        margin: 3px auto;
-
-        a {
-            height: 100%;
-            width: 100%;
-        }
-
-        .homePageThreeFeaturePiece {
-            margin: 1px auto;
-            position: relative;
-            height: 30vh;
-            text-align: center;
-            padding-right: 0;
-            padding-left: 0;
-
-            .homePageFeaturedSectionsWebsitesPath,
-            .homePageFeaturedSectionsSchoolPath,
-            .homePageFeaturedSectionsFeaturedPath {
-                fill: transparent;
-                stroke-miterlimit: 10;
-            }
-
-            &:after {
-                content: '';
-                display: block;
-            }
-        }
-    }
-
-    .homePageThreeSVG {
+    &-threeSVG {
         width: 50%;
         position: absolute;
         inset: 0;
         height: 30%;
         margin: auto;
-    }
-
-    &-featuredPortal,
-    &-websitesPortal {
-        background-color: var(--color-teal);
-    }
-
-    &-schoolPortal {
-        background-color: var(--color-teal-light);
-    }
-
-    &-websitesPortal {
-
-    }
-
-    &-featuredPortal,
-    &-schoolPortal,
-    &-websitesPortal {
-        position: relative;
-
-        &:after {
-            content: '';
-            display: block;
-            margin: auto;
-            height: 100%;
-            width: 0;
-            background: transparent;
-            transition: width 1s ease, background-color 1s ease;
-            position: absolute;
-            inset: 0;
-        }
-
-        &:hover:after {
-            width: 100%;
-            background: var(--color-dark-grey);
-        }
-    }
-
-    &.homeAnimationArea {
-        margin: 1px auto;
-        background-color: var(--color-purple-light);
-        height: calc(80vh - var(--wp-admin--admin-bar--height));
-
-        h2 {
-            color: var(--color-white);
-        }
-
-        figure {
-            height: 100%;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
-
-        svg {
-            width: 50%;
-        }
-
-        .hexagon {
-            fill: transparent;
-            stroke: var(--color-white);
-            stroke-width: 10;
-            stroke-miterlimit: 10;
-        }
-
-        .line {
-            fill: transparent;
-            stroke: var(--color-white);
-            stroke-width: 10;
-            stroke-miterlimit: 10;
-        }
-
-        .bulletPoints {
-            opacity: 0;
-        }
-
-        .subLine {
-            opacity: 0;
-        }
-
-        .wordpressDevelopmentPath,
-        .UIDevelopmentPath,
-        .webDevelopmentPath,
-        .dreamNotOfTodayPath {
-            fill: transparent;
-        }
-
-        #dreamSVGPolygons,
-        #dreamSVGLines,
-        #dreamSVGText {
-            fill: transparent;
-        }
-
-        #dreamTriangle {
-            opacity: 0;
-        }
-
-        #dreamLargeHexagon {
-            opacity: 0;
-        }
-
-        #dreamSmallHexagon {
-            opacity: 0;
-        }
     }
 }

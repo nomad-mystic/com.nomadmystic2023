@@ -1,0 +1,70 @@
+.Home {
+    &-animationArea {
+        margin: 1px auto;
+        background-color: var(--color-purple-light);
+        height: calc(80vh - var(--wp-admin--admin-bar--height));
+
+        h2 {
+            color: var(--color-white);
+        }
+
+        figure {
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        svg {
+            width: 50%;
+        }
+
+        .hexagon {
+            fill: transparent;
+            stroke: var(--color-white);
+            stroke-width: 10;
+            stroke-miterlimit: 10;
+        }
+
+        .line {
+            fill: transparent;
+            stroke: var(--color-white);
+            stroke-width: 10;
+            stroke-miterlimit: 10;
+        }
+
+        .bulletPoints {
+            opacity: 0;
+        }
+
+        .subLine {
+            opacity: 0;
+        }
+
+        .wordpressDevelopmentPath,
+        .UIDevelopmentPath,
+        .webDevelopmentPath,
+        .dreamNotOfTodayPath {
+            fill: transparent;
+        }
+
+        #dreamSVGPolygons,
+        #dreamSVGLines,
+        #dreamSVGText {
+            fill: transparent;
+        }
+
+        #dreamTriangle {
+            opacity: 0;
+        }
+
+        #dreamLargeHexagon {
+            opacity: 0;
+        }
+
+        #dreamSmallHexagon {
+            opacity: 0;
+        }
+    }
+}

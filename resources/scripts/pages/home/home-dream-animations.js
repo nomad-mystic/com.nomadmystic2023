@@ -53,8 +53,8 @@ export default class HomeDreamAnimations extends AnimationMethods {
      * @return {void}
      */
     startAnimations = () => {
-        const homeAnimationArea = window.document.querySelector('.homeAnimationArea');
-        const homeFeaturedSchoolWebsites = window.document.querySelector('.homePageThreeFeatures');
+        const homeAnimationArea = window.document.querySelector('.Home-animationArea');
+        const homeFeaturedSchoolWebsites = window.document.querySelector('.Home-threeFeatures');
 
 
         // Shapes animations
@@ -66,7 +66,7 @@ export default class HomeDreamAnimations extends AnimationMethods {
         const dreamLargeHexagon = window.document.getElementById('dreamLargeHexagon');
         this.fadeIdAnimation(dreamLargeHexagon, '1s');
 
-        // dreamSmallHexagon in homeAnimationArea
+        // dreamSmallHexagon in Home-animationArea
         setTimeout(() => {
             const dreamSmallHexagon = window.document.getElementById('dreamSmallHexagon');
             this.fadeIdAnimation(dreamSmallHexagon, '1s');
@@ -82,7 +82,7 @@ export default class HomeDreamAnimations extends AnimationMethods {
 
         }, 1000);
 
-        // lines and hexagons(bulletPoints) in homeAnimationArea
+        // lines and hexagons(bulletPoints) in Home-animationArea
         setInterval(() => {
             // bulletPoints animations
             const bulletPoints = window.document.getElementsByClassName('bulletPoints');
@@ -94,8 +94,8 @@ export default class HomeDreamAnimations extends AnimationMethods {
 
         }, 2000); // end lines and bulletPoints
 
-        ///////////////////// Text Animations in homeAnimationArea
-        // delaying small text animation so it waits for the header to animate in
+        ///////////////////// Text Animations in Home-animationArea
+        // delaying small text animation, so it waits for the header to animate in
         setTimeout(() => {
 
             // Animation for Web Development text
@@ -106,7 +106,7 @@ export default class HomeDreamAnimations extends AnimationMethods {
 
             }, 1000);
 
-            // Animation for Text UI Development in homeAnimationArea
+            // Animation for Text UI Development in Home-animationArea
             setTimeout(() => {
 
                 const UIDevelopmentPath = window.document.getElementsByClassName('UIDevelopmentPath');
@@ -114,7 +114,7 @@ export default class HomeDreamAnimations extends AnimationMethods {
 
             }, 2000);
 
-            // Animation for WordPress Development text in homeAnimationArea
+            // Animation for WordPress Development text in Home-animationArea
             setTimeout(() => {
 
                 const wordpressDevelopmentPath = window.document.getElementsByClassName('wordpressDevelopmentPath');
@@ -123,7 +123,7 @@ export default class HomeDreamAnimations extends AnimationMethods {
             }, 3000);
         }, 2500);
 
-        // Sets the timing/delay of the animation for text fills in homeAnimationArea at the end of the text path animation
+        // Sets the timing/delay of the animation for text fills in Home-animationArea at the end of the text path animation
         setTimeout(() => {
             const dreamNotOfTodayPaths = window.document.querySelectorAll('.dreamNotOfTodayPath');
             const webDevelopmentPaths = window.document.querySelectorAll('.webDevelopmentPath');
