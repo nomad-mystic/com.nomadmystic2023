@@ -13,7 +13,7 @@ export default class HomePortalAnimations extends AnimationMethods {
     }
 
     init = () => {
-        this.homePortalSections();
+        // this.homePortalSections();
     }
 
     /**

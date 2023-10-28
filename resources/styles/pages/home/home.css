@@ -9,9 +9,14 @@
     &-heroContainer {
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: bottom center;
 
-        #homePageHeaderHexagon,
-        #homePageHeaderTriangle {
+        @media screen('lg') {
+            background-position: center center;
+        }
+
+        #Home-headerHexagon,
+        #Home-headerTriangle {
             opacity: 0;
             fill: transparent;
             stroke: var(--color-animation-stroke);
@@ -19,7 +24,7 @@
             stroke-miterlimit: 10;
         }
 
-        .headerMysticTextPath {
+        .Home-headerMysticTextPath {
             fill: transparent;
             stroke-miterlimit: 10;
             stroke-width: 2.5;
