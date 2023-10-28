@@ -6,7 +6,13 @@
     height: var(--lg-header-height);
     top: calc(0px + var(--wp-admin--admin-bar--height));
 
-    &-logo {}
+    &-logo {
+        max-width: 100px;
+
+        @media screen('lg') {
+            max-width: 120px;
+        }
+    }
 
     &-navigation-footer {
         position: fixed;

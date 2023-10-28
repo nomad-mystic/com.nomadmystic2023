@@ -1,5 +1,5 @@
 <section class="Home-heroContainer Hero bg-black flex justify-center items-center" style="background-image: url(@asset('images/home-header-background.jpg'))">
-    <div class="Home-heroSVG mx-auto w-2/4">
+    <div class="Home-heroSVG mx-auto w-3/4 md:w-2/4">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px"
              viewBox="0 0 879.7 250.6" xml:space="preserve">

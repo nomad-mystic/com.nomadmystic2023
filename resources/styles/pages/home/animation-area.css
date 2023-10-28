@@ -1,8 +1,12 @@
 .Home {
     &-animationArea {
-        margin: 1px auto;
+        margin: 3px auto;
         background-color: var(--color-purple-light);
-        height: calc(80vh - var(--wp-admin--admin-bar--height));
+        height: calc(40vh - var(--wp-admin--admin-bar--height, 0px));
+
+        @media screen('lg') {
+            height: calc(80vh - var(--wp-admin--admin-bar--height, 0px));
+        }
 
         h2 {
             color: var(--color-white);
@@ -17,7 +21,11 @@
         }
 
         svg {
-            width: 50%;
+            width: 90%;
+
+            @media screen('md') {
+                width: 50%;
+            }
         }
 
         .hexagon {
