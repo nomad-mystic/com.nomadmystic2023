@@ -1,4 +1,4 @@
-<section class="Home Home-exploreDiscoverCodeSection flex">
+<section class="Home Home-exploreDiscoverCodeSection flex flex-col md:flex-row">
     <div class="Home-exploreDiscoverCode Home-exploreDiscoverCodeExploreGroup">
         <div class="Home-threeSVG">
             <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

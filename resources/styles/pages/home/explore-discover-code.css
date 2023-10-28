@@ -1,17 +1,22 @@
 .Home {
     /* Aspirations */
     &-exploreDiscoverCodeSection {
-
+        margin: 3px auto;
     }
 
     &-exploreDiscoverCode {
-        margin: 1px auto;
         position: relative;
-        height: 30vh;
+        height: 12vh;
         width: 100%;
         text-align: center;
         padding-right: 0;
         padding-left: 0;
+        display: flex;
+        justify-content: center;
+
+        @media screen('lg') {
+            height: 30vh;
+        }
     }
 
     &-exploreDiscoverCodeExplorePath,

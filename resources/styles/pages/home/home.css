@@ -29,10 +29,12 @@
     &-heroSVG {}
 
     &-threeSVG {
-        width: 50%;
-        position: absolute;
-        inset: 0;
-        height: 30%;
+        width: 40%;
+        height: auto;
         margin: auto;
+
+        @media screen('md') {
+            width: 50%;
+        }
     }
 }
