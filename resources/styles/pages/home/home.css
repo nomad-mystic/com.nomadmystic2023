@@ -9,6 +9,11 @@
     &-heroContainer {
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: bottom center;
+
+        @media screen('lg') {
+            background-position: center center;
+        }
 
         #Home-headerHexagon,
         #Home-headerTriangle {
