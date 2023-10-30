@@ -5,7 +5,7 @@
         "description": "I created a Netlify static website that directly hooked into the documentation team’s generated HTML from AWS S3 buckets. I developed custom Node.js scripts for each of the seven product lines that run several internal scripts for static asset generation; I created all front-end JavaScript and SCSS assets, deployment automation, custom generation of a standalone preview site, and custom integrations with 3rd party APIs.",
         "url": "https://puppet.com/docs",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-puppet-logo.svg",
+        "thumbnail": "schemas/static/images/websites/website-puppet-logo.svg",
         "thumbnailAlt": "Image of Puppet, Inc logo",
         "githubURL": ""
     },
@@ -15,7 +15,7 @@
         "description": "I created custom React.js components for a WordPress-powered backend. I developed custom Netlify plugins for connecting into the Netlify lifecycle, monitored site health with Sentry.io, set up custom search with Algolia.js, audited scripts for performance optimizations, and worked with Puppet to deliver features. ",
         "url": "https://puppet.com",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-puppet-logo.svg",
+        "thumbnail": "schemas/static/images/websites/website-puppet-logo.svg",
         "thumbnailAlt": "Image of Puppet, Inc logo",
         "githubURL": ""
     },
@@ -25,7 +25,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Airship's development needs.",
         "url": "https://www.airship.com",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-airship-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-airship-logo.png",
         "thumbnailAlt": "Image of Airship logo",
         "githubURL": ""
     },
@@ -35,7 +35,7 @@
         "description": "I created JS/SCSS/PHP/Drupal solutions based on BlueJeans's development needs.",
         "url": "https://www.bluejeans.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-bluejeans-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-bluejeans-logo.png",
         "thumbnailAlt": "Image of Bluejeans logo",
         "githubURL": ""
     },
@@ -45,7 +45,7 @@
         "description": "I created JS/SCSS/PHP/Drupal solutions based on Lakeside Software's development needs.",
         "url": "https://www.lakesidesoftware.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-lakesidesoftware-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-lakesidesoftware-logo.png",
         "thumbnailAlt": "Image of Lakeside Software logo",
         "githubURL": ""
     },
@@ -55,7 +55,7 @@
         "description": "I created JS/SCSS/PHP/WordPress/WordPress solutions based on Okta's development needs.",
         "url": "https://www.okta.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-okta-logo.png",
         "thumbnailAlt": "Image of Okta logo",
         "githubURL": ""
     },
@@ -65,7 +65,7 @@
         "description": "I created custom React.js components for a Drupal-powered backend.",
         "url": "https://www.okta.com/oktane/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-okta-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-okta-logo.png",
         "thumbnailAlt": "Image of Okta logo",
         "githubURL": ""
     },
@@ -75,7 +75,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://www.stitchfix.com/women/blog/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -85,7 +85,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://www.stitchfix.com/men/blog/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -95,7 +95,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://newsroom.stitchfix.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -105,7 +105,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://impact.stitchfix.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-stitchfix-logo.png",
         "thumbnailAlt": "Image of Stitchfix logo",
         "githubURL": ""
     },
@@ -115,7 +115,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Gong's development needs.",
         "url": "https://www.gong.io/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-gong-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-gong-logo.png",
         "thumbnailAlt": "Image of Gong logo",
         "githubURL": ""
     },
@@ -125,7 +125,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Carta's development needs.",
         "url": "https://www.carta.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-carta-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-carta-logo.png",
         "thumbnailAlt": "Image of Carta logo",
         "githubURL": ""
     },
@@ -135,7 +135,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on First Round Capitals' development needs.",
         "url": "https://www.firstround.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-firstround-logo.jpeg",
+        "thumbnail": "schemas/static/images/websites/website-firstround-logo.jpeg",
         "thumbnailAlt": "Image of First Round Capital logo",
         "githubURL": ""
     },
@@ -145,7 +145,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Crossbeam's development needs.",
         "url": "https://www.crossbeam.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-crossbeam-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-crossbeam-logo.png",
         "thumbnailAlt": "Image of Crossbeam logo",
         "githubURL": ""
     },
@@ -155,7 +155,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Kindred Partners' development needs.",
         "url": "https://www.kindredpartners.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-kindredpartners-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-kindredpartners-logo.png",
         "thumbnailAlt": "Image of Kindred Partners logo",
         "githubURL": ""
     },
@@ -165,7 +165,7 @@
         "description": "I created JS/SCSS/PHP/Drupal solutions based on Blue Hexagon's development needs.",
         "url": "https://bluehexagon.ai/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-bluehexagon-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-bluehexagon-logo.png",
         "thumbnailAlt": "Image of Blue Hexagon logo",
         "githubURL": ""
     },
@@ -175,7 +175,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Samsung Next's development needs.",
         "url": "https://www.samsungnext.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-samsungnext-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-samsungnext-logo.png",
         "thumbnailAlt": "Image of Samsung Next logo",
         "githubURL": ""
     },
@@ -185,7 +185,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Rezilion's development needs.",
         "url": "https://www.rezilion.com/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-rezilion-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-rezilion-logo.png",
         "thumbnailAlt": "Image of Rezilion logo",
         "githubURL": ""
     },
@@ -195,7 +195,7 @@
         "description": "I created JS/SCSS/PHP/WordPress solutions based on Instacart's development needs.",
         "url": "https://instacart.careers/",
         "type": "client",
-        "thumbnail": "schemas/static/images/website-instacart-logo.png",
+        "thumbnail": "schemas/static/images/websites/website-instacart-logo.png",
         "thumbnailAlt": "Image of Instacart logo",
         "githubURL": ""
     }

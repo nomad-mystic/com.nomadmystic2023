@@ -6,7 +6,7 @@
         "url": "website-featured/midterm-2015/index.html",
         "path": "wp-content/themes/nomad-mystic/website-featured/midterm-2015",
         "static": true,
-        "thumbnail": "schemas/static/images/featured-the-history-of-human-space-travel.jpg",
+        "thumbnail": "schemas/static/images/featured/featured-the-history-of-human-space-travel.jpg",
         "thumbnailAlt": "Image of Hubble telescope large field render",
         "githubURL": "https://github.com/nomad-mystic/midterm-spring-2015-CAS222"
     }
