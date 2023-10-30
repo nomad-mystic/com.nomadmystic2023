@@ -538,6 +538,7 @@ class ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2
         'App\\Providers\\ThemeServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ThemeServiceProvider.php',
         'App\\UtilsHelpers' => __DIR__ . '/../..' . '/app/UtilsHelpers.php',
         'App\\View\\Components\\Alert' => __DIR__ . '/../..' . '/app/View/Components/Alert.php',
+        'App\\View\\Composers\\About' => __DIR__ . '/../..' . '/app/View/Composers/About.php',
         'App\\View\\Composers\\App' => __DIR__ . '/../..' . '/app/View/Composers/App.php',
         'App\\View\\Composers\\Featured' => __DIR__ . '/../..' . '/app/View/Composers/Featured.php',
         'App\\View\\Composers\\Packages' => __DIR__ . '/../..' . '/app/View/Composers/Packages.php',
