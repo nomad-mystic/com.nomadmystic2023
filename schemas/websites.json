@@ -2,7 +2,7 @@
     {
         "safeName": "Puppet Docs",
         "name": "puppet-docs",
-        "description": "Created a Netlify static website that directly hooked into the documentation team’s generated HTML from AWS S3 buckets. I developed custom Node.js scripts for each of the seven product lines that run several internal scripts for static asset generation; I created all front-end JavaScript and SCSS assets, deployment automation, custom generation of a standalone preview site, and custom integrations with 3rd party APIs.",
+        "description": "I created a Netlify static website that directly hooked into the documentation team’s generated HTML from AWS S3 buckets. I developed custom Node.js scripts for each of the seven product lines that run several internal scripts for static asset generation; I created all front-end JavaScript and SCSS assets, deployment automation, custom generation of a standalone preview site, and custom integrations with 3rd party APIs.",
         "url": "https://puppet.com/docs",
         "type": "client",
         "thumbnail": "schemas/static/images/website-puppet-logo.svg",
@@ -12,7 +12,7 @@
     {
         "safeName": "Puppet.com",
         "name": "puppet-com",
-        "description": "",
+        "description": "I created custom React.js components for a WordPress-powered backend. I developed custom Netlify plugins for connecting into the Netlify lifecycle, monitored site health with Sentry.io, set up custom search with Algolia.js, audited scripts for performance optimizations, and worked with Puppet to deliver features. ",
         "url": "https://puppet.com",
         "type": "client",
         "thumbnail": "schemas/static/images/website-puppet-logo.svg",
@@ -22,7 +22,7 @@
     {
         "safeName": "Airship.com",
         "name": "airship-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Airship's development needs.",
         "url": "https://www.airship.com",
         "type": "client",
         "thumbnail": "schemas/static/images/website-airship-logo.png",
@@ -32,7 +32,7 @@
     {
         "safeName": "Bluejeans.com",
         "name": "bluejeans-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/Drupal solutions based on BlueJeans's development needs.",
         "url": "https://www.bluejeans.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-bluejeans-logo.png",
@@ -42,7 +42,7 @@
     {
         "safeName": "Lakesidesoftware.com",
         "name": "lakesidesoftware-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/Drupal solutions based on Lakeside Software's development needs.",
         "url": "https://www.lakesidesoftware.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-lakesidesoftware-logo.png",
@@ -52,7 +52,7 @@
     {
         "safeName": "Okta.com",
         "name": "okta-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress/WordPress solutions based on Okta's development needs.",
         "url": "https://www.okta.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-okta-logo.png",
@@ -62,7 +62,7 @@
     {
         "safeName": "Oktane",
         "name": "oktane-com",
-        "description": "",
+        "description": "I created custom React.js components for a Drupal-powered backend.",
         "url": "https://www.okta.com/oktane/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-okta-logo.png",
@@ -72,7 +72,7 @@
     {
         "safeName": "Stitchfix.com Women",
         "name": "stitchfix-women",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://www.stitchfix.com/women/blog/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
@@ -82,7 +82,7 @@
     {
         "safeName": "Stitchfix.com Men",
         "name": "stitchfix-men",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://www.stitchfix.com/men/blog/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
@@ -92,7 +92,7 @@
     {
         "safeName": "Stitchfix.com Newsroom",
         "name": "stitchfix-newsroom",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://newsroom.stitchfix.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
@@ -102,7 +102,7 @@
     {
         "safeName": "Stitchfix.com Impact",
         "name": "stitchfix-impact",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on StitchFix's development needs.",
         "url": "https://impact.stitchfix.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-stitchfix-logo.png",
@@ -112,7 +112,7 @@
     {
         "safeName": "Gong.io",
         "name": "gong-io",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Gong's development needs.",
         "url": "https://www.gong.io/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-gong-logo.png",
@@ -122,7 +122,7 @@
     {
         "safeName": "Carta.com",
         "name": "carta-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Carta's development needs.",
         "url": "https://www.carta.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-carta-logo.png",
@@ -132,7 +132,7 @@
     {
         "safeName": "Firstround.com",
         "name": "firstround-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on First Round Capitals' development needs.",
         "url": "https://www.firstround.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-firstround-logo.jpeg",
@@ -142,7 +142,7 @@
     {
         "safeName": "Crossbeam.com",
         "name": "crossbeam-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Crossbeam's development needs.",
         "url": "https://www.crossbeam.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-crossbeam-logo.png",
@@ -152,7 +152,7 @@
     {
         "safeName": "Kindredpartners.com",
         "name": "kindredpartners-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Kindred Partners' development needs.",
         "url": "https://www.kindredpartners.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-kindredpartners-logo.png",
@@ -162,7 +162,7 @@
     {
         "safeName": "Bluehexagon.ai",
         "name": "bluehexagon-ai",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/Drupal solutions based on Blue Hexagon's development needs.",
         "url": "https://bluehexagon.ai/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-bluehexagon-logo.png",
@@ -172,7 +172,7 @@
     {
         "safeName": "Samsungnext.com",
         "name": "samsungnext-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Samsung Next's development needs.",
         "url": "https://www.samsungnext.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-samsungnext-logo.png",
@@ -182,7 +182,7 @@
     {
         "safeName": "Rezilion.com",
         "name": "rezilion-com",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Rezilion's development needs.",
         "url": "https://www.rezilion.com/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-rezilion-logo.png",
@@ -192,7 +192,7 @@
     {
         "safeName": "Instacart.careers",
         "name": "instacart-careers",
-        "description": "",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Instacart's development needs.",
         "url": "https://instacart.careers/",
         "type": "client",
         "thumbnail": "schemas/static/images/website-instacart-logo.png",
