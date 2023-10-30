@@ -1,8 +1,6 @@
 # Nomad Mystic's Custom Portfolio Theme
 
-
 ## Development
-
 
 Helpful commands for dealing with broken packages 
 * `wp acorn optimize:clear`

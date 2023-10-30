@@ -1,5 +1,5 @@
 <section class="SingleWebsite SingleWebsite-{{ $website['name'] ?? '' }} w-full p-4">
-    <article class="flex flex-col lg:flex-row">
+    <article class="flex flex-col md:flex-row">
         <a href="{{ $website['url'] ?? '' }}"
            target="_blank"
            rel="noreferrer"
@@ -11,7 +11,7 @@
             </figure>
         </a>
 
-        <section class="pt-4 lg:pt-0 lg:pl-4">
+        <section class="pt-4 md:pt-0 md:pl-4">
             <header>
                 <a href="{{ $website['url'] ?? '' }}"
                    target="_blank"

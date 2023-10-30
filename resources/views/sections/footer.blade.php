@@ -12,19 +12,19 @@
 
     <section class="Footer-links flex">
         <a href="https://github.com/nomad-mystic/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="Icon">
+            <figure class="Footer-icon">
                 @svg('si-github')
             </figure>
         </a>
 
         <a href="https://www.npmjs.com/~nomadmystic" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="Icon">
+            <figure class="Footer-icon">
                 @svg('si-npm')
             </figure>
         </a>
 
         <a href="https://www.linkedin.com/in/keith-p-murphy/" target="_blank" rel="noreferrer" class="p-4 mx-2">
-            <figure class="Icon">
+            <figure class="Footer-icon">
                 @svg('si-linkedin')
             </figure>
         </a>
@@ -32,6 +32,6 @@
 
     <section class="Footer-contact flex flex-col sm:flex-row items-center pt-4">
         <h4>Contact the Nomad:</h4>
-        <a href="mailto:nomadmystics@gmail.com?subject=This is from the footer of nomadmystic.com" class="ml-2 text-teal">keith@nomadmystic.com</a>
+        <a href="mailto:nomadmystics@gmail.com?subject=This is from the footer of nomadmystic.com" class="ml-1">keith@nomadmystic.com</a>
     </section>
 </footer>

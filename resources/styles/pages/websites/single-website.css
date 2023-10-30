@@ -2,11 +2,21 @@
     border-radius: var(--radius);
     border: 1px solid var(--color-border-colors);
 
+    article {
+        @media screen('md') {
+            min-height: 176px;
+        }
+    }
+
     &-title {
+        transition: var(--header-text-transition);
+
         &:hover,
         &:active,
         &:focus {
+            transition: var(--header-text-transition);
             text-decoration: underline;
+            color: var(--color-white);
         }
     }
 
@@ -41,7 +51,7 @@
         justify-content: center;
         width: 100%;
 
-        @media screen('lg') {
+        @media screen('md') {
             width: auto;
             height: auto;
             min-width: 232px;

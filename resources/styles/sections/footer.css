@@ -21,4 +21,10 @@
             width: 40px;
         }
     }
+
+    &-contact {
+        a {
+            color: var(--color-teal-dark);
+        }
+    }
 }

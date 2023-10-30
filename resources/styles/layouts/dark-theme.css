@@ -4,14 +4,6 @@
         background-color: var(--color-dark-theme-black);
         color: var(--color-dark-theme-black-text);
         box-shadow: inset 0 -1px 0 0 var(--color-border-colors);
-
-        li {
-            &:hover,
-            &:active,
-            &:focus {
-                color: var(--color-white);
-            }
-        }
     }
 
     &.Header {
@@ -20,6 +12,12 @@
         .Header-navigation {
             li {
                 color: var(--color-dark-theme-black-text);
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: var(--color-white);
+                }
             }
         }
     }
@@ -40,7 +38,29 @@
 
     &.Footer {
         h4 {
-            color: var(--color-black);
+            color: var(--color-dark-theme-black-text);
+        }
+
+        .Footer-icon {
+            color: var(--color-dark-theme-black-text);
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-white);
+            }
+        }
+
+        .Footer-navigation {
+            li {
+                color: var(--color-dark-theme-black-text);
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: var(--color-white);
+                }
+            }
         }
     }
 }
