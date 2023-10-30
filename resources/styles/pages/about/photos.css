@@ -53,6 +53,14 @@
         &:nth-of-type(10) {
             grid-column: span 4;
             grid-row: span 2;
+
+            img {
+                object-position: bottom 68% right 24%;
+
+                @media screen('md') {
+                    object-position: top 0 left 75%;
+                }
+            }
         }
 
         &:nth-of-type(11) {
@@ -81,7 +89,11 @@
 
             img {
                 object-fit: none;
-                object-position: bottom 40% right 0;
+                object-position: bottom 20% left 20%;
+
+                @media screen('lg') {
+                    object-position: bottom 40% right 0;
+                }
             }
         }
     }
