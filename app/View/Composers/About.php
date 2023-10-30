@@ -11,7 +11,7 @@ use Roots\Acorn\View\Composer;
  * @extends Composer
  * @author Keith Murphy | nomadmystics@gmail.com
  */
-class Websites extends Composer
+class About extends Composer
 {
     /**
      * @description List of views served by this composer.
@@ -19,7 +19,7 @@ class Websites extends Composer
      * @var string[]
      */
     protected static $views = [
-        'template-websites',
+        'template-about',
     ];
 
     /**
@@ -30,27 +30,27 @@ class Websites extends Composer
     public function with(): array
     {
         return [
-            'websites' => $this->buildWebsites()
+            'photos' => $this->buildPhotos()
         ];
     }
 
     /**
-     * @description Extract our websites JSON schema
+     * @description Extract our about JSON schema
      * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *
      * @return object
      */
-    private function buildWebsites(): mixed
+    private function buildPhotos(): mixed
     {
-        $websites = (object) [];
+        $photos = (object) [];
 
-        $json = SchemaHelpers::getSchemaJson('websites');
+        $json = SchemaHelpers::getSchemaJson('about');
 
         if (!empty($json)) {
             return $json;
         }
 
-        return $websites;
+        return $photos;
     }
 }
