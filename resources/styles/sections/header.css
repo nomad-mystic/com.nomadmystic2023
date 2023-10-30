@@ -14,7 +14,8 @@
         }
     }
 
-    &-navigation-footer {
+    /** @todo Maybe move this to another place, this seems weird */
+    &-navigation-canvas {
         position: fixed;
         top: 12px;
         right: 24px;
@@ -25,9 +26,31 @@
         opacity: 0;
         height: 0;
 
-        /** Dark theme */
-        background-color: var(--color-dark-theme-black);
-        box-shadow: 0 0 3px 0 var(--color-dark-theme-black-text);
+        @media screen('sm') {
+            width: 50vw;
+        }
+
+        &.LightTheme {
+            background-color: var(--color-white);
+            box-shadow: 0 0 3px 0 var(--color-dark-theme-black-text);
+
+            li {
+                border-bottom: 1px solid var(--color-black);
+            }
+        }
+
+        &.DarkTheme {
+            /** Dark theme */
+            background-color: var(--color-dark-theme-black);
+            box-shadow: 0 0 1px 1px var(--color-dark-theme-black-text);
+            border-bottom: 1px solid var(--color-dark-theme-black-text);
+
+            ul {
+                li {
+                    color: var(--color-dark-theme-black-text);
+                }
+            }
+        }
 
         &.is-visible {
             visibility: visible;
@@ -48,11 +71,13 @@
         display: block;
         position: absolute;
         top: 4px;
-        right: 4px;
+        right: 8px;
 
         /** Dark theme */
         svg {
             fill: var(--color-dark-theme-black-text);
+            height: 100%;
+            width: 100%;
         }
     }
 
@@ -97,8 +122,6 @@
             opacity: 0;
         }
 
-        &.is-active {
-
-        }
+        &.is-active {}
     }
 }

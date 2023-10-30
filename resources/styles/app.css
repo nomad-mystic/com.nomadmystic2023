@@ -36,7 +36,7 @@
 
     /* Dark theme */
     --color-dark-theme-white: hsla(0, 0%, 93%, 1);
-    --color-dark-theme-black-text: #b8b8b8; /** @todo Update text in lack theme styles */
+    --color-dark-theme-black-text: #919191;
     --color-dark-theme-black: hsla(0, 0%, 0%, 1);
     --color-dark-theme-black-trans: hsla(0, 0%, 0%, .75);
     --color-border-colors: #333333;

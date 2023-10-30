@@ -100,7 +100,7 @@ export default {
         // DOM Elements
         this.hamburger = window.document.getElementById('Header-hamburger');
         this.closeIcon = window.document.getElementById('Header-close-icon');
-        this.footerNav = window.document.getElementById('Header-navigation-footer');
+        this.footerNav = window.document.getElementById('Header-navigation-canvas');
         this.bodyBackground = window.document.getElementById('Layout-bodyBackground');
 
         this.showMobileNav();

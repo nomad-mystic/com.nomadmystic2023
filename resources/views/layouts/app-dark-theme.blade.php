@@ -19,5 +19,5 @@
 )
 
 @include('partials.common.footer-navigation', [
-  'type' => 'Dark',
+  'type' => 'DarkTheme',
 ])
