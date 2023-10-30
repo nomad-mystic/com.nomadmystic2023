@@ -1,5 +1,5 @@
 @if (has_nav_menu('primary_navigation'))
-    <nav class="Header Header-navigation-footer" id="Header-navigation-footer" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+    <nav class="Header Header-navigation-canvas {{ $type }}" id="Header-navigation-canvas" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
         <span class="Header-close-icon" id="Header-close-icon">
             {{ svg('fas-xmark') }}
         </span>

@@ -17,7 +17,7 @@
             <div class="Header-hamburger lg:hidden flex items-center" id="Header-hamburger">
                 <button class="outline-none">
                     <svg
-                        class="w-6 h-6 text-gray-500"
+                        class="w-6 h-6"
                         fill="none"
                         stroke-linecap="round"
                         stroke-linejoin="round"

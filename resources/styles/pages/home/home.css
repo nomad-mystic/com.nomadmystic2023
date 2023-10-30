@@ -34,9 +34,13 @@
     &-heroSVG {}
 
     &-threeSVG {
-        width: 40%;
+        width: 30%;
         height: auto;
         margin: auto;
+
+        @media screen('sm') {
+            width: 20%;
+        }
 
         @media screen('md') {
             width: 50%;

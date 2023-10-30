@@ -3,7 +3,7 @@
 </a>
 
 @include('sections.header', [
-  'classes' => '',
+  'classes' => 'LightTheme',
 ])
 
 <main id="main" class="main">
@@ -12,10 +12,10 @@
 
 @include('sections.footer',
     [
-      'classes' => '',
+      'classes' => 'LightTheme',
     ]
 )
 
 @include('partials.common.footer-navigation', [
-  'type' => 'Light',
+  'type' => 'LightTheme',
 ])
