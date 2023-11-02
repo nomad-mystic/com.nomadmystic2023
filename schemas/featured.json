@@ -9,5 +9,16 @@
         "thumbnail": "schemas/static/images/featured/featured-the-history-of-human-space-travel.jpg",
         "thumbnailAlt": "Image of Hubble telescope large field render",
         "githubURL": "https://github.com/nomad-mystic/midterm-spring-2015-CAS222"
+    },
+    {
+        "safeName": "Gong - Sr Web Developer Take Home Project",
+        "name": "gong",
+        "description": "Homework assessment for Gong.io",
+        "url": "website-featured/gong/index.html",
+        "path": "wp-content/themes/nomad-mystic/website-featured/gong",
+        "static": true,
+        "thumbnail": "schemas/static/images/featured/featured-gong.png",
+        "thumbnailAlt": "Gong.io logo",
+        "githubURL": "https://github.com/nomad-mystic/web-dev-gong"
     }
 ]
