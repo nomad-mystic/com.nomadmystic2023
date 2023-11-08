@@ -18,6 +18,7 @@ jobs:
       EMAIL: ${{ secrets.EMAIL }}
       GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
       SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      MAIN_ADDRESS: ${{ secrets.MAIN_ADDRESS }}
 
     strategy:
       matrix:
@@ -47,6 +48,6 @@ jobs:
 
       - name: Deploy to Hostgator
         run: |
-          git remote add hostgator "nomad@nomadmystic.com:public_html/wordpress/wp-content/themes/nomad-mystic-2023"
+          git remote add hostgator "$MAIN_ADDRESS"
           git fetch --unshallow
           git push -u hostgator "${{ secrets.MAIN_BRANCH }}"
