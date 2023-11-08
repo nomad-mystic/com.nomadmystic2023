@@ -47,6 +47,6 @@ jobs:
 
       - name: Deploy to Hostgator
         run: |
-          git remote add hostgator "${{ secrets.MAIN_ADDRESS }}"
+          git remote add hostgator "nomad@nomadmystic.com:public_html/wordpress/wp-content/themes/nomad-mystic-2023"
           git fetch --unshallow
           git push -u hostgator "${{ secrets.MAIN_BRANCH }}"
