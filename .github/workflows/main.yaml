@@ -49,7 +49,5 @@ jobs:
       - name: Deploy to Hostgator
         run: |
           git remote add hostgator "$MAIN_ADDRESS"
-          echo git remote -v
-          echo "$MAIN_ADDRESS"
           git fetch --unshallow
           git push -u hostgator "${{ secrets.MAIN_BRANCH }}"
