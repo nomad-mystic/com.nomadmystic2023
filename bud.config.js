@@ -23,7 +23,7 @@ export default async (app) => {
      *
      * @link https://bud.js.org/docs/bud.setPublicPath
      */
-    app.setPublicPath('/wp-content/themes/nomad-mystic/public/');
+    app.setPublicPath('/wp-content/themes/nomad-mystic-2023/public/');
 
     /**
      * @description Development server settings
