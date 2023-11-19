@@ -1,7 +1,7 @@
 <header class="Header w-screen fixed z-10 {{ $classes }}">
     <section class="flex justify-between lg:justify-around items-center h-full w-[90%] lg:w-screen mx-auto">
         <a class="Header-logo" href="{{ home_url('/') }}">
-            <img src="@asset('images/nav-logo-dark.png')">
+            <img src="@asset('images/nav-logo-dark.png')" alt="Nomad Mystic logo">
         </a>
 
         @if (has_nav_menu('primary_navigation'))

@@ -1,4 +1,6 @@
 .SingleFeature {
+    --icon-size: 1.5rem;
+
     border-radius: var(--radius);
     border: 1px solid var(--color-black);
 
@@ -11,26 +13,44 @@
         }
     }
 
+    &-metadata {
+        margin-block-start: 1rem;
+        gap: .75rem;
+    }
+
     &-github {}
     &-production {}
+    &-published {}
 
     &-github,
-    &-production {
-        margin-block-start: 16px;
-
+    &-production,
+    &-published {
         p {
             font-size: 12px;
         }
 
         svg {
-            width: 24px;
-            height: 24px;
+            width: var(--icon-size);
+            height: var(--icon-size);
         }
 
         a {
             &:hover {
                 color: var(--color-teal-dark);
             }
+        }
+    }
+
+    &-builtWith {
+        gap: .5rem;
+
+        p {
+            font-size: 12px;
+        }
+
+        figure {
+            width: var(--icon-size);
+            height: var(--icon-size);
         }
     }
 }

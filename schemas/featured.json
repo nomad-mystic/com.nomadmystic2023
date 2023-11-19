@@ -8,6 +8,25 @@
         "static": true,
         "thumbnail": "schemas/static/images/featured/featured-the-history-of-human-space-travel.jpg",
         "thumbnailAlt": "Image of Hubble telescope large field render",
-        "githubURL": "https://github.com/nomad-mystic/midterm-spring-2015-CAS222"
+        "githubURL": "https://github.com/nomad-mystic/midterm-spring-2015-CAS222",
+        "published": "July 1st 2015",
+        "builtWith": [
+            {
+                "name": "javascript",
+                "altText": "Javascript Language"
+            },
+            {
+                "name": "css",
+                "altText": "CSS Language"
+            },
+            {
+                "name": "html",
+                "altText": "HTML Language"
+            },
+            {
+                "name": "scss",
+                "altText": "SCSS Language"
+            }
+        ]
     }
 ]
