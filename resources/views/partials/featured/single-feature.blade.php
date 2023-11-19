@@ -74,7 +74,7 @@
 
                             <figure title="{{ $icon['altText'] ?? '' }}">
 
-                                <img src="{{ get_stylesheet_directory_uri() }}/public/images/icons/languages/{{ $icon['name'] ?? '' }}.svg"
+                                <img src="{{ get_stylesheet_directory_uri() }}/resources/images/icons/languages/{{ $icon['name'] ?? '' }}.svg"
                                      alt="Icon for {{ $icon['altText'] ?? '' }}">
 
                             </figure>
