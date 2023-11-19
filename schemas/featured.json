@@ -16,15 +16,15 @@
                 "altText": "Javascript Language"
             },
             {
-                "name": "CSS",
+                "name": "css",
                 "altText": "CSS Language"
             },
             {
-                "name": "HTML",
+                "name": "html",
                 "altText": "HTML Language"
             },
             {
-                "name": "SCSS",
+                "name": "scss",
                 "altText": "SCSS Language"
             }
         ]
