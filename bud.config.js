@@ -46,9 +46,6 @@ export default async (app) => {
 
     app.vue.set('runtimeOnly', false);
 
-    // Babel configs
-    // app.babel.setPlugin(['babel-plugin-css-in-js']);
-
     /**
      * @description Generate WordPress `theme.json`
      *
