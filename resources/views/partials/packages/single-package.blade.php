@@ -1,3 +1,10 @@
+{{-- Not ideal but a workaround for different root paths in staging and production --}}
+<component is="style">
+    summary::after {
+        background-image: url(@asset('images/icons/chevron-down.svg'));
+    }
+</component>
+
 <section class="SinglePackage w-full p-6 mb-6">
     <article>
         <header>

@@ -49,4 +49,4 @@ jobs:
         run: |
           git remote add hostgator "${{ secrets.STAGING_ADDRESS }}"
           git fetch --unshallow
-          git push -u hostgator "${{ secrets.STAGING_BRANCH }}"
+          git push -u -f hostgator "${{ secrets.STAGING_BRANCH }}"

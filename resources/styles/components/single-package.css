@@ -64,7 +64,6 @@
 
         summary::after {
             content: '';
-            background-image: url('../images/icons/chevron-down.svg');
             background-repeat: no-repeat;
             background-size: contain;
             display: block;
@@ -79,7 +78,6 @@
 
     details[open] summary:after {
         content: '';
-        background-image: url('../images/icons/chevron-down.svg');
         transform: rotate(180deg);
         transition: transform .10s linear;
     }
