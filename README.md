@@ -2,13 +2,27 @@
 
 ## Development
 
+#### Local
+```shell
+$ cd ./
+$ nvm use 
+$ yarn install
+$ yarn run dev
+```
+
+#### Production
+```shell
+$ cd ./
+$ nvm use 
+$ yarn run build
+```
+
 Helpful commands for dealing with broken packages 
 * `wp acorn optimize:clear`
 * `wp acorn package:discover`
 * `wp acorn optimize:clear`
 * `wp acorn icons:cache`
 * `wp acorn view:cache`
-
 
 ## @todos
 * Add schemas for each of the repositories
