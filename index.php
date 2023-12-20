@@ -11,6 +11,27 @@
     <?php wp_head(); ?>
 </head>
 
+
+<?php
+
+$google_analytics_tag = 'G-0W4Y4F90Y8'; // Default not production
+
+if (!empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'nomadmystic.com') {
+    $google_analytics_tag = '';
+}
+
+?>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $google_analytics_tag ?>"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', <?php echo $google_analytics_tag ?>);
+</script>
+
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <?php do_action('get_header'); ?>
