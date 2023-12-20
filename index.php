@@ -29,7 +29,7 @@ if (!empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] =
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', <?php echo $google_analytics_tag ?>);
+    gtag('config', "<?php echo $google_analytics_tag ?>");
 </script>
 
 <body <?php body_class(); ?>>
