@@ -14,10 +14,10 @@
 
 <?php
 
-$google_analytics_tag = 'G-0W4Y4F90Y8'; // Default not production
+$google_analytics_tag = 'G-EC8J6TE56P'; // Default not production
 
 if (!empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'nomadmystic.com') {
-    $google_analytics_tag = '';
+    $google_analytics_tag = 'G-T307SL3RSD';
 }
 
 ?>
@@ -29,7 +29,7 @@ if (!empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] =
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-0W4Y4F90Y8');
+    gtag('config', 'G-EC8J6TE56P');
 </script>
 
 <body <?php body_class(); ?>>
