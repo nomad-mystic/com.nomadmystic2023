@@ -23,7 +23,7 @@ if (!empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] =
 ?>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $google_analytics_tag ?>"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $google_analytics_tag; ?>"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -33,7 +33,7 @@ if (!empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] =
 
     gtag('js', new Date());
 
-    const googleTag = <?php echo $google_analytics_tag ?>
+    const googleTag = "<?php echo $google_analytics_tag; ?>";
 
     gtag('config', googleTag);
 </script>
