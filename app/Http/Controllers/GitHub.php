@@ -57,7 +57,7 @@ class GitHub extends Controller
     }
 
     /**
-     * @description
+     * @description For each of the repos get the associated languages
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      *
@@ -108,7 +108,7 @@ class GitHub extends Controller
     }
 
     /**
-     * @description
+     * @description Only get the repos that are not in the current calls string[]
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      *

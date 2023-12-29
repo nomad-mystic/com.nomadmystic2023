@@ -5,10 +5,15 @@ namespace App\Helpers;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Utils;
 
+/**
+ * @classdesc Handle anything related to get our repos
+ * @class ReposHelpers
+ * @author Keith Murphy | nomadmystics@gmail.com
+ */
 class ReposHelpers
 {
     /**
-     * @description
+     * @description Sort repos by topic
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      *

@@ -1,3 +1,9 @@
+<?php
+
+use App\Helpers\SeoHelpers;
+
+?>
+
 <section class="Repos w-[90%] xl:w-full max-w-6xl mx-auto py-6">
 
     <h4 class="text-4xl pb-4 capitalize">{{ $topicName ?? '' }}</h4>
@@ -8,6 +14,9 @@
             <li class="Repos Card w-auto sm:w-[48%] lg:w-[31%] xl:[32%] h-auto mx-0 my-auto">
                 <a href="{{ $individual['html_url'] ?? '' }}" target="_blank" rel="noreferrer" class="link block min-h-[200px] p-6">
                     <article class="flex justify-between items-start">
+
+                        <script type="application/ld+json">{!! SeoHelpers::buildRepoLdJson($individual) !!}</script>
+
                         <div class="w-full">
                             <header>
                                 <p class="Repos-title mb-1">{{ str_replace('-', ' ', $individual['name'] ?? '') }}</p>
