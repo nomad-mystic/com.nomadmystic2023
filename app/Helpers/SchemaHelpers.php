@@ -6,7 +6,7 @@ use GuzzleHttp\Utils;
 use Safe\Exceptions\FilesystemException;
 
 /**
- * @classdesc @classdesc Handle anything related to get our schemas
+ * @classdesc Handle anything related to our schemas (local)
  * @class SchemaHelpers
  * @author Keith Murphy | nomadmystics@gmail.com
  */
