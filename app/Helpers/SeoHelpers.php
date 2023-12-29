@@ -66,4 +66,60 @@ class SeoHelpers
 
         return $finalJsonLd;
     }
+
+    /**
+     * @description Create LD+JSON objects based on content of our repo
+     * @public
+     * @author Keith Murphy | nomadmystics@gmail.com
+     * @link https://schema.org/WebSite
+     *
+     * @example
+     *
+     *  <script type="application/ld+json">
+     *      {
+     *          "@context": "https://schema.org/",
+     *          "@type": "WebSite",
+     *          "name": "Okta.com",
+     *          "url": "https://okta.com",
+     *          "potentialAction": {
+     *              "@type": ReadAction,
+     *              "target": {
+     *                  "@type": EntryPoint,
+     *                  "urlTemplate": "https://okta.com"
+     *              }
+     *          },
+     *          "description": "This is a website I worked on"
+     *      }
+     *  </script>
+     *
+     * @param array $website
+     * @return string
+     */
+    public static function buildWebsiteLdJson(array $website): string
+    {
+        // Bail early
+        if (empty($website)) {
+            echo '';
+        }
+
+        // Build our object
+        $jsonLdContent = (object) [
+            '@context' => 'https://schema.org/',
+            '@type' => 'WebSite',
+            'name' => $website['name'] ?? '',
+            'potentialAction' => (object) [
+                '@type' => 'ReadAction',
+                'target' => (object) [
+                    '@type' => 'EntryPoint',
+                    'urlTemplate' => $website['url'] ?? '',
+                ],
+            ],
+            'url' => $website['url'] ?? '',
+            'description' => $website['description'] ?? '',
+        ];
+
+        $finalJsonLd = Utils::jsonEncode($jsonLdContent);
+
+        return $finalJsonLd;
+    }
 }
