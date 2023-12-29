@@ -9,7 +9,7 @@ use GuzzleHttp\Utils;
 use Illuminate\Routing\Controller;
 
 /**
- * @classdesc
+ * @classdesc Use this to call the NPM REST endpoint by package
  * @class NPM
  * @extends Controller
  * @author Keith Murphy | nomadmystics@gmail.com

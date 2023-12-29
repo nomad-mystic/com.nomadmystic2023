@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Helpers\\ReposHelpers' => $baseDir . '/app/Helpers/ReposHelpers.php',
     'App\\Helpers\\SchemaHelpers' => $baseDir . '/app/Helpers/SchemaHelpers.php',
+    'App\\Helpers\\SeoHelpers' => $baseDir . '/app/Helpers/SeoHelpers.php',
     'App\\Http\\Controllers\\GitHub' => $baseDir . '/app/Http/Controllers/GitHub.php',
     'App\\Http\\Controllers\\NPM' => $baseDir . '/app/Http/Controllers/NPM.php',
     'App\\Providers\\ThemeServiceProvider' => $baseDir . '/app/Providers/ThemeServiceProvider.php',

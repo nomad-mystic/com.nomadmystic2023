@@ -8,6 +8,7 @@ use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Utils;
 use Roots\Acorn\View\Composer;
+use Safe\Exceptions\FilesystemException;
 
 /**
  * @classdesc Expose data to the repos template
@@ -59,9 +60,10 @@ class Repos extends Composer
 
     /**
      * @description Data to be passed to view before rendering.
+     * @throws GuzzleException
+     * @throws FilesystemException
      *
      * @return array
-     * @throws GuzzleException
      */
     public function with(): array
     {
@@ -76,6 +78,7 @@ class Repos extends Composer
      * @author Keith Murphy | nomadmystics@gmail.com
      *
      * @throws GuzzleException
+     * @throws FilesystemException
      *
      * @return null|array
      */
@@ -85,6 +88,13 @@ class Repos extends Composer
 
         try {
             $query = 'https://api.github.com/user/repos?per_page=100&username=nomad-mystic&visibility=public';
+
+            // Enable debug mode for calling the endpoints less during testing
+            if (!empty($_ENV['REPOS_DEBUG']) && $_ENV['REPOS_DEBUG'] === 'true') {
+                $mockRepos = \Safe\file_get_contents(get_template_directory() . '/app/Mocks/repos.json');
+
+                return Utils::jsonDecode($mockRepos, true);
+            }
 
             $unsortedRepos = GitHub::getReposAndIgnore($query, Repos::$ignoredTopics);
 

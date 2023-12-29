@@ -5,10 +5,15 @@ namespace App\Helpers;
 use GuzzleHttp\Utils;
 use Safe\Exceptions\FilesystemException;
 
+/**
+ * @classdesc Handle anything related to our schemas (local)
+ * @class SchemaHelpers
+ * @author Keith Murphy | nomadmystics@gmail.com
+ */
 class SchemaHelpers
 {
     /**
-     * @description Pass this a JSON schema name a it will return the file
+     * @description Pass this a JSON schema name and it will return the file
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      *
