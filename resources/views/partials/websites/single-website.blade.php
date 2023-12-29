@@ -1,5 +1,14 @@
+<?php
+
+use App\Helpers\SeoHelpers;
+
+?>
+
 <section class="SingleWebsite SingleWebsite-{{ $website['name'] ?? '' }} w-full p-4">
     <article class="flex flex-col md:flex-row">
+
+        <script type="application/ld+json">{!! SeoHelpers::buildWebsiteLdJson($website) !!}</script>
+
         <a href="{{ $website['url'] ?? '' }}"
            target="_blank"
            rel="noreferrer"
