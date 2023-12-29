@@ -59,7 +59,7 @@ use App\Helpers\SeoHelpers;
 
                             <section class="Repos-languages mt-4">
 
-{{--                                <github-languages owner-repo="@php echo $individual['full_name'] ?? '' @endphp"/></github-languages>--}}
+                                <github-languages owner-repo="@php echo $individual['full_name'] ?? '' @endphp"/></github-languages>
 
                             </section>
                         </div>
