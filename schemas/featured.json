@@ -1,31 +1,94 @@
 [
     {
+        "safeName": "Space Tourism Website",
+        "name": "space-tourism",
+        "description": "Frontend Mentor Challenge (intermediate)",
+        "url": "https://space-tourism-eta-ten.vercel.app/",
+        "path": "",
+        "static": true,
+        "thumbnail": "schemas/static/images/featured/featured-space-tourism.jpeg",
+        "thumbnailAlt": "Snapshot of a website for space tourism",
+        "githubURL": "https://github.com/nomad-mystic/io.frontendmentor/tree/main/space-tourism",
+        "published": "Jan 19th 2024",
+        "builtWith": [
+            {
+                "name": "react",
+                "altText": "React Library",
+                "url": "https://react.dev/"
+            },
+            {
+                "name": "redux-reducer",
+                "altText": "Redux Toolkit Library",
+                "url":  "https://redux-toolkit.js.org/"
+            },
+            {
+                "name": "typescript",
+                "altText": "Typescript Language",
+                "url":  "https://www.typescriptlang.org/"
+            },
+            {
+                "name": "tailwindcss",
+                "altText": "Tailwind CSS Library",
+                "url":  "https://tailwindcss.com"
+            },
+            {
+                "name": "postcss",
+                "altText": "PostCSS Library",
+                "url":  "https://postcss.org/"
+            },
+            {
+                "name": "vite",
+                "altText": "Vite Library",
+                "url":  "https://vitejs.dev/"
+            },
+            {
+                "name": "vercel",
+                "altText": "Vercel Platform",
+                "url":  "https://vercel.com/"
+            },
+            {
+                "name": "nodejs",
+                "altText": "Node.js Library",
+                "url":  "https://nodejs.org/"
+            },
+            {
+                "name": "figma",
+                "altText": "Figma Graphic Tool",
+                "url":  "https://www.figma.com/"
+            }
+        ]
+    },
+    {
         "safeName": "The History of Human Space Travel",
         "name": "space-travel",
-        "description": "This is the midterm project I created for CAS222 at Portland Community College. The theme for the site is the history of space exploration by humans.",
-        "url": "website-featured/midterm-2015/index.html",
-        "path": "wp-content/themes/nomad-mystic/website-featured/midterm-2015",
+        "description": "This is the midterm project I created for CAS222 at Portland Community College.",
+        "url": "/wp-content/themes/nomad-mystic-2023/website-featured/midterm-2015/index.html",
+        "path": "wp-content/themes/nomad-mystic-2023/website-featured/midterm-2015",
         "static": true,
         "thumbnail": "schemas/static/images/featured/featured-the-history-of-human-space-travel.jpg",
         "thumbnailAlt": "Image of Hubble telescope large field render",
         "githubURL": "https://github.com/nomad-mystic/midterm-spring-2015-CAS222",
-        "published": "July 1st 2015",
+        "published": "Jul 1st 2015",
         "builtWith": [
             {
                 "name": "javascript",
-                "altText": "Javascript Language"
+                "altText": "Javascript Language",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             },
             {
                 "name": "css",
-                "altText": "CSS Language"
+                "altText": "CSS Language",
+                "url":  "https://developer.mozilla.org/en-US/docs/Learn/CSS"
             },
             {
                 "name": "html",
-                "altText": "HTML Language"
+                "altText": "HTML Language",
+                "url":  "https://developer.mozilla.org/en-US/docs/Learn/HTML"
             },
             {
                 "name": "scss",
-                "altText": "SCSS Language"
+                "altText": "SCSS Language",
+                "url":  "https://sass-lang.com/"
             }
         ]
     }

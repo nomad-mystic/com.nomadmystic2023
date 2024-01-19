@@ -1,13 +1,13 @@
 <section class="SingleFeature SingleFeature-{{ $feature['name'] ?? '' }} w-full p-4 mb-6">
     <article class="flex flex-col md:flex-row">
         <figure class="SingleFeature-thumbnail">
-            <a href="{{ get_stylesheet_directory_uri() }}/{{ $feature['url'] ?? '' }}"
+            <a href="{{ $feature['url'] ?? '' }}"
                target="_blank"
                rel="noreferrer"
                class="flex items-center"
             >
                 <img src="{{ get_stylesheet_directory_uri() }}/{{ $feature['thumbnail'] ?? '' }}"
-                     alt="{{ $feature['thumbnailAlt'] ?? '' }}"/>
+                     alt="{{ $feature['thumbnailAlt'] ?? '' }}" />
             </a>
         </figure>
 
@@ -18,7 +18,7 @@
             </header>
 
             <div class="flex flex-col SingleFeature-metadata">
-                <section class="flex gap-4">
+                <section class="flex gap-4 align-center">
                     <div class="SingleFeature-github" title="Link to GitHub code">
                         <a href="{{ $feature['githubURL'] ?? '' }}"
                            target="_blank"
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="SingleFeature-production" title="Link to production landing page">
-                        <a href="{{ get_stylesheet_directory_uri() }}/{{ $feature['url'] ?? '' }}"
+                        <a href="{{ $feature['url'] ?? '' }}"
                            target="_blank"
                            rel="noreferrer"
                            class="flex items-center"
@@ -71,14 +71,16 @@
                     @if (!empty($feature['builtWith']) && is_array($feature['builtWith']))
 
                         @foreach($feature['builtWith'] as $icon)
+                            <a href="{{ $icon['url'] ?? '' }}" target="_blank" rel="nofollow">
+                                <figure title="{{ $icon['altText'] ?? '' }}">
 
-                            <figure title="{{ $icon['altText'] ?? '' }}">
+                                    <img
+                                        src="{{ get_stylesheet_directory_uri() }}/resources/images/icons/languages/{{ $icon['name'] ?? '' }}.svg"
+                                        alt="Icon for {{ $icon['altText'] ?? '' }}">
 
-                                <img src="{{ get_stylesheet_directory_uri() }}/resources/images/icons/languages/{{ $icon['name'] ?? '' }}.svg"
-                                     alt="Icon for {{ $icon['altText'] ?? '' }}">
+                                </figure>
 
-                            </figure>
-
+                            </a>
                         @endforeach
 
                     @endif
