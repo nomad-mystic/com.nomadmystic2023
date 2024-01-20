@@ -8,6 +8,12 @@
     &-description {}
 
     &-thumbnail {
+        @screen md {
+            width: 100%;
+            height: 100%;
+            max-width: 348px;
+        }
+
         img {
             width: 100%;
         }
@@ -32,6 +38,14 @@
         svg {
             width: var(--icon-size);
             height: var(--icon-size);
+
+            @screen md {
+                --icon-size: 1.2rem;
+            }
+
+            @screen lg {
+                --icon-size: 1.6rem;
+            }
         }
 
         a {
@@ -43,6 +57,7 @@
 
     &-builtWith {
         gap: .5rem;
+        flex-wrap: wrap;
 
         p {
             font-size: 12px;
