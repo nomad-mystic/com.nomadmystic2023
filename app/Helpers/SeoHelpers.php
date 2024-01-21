@@ -68,7 +68,7 @@ class SeoHelpers
     }
 
     /**
-     * @description
+     * @description Build our common Website schema
      * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *
