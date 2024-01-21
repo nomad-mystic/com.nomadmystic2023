@@ -1,5 +1,14 @@
+<?php
+
+use App\Helpers\SeoHelpers;
+
+?>
+
 <section class="SingleFeature SingleFeature-{{ $feature['name'] ?? '' }} w-full p-4 mb-6">
     <article class="flex flex-col md:flex-row">
+
+        <script type="application/ld+json">{!! SeoHelpers::buildFeaturedLdJson($feature) !!}</script>
+
         <figure class="SingleFeature-thumbnail">
             <a href="{{ $feature['url'] ?? '' }}"
                target="_blank"
