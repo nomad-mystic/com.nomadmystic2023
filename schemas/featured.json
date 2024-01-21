@@ -19,42 +19,42 @@
             {
                 "name": "redux-reducer",
                 "altText": "Redux Toolkit Library",
-                "url":  "https://redux-toolkit.js.org/"
+                "url": "https://redux-toolkit.js.org/"
             },
             {
                 "name": "typescript",
                 "altText": "Typescript Language",
-                "url":  "https://www.typescriptlang.org/"
+                "url": "https://www.typescriptlang.org/"
             },
             {
                 "name": "tailwindcss",
                 "altText": "Tailwind CSS Library",
-                "url":  "https://tailwindcss.com"
+                "url": "https://tailwindcss.com"
             },
             {
                 "name": "postcss",
                 "altText": "PostCSS Library",
-                "url":  "https://postcss.org/"
+                "url": "https://postcss.org/"
             },
             {
                 "name": "vite",
                 "altText": "Vite Library",
-                "url":  "https://vitejs.dev/"
+                "url": "https://vitejs.dev/"
             },
             {
                 "name": "vercel",
                 "altText": "Vercel Platform",
-                "url":  "https://vercel.com/"
+                "url": "https://vercel.com/"
             },
             {
                 "name": "nodejs",
                 "altText": "Node.js Library",
-                "url":  "https://nodejs.org/"
+                "url": "https://nodejs.org/"
             },
             {
                 "name": "figma",
                 "altText": "Figma Graphic Tool",
-                "url":  "https://www.figma.com/"
+                "url": "https://www.figma.com/"
             }
         ]
     },
@@ -63,7 +63,7 @@
         "name": "space-travel",
         "description": "This is the midterm project I created for CAS222 at Portland Community College.",
         "url": "/wp-content/themes/nomad-mystic-2023/website-featured/midterm-2015/index.html",
-        "path": "wp-content/themes/nomad-mystic-2023/website-featured/midterm-2015",
+        "path": "/wp-content/themes/nomad-mystic-2023/website-featured/midterm-2015",
         "static": true,
         "thumbnail": "schemas/static/images/featured/featured-the-history-of-human-space-travel.jpg",
         "thumbnailAlt": "Image of Hubble telescope large field render",
@@ -78,17 +78,17 @@
             {
                 "name": "css",
                 "altText": "CSS Language",
-                "url":  "https://developer.mozilla.org/en-US/docs/Learn/CSS"
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS"
             },
             {
                 "name": "html",
                 "altText": "HTML Language",
-                "url":  "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML"
             },
             {
                 "name": "scss",
                 "altText": "SCSS Language",
-                "url":  "https://sass-lang.com/"
+                "url": "https://sass-lang.com/"
             }
         ]
     }
