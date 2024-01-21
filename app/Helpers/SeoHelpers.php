@@ -68,14 +68,40 @@ class SeoHelpers
     }
 
     /**
-     * @description Create LD+JSON objects based on content of our repo
+     * @description Build our common Website schema
+     * @private
+     * @author Keith Murphy | nomadmystics@gmail.com
+     *
+     * @param array $website
+     * @return object
+     *
+     */
+    private static function buildWebsiteBaseLdJson(array $website): object
+    {
+        // Build our object
+        return (object) [
+            '@context' => 'https://schema.org/',
+            '@type' => 'WebSite',
+            'name' => $website['safeName'] ?? '',
+            'potentialAction' => (object) [
+                '@type' => 'ReadAction',
+                'target' => (object) [
+                    '@type' => 'EntryPoint',
+                    'urlTemplate' => $website['url'] ?? '',
+                ],
+            ],
+            'url' => $website['url'] ?? '',
+            'description' => $website['description'] ?? '',
+        ];
+    }
+
+    /**
+     * @description Create LD+JSON objects based on content of our websites
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      * @link https://schema.org/WebSite
      *
      * @example
-     *
-     *  <script type="application/ld+json">
      *      {
      *          "@context": "https://schema.org/",
      *          "@type": "WebSite",
@@ -90,7 +116,6 @@ class SeoHelpers
      *          },
      *          "description": "This is a website I worked on"
      *      }
-     *  </script>
      *
      * @param array $website
      * @return string
@@ -102,23 +127,65 @@ class SeoHelpers
             echo '';
         }
 
-        // Build our object
-        $jsonLdContent = (object) [
-            '@context' => 'https://schema.org/',
-            '@type' => 'WebSite',
-            'name' => $website['name'] ?? '',
-            'potentialAction' => (object) [
-                '@type' => 'ReadAction',
-                'target' => (object) [
-                    '@type' => 'EntryPoint',
-                    'urlTemplate' => $website['url'] ?? '',
-                ],
-            ],
-            'url' => $website['url'] ?? '',
-            'description' => $website['description'] ?? '',
-        ];
+        $jsonLdContent = self::buildWebsiteBaseLdJson($website);
 
         $finalJsonLd = Utils::jsonEncode($jsonLdContent);
+
+        return $finalJsonLd;
+    }
+
+    /**
+     * @description Create LD+JSON objects based on content of our featured items
+     * @public
+     * @author Keith Murphy | nomadmystics@gmail.com
+     *
+     * @return string
+     * @param array $feature
+     */
+    public static function buildFeaturedLdJson(array $feature): string
+    {
+        // Bail early
+        if (empty($feature)) {
+            echo '';
+        }
+
+        $baseContent = self::buildWebsiteBaseLdJson($feature);
+
+        // "merge" immutable
+        $featureLdJson = $baseContent;
+
+        // Extend base
+        $featureLdJson->datePublished = $feature['published'] ?? '';
+
+        $featureLdJson->maintainer = (object) [
+            '@type' => 'Person',
+            'name' => 'Keith Murphy',
+            'url' => $feature['githubURL'] ?? '',
+            'email' => 'nomadmystics@gmail.com',
+        ];
+
+        // Sanity check
+        if (!empty($feature['builtWith']) && is_array($feature['builtWith'])) {
+
+            // Build our keywords
+            $keywords = [];
+
+            foreach ($feature['builtWith'] as $techKey => $techValue) {
+                if (!empty($techValue)) {
+                    $techTerm = (object) [];
+
+                    $techTerm->{'@type'} = 'DefinedTerm';
+                    $techTerm->{'name'} = $techValue['name'] ?? '';
+                    $techTerm->{'url'} = $techValue['url'] ?? '';
+
+                    $keywords[] = $techTerm;
+                }
+            }
+
+            $featureLdJson->keywords = $keywords;
+        }
+
+        $finalJsonLd = Utils::jsonEncode($featureLdJson);
 
         return $finalJsonLd;
     }
