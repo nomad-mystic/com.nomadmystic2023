@@ -198,5 +198,15 @@
         "thumbnail": "schemas/static/images/websites/website-instacart-logo.png",
         "thumbnailAlt": "Image of Instacart logo",
         "githubURL": ""
+    },
+    {
+        "safeName": "Zuora",
+        "name": "zuora-com",
+        "description": "I created JS/SCSS/PHP/WordPress solutions based on Zuora's development needs.",
+        "url": "https://www.zuora.com/",
+        "type": "client",
+        "thumbnail": "schemas/static/images/websites/website-zuora-logo.png",
+        "thumbnailAlt": "Image of Zuora logo",
+        "githubURL": ""
     }
 ]
