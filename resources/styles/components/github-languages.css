@@ -1,7 +1,5 @@
 .GitHub {
-    &-languages {
-
-    }
+    &-languages {}
 
     &-language {
         width: var(--logo-width);

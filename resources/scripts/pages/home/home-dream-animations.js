@@ -1,7 +1,7 @@
 import AnimationMethods from '@scripts/pages/home/animation-methods.js';
 
 /**
- * @classdesc
+ * @classdesc Build the animations for the "Dream" section
  * @class HomeDreamAnimations
  * @extends AnimationMethods
  * @author Keith Murphy | nomadmystics@gmail.com
@@ -135,13 +135,6 @@ export default class HomeDreamAnimations extends AnimationMethods {
             this.fillPathAnimation(UIDevelopmentPaths, '4s', 'var(--color-white)');
             this.fillPathAnimation(wordpressDevelopmentPaths, '5s', 'var(--color-white)');
 
-            setTimeout(() => {
-                // if the user waits for th dream not of today animation start animation
-                if (homeFeaturedSchoolWebsites.classList.contains('startAnimation')) {
-                    // $(window).unbind('scroll');
-                    // homeActionSections();
-                }
-            }, 2000);
         }, 8000);
     };
 }

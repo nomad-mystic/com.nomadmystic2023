@@ -1,6 +1,11 @@
 import AnimationMethods from '@scripts/pages/home/animation-methods.js';
 
-
+/**
+ * @classdesc Build animations for Explore/Discover/Code section
+ * @class HomeAspirationsAnimations
+ * @extends AnimationMethods
+ * @author Keith Murphy | nomadmystics@gmail.com
+ */
 export default class HomeAspirationsAnimations extends AnimationMethods {
     constructor()
     {

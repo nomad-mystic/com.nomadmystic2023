@@ -74,7 +74,6 @@ class SeoHelpers
      *
      * @param array $website
      * @return object
-     *
      */
     private static function buildWebsiteBaseLdJson(array $website): object
     {

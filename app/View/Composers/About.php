@@ -39,11 +39,11 @@ class About extends Composer
      * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *
-     * @return object
+     * @return mixed
      */
     private function buildPhotos(): mixed
     {
-        $photos = (object) [];
+        $photos = [];
 
         $json = SchemaHelpers::getSchemaJson('about');
 
