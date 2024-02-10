@@ -39,11 +39,11 @@ class Featured extends Composer
      * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *
-     * @return object
+     * @return mixed
      */
     private function buildFeatures(): mixed
     {
-        $features = (object) [];
+        $features = [];
 
         $json = SchemaHelpers::getSchemaJson('featured');
 

@@ -4,6 +4,12 @@ namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
 
+/**
+ * @classdesc Expose Post level data to the views
+ * @class Websites
+ * @extends Composer
+ * @author Keith Murphy | nomadmystics@gmail.com
+ */
 class Post extends Composer
 {
     /**

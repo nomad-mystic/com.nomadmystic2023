@@ -39,11 +39,11 @@ class Websites extends Composer
      * @private
      * @author Keith Murphy | nomadmystics@gmail.com
      *
-     * @return object
+     * @return mixed
      */
     private function buildWebsites(): mixed
     {
-        $websites = (object) [];
+        $websites = [];
 
         $json = SchemaHelpers::getSchemaJson('websites');
 

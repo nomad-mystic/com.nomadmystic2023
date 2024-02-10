@@ -1,4 +1,3 @@
-import AnimationMethods from '@scripts/pages/home/animation-methods.js';
 import HomeHeaderAnimations from '@scripts/pages/home/home-header-animations.js';
 
 /**

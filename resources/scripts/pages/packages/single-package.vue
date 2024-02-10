@@ -36,6 +36,14 @@ export default {
         };
     },
     methods: {
+        /**
+         * @description Parse the a packages README markdown
+         * @public
+         * @author Keith Murphy | nomadmystics@gmail.com
+         *
+         * @param {string} html
+         * @return {string|Promise<string>}
+         */
         parseMarkdown(html) {
             const pure = purify.sanitize(html);
 
@@ -60,8 +68,6 @@ export default {
         const html = this.$el.dataset.markdown;
 
         this.markdown = this.parseMarkdown(html);
-
-        // hljs.highlightAll();
     },
 };
 </script>

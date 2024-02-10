@@ -13,7 +13,8 @@
                 transition: background-color .25s linear;
             }
 
-            &-link {}
+            &-link {
+            }
 
             &-title {
                 text-transform: capitalize;

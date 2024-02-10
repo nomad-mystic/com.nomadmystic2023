@@ -110,13 +110,7 @@ class Bootloader
             return class_exists('WP_CLI') ? $this->bootWpCli($app) : $this->bootConsole($app);
         }
 
-        /**
-         * @hotfix There is an issue were Env::get('ACORN_ENABLE_EXPIRIMENTAL_ROUTER'); is null form .env
-         * @link https://discourse.roots.io/t/sage-10-php-router/25770
-         */
-        $router = true;
-
-        if ($router) {
+        if (Env::get('ACORN_ENABLE_EXPIRIMENTAL_ROUTER')) {
             $app->singleton(
                 \Illuminate\Contracts\Http\Kernel::class,
                 \Roots\Acorn\Http\Kernel::class

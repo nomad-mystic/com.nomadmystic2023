@@ -122,6 +122,7 @@
             opacity: 0;
         }
 
-        &.is-active {}
+        &.is-active {
+        }
     }
 }
