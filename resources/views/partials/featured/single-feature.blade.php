@@ -10,7 +10,8 @@ if (!empty($feature['external'])) {
 
 } else {
 
-    $featured_url = get_stylesheet_directory_uri() }}/{{ $feature['url'];
+    $featured_url = get_stylesheet_directory_uri() . '/' . $feature['url'] ?? '';
+
 }
 
 ?>
