@@ -10,7 +10,7 @@ use App\Helpers\SeoHelpers;
         <script type="application/ld+json">{!! SeoHelpers::buildFeaturedLdJson($feature) !!}</script>
 
         <figure class="SingleFeature-thumbnail">
-            <a href="{{ $feature['url'] ?? '' }}"
+            <a href="{{ !empty($feature['external']) ? $feature['url'] : get_stylesheet_directory_uri() }}/{{ $feature['url'] }}"
                target="_blank"
                rel="noreferrer"
                class="flex items-center"
@@ -46,7 +46,7 @@ use App\Helpers\SeoHelpers;
                     </div>
 
                     <div class="SingleFeature-production" title="Link to production landing page">
-                        <a href="{{ $feature['url'] ?? '' }}"
+                        <a href="{{ !empty($feature['external']) ? $feature['url'] : get_stylesheet_directory_uri() }}/{{ $feature['url'] }}"
                            target="_blank"
                            rel="noreferrer"
                            class="flex items-center"
