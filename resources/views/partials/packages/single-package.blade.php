@@ -8,8 +8,8 @@
 <section class="SinglePackage w-full p-6 mb-6">
     <article>
         <header>
-            <h2 class="SinglePackage-title sm:text-3xl pb-2">{{  $package['name'] ?? '' }}</h2>
-            <p class="SinglePackage-description">{{  $package['description'] ?? '' }}</p>
+            <h2 class="SinglePackage-title sm:text-3xl pb-2">{{ __($package['name'] ?? '', NOMAD_THEME_TEXT_DOMAIN) }}</h2>
+            <p class="SinglePackage-description">{{ __($package['description'] ?? '', NOMAD_THEME_TEXT_DOMAIN) }}</p>
         </header>
 
         <section class="flex items-center flex-wrap gap-3 justify-start pt-4" title="NPM Homepage">
@@ -23,7 +23,7 @@
                         {{ svg('si-npm') }}
                     </figure>
 
-                    <p>Package</p>
+                    <p>{{ __('Package', NOMAD_THEME_TEXT_DOMAIN) }}</p>
                 </a>
             </div>
 
@@ -37,7 +37,7 @@
                         {{ svg('si-github') }}
                     </figure>
 
-                    <p>Homepage</p>
+                    <p>{{ __('Homepage', NOMAD_THEME_TEXT_DOMAIN) }}</p>
                 </a>
             </div>
 
@@ -51,7 +51,7 @@
                         {{ svg('fas-bugs') }}
                     </figure>
 
-                    <p>Bugs</p>
+                    <p>{{ __('Bugs', NOMAD_THEME_TEXT_DOMAIN) }}</p>
                 </a>
             </div>
 

@@ -2,22 +2,18 @@
     {{ __('Skip to content') }}
 </a>
 
-@include('sections.header',
-    [
-      'classes' => 'DarkTheme'
-    ]
-)
+@include('sections.header', [
+    'classes' => 'DarkTheme'
+])
 
 <main id="main" class="main DarkTheme">
     @yield('content')
 </main>
 
-@include('sections.footer',
-    [
-      'classes' => 'DarkTheme',
-    ]
-)
+@include('sections.footer', [
+    'classes' => 'DarkTheme',
+])
 
 @include('partials.common.footer-navigation', [
-  'type' => 'DarkTheme',
+    'type' => 'DarkTheme',
 ])

@@ -10,11 +10,9 @@
     @yield('content')
 </main>
 
-@include('sections.footer',
-    [
-      'classes' => 'LightTheme',
-    ]
-)
+@include('sections.footer', [
+    'classes' => 'LightTheme',
+])
 
 @include('partials.common.footer-navigation', [
   'type' => 'LightTheme',

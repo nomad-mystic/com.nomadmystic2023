@@ -2,7 +2,7 @@
          style="background-image: url(@asset('images/background-built-with.jpg'))">
 
     <header class="Header BuiltWith-header">
-        <h2 class="text-2xl text-black mb-4">Custom Theme Built with...</h2>
+        <h2 class="text-2xl text-black mb-4">{{ __('Custom Theme Built with...', NOMAD_THEME_TEXT_DOMAIN) }}</h2>
     </header>
 
     <section class="BuiltWith-icons flex justify-between">

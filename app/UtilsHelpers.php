@@ -5,7 +5,7 @@ namespace App;
 use Dotenv;
 
 /**
- * @classdesc
+ * @classdesc Handle general utils here
  * @class Utils
  * @author Keith Murphy | nomadmystics@gmail.com
  */
