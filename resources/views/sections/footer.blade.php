@@ -31,7 +31,7 @@
     </section>
 
     <section class="Footer-contact flex flex-col sm:flex-row items-center pt-4">
-        <h4>Contact the Nomad:</h4>
+        <h4>{{ __('Contact the Nomad:', NOMAD_THEME_TEXT_DOMAIN) }}</h4>
         <a href="mailto:nomadmystics@gmail.com?subject=This is from the footer of nomadmystic.com" class="ml-1">keith@nomadmystic.com</a>
     </section>
 </footer>

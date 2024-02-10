@@ -6,14 +6,18 @@ use App\Helpers\SeoHelpers;
 
 <section class="Repos w-[90%] xl:w-full max-w-6xl mx-auto py-6">
 
-    <h4 class="text-4xl pb-4 capitalize">{{ $topicName ?? '' }}</h4>
+    <h4 class="text-4xl pb-4 capitalize">{{ __($topicName ?? '', NOMAD_THEME_TEXT_DOMAIN) }}</h4>
 
     <ul class="grid grid-cols-1 auto-rows-auto gap-5 md:grid-cols-2 lg:grid-cols-3 justify-center lg:justify-start sm:flex-row">
         @if(count($repos) > 0)
             @foreach($repos as $repo => $individual)
                 <li class="Repos Card w-auto sm:w-[48%] lg:w-[31%] xl:[32%] h-auto mx-0 my-auto">
-                    <a href="{{ $individual['html_url'] ?? '' }}" target="_blank" rel="noreferrer"
-                       class="link block min-h-[200px] p-6">
+                    <a href="{{ $individual['html_url'] ?? '' }}"
+                       target="_blank"
+                       rel="noreferrer"
+                       class="link block min-h-[200px] p-6"
+                    >
+
                         <article class="flex justify-between items-start">
 
                             <script type="application/ld+json">{!! SeoHelpers::buildRepoLdJson($individual) !!}</script>
@@ -40,6 +44,7 @@ use App\Helpers\SeoHelpers;
                                         <span class="Repos-issues-count flex"
                                               title="GitHub Issues"
                                         >
+
                                         {{ svg('fas-folder-open') }}{{ $individual['open_issues_count'] ?? 0  }}
                                     </span>
 
@@ -50,7 +55,7 @@ use App\Helpers\SeoHelpers;
 
                                             @foreach($individual['topics'] as $topic)
 
-                                                <span class="Repos-topic">{{ $topic ?? ''}}</span>
+                                                <span class="Repos-topic">{{ __($topic ?? '', NOMAD_THEME_TEXT_DOMAIN)}}</span>
 
                                             @endforeach
                                         </span>
