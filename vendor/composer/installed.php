@@ -3,11 +3,11 @@
         'name' => 'nomad-mystic/nomad-mystic',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2e3f32b2d4d691fcad0792cecaad9db8a006beef',
+        'reference' => '6551f3847d5b590c753b3a8d97c470a81afd8b7f',
         'type' => 'wordpress-theme',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'dev' => true,
+        'dev' => false,
     ),
     'versions' => array(
         'blade-ui-kit/blade-icons' => array(
@@ -319,7 +319,7 @@
         'nomad-mystic/nomad-mystic' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2e3f32b2d4d691fcad0792cecaad9db8a006beef',
+            'reference' => '6551f3847d5b590c753b3a8d97c470a81afd8b7f',
             'type' => 'wordpress-theme',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -454,8 +454,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0.0 || 2.0.0 || 3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '1.0.0 || 2.0.0 || 3.0.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -523,15 +523,6 @@
             'install_path' => __DIR__ . '/../roots/support',
             'aliases' => array(),
             'dev_requirement' => false,
-        ),
-        'squizlabs/php_codesniffer' => array(
-            'pretty_version' => '3.7.2',
-            'version' => '3.7.2.0',
-            'reference' => 'ed8e00df0a83aa96acf703f8c2979ff33341f879',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../squizlabs/php_codesniffer',
-            'aliases' => array(),
-            'dev_requirement' => true,
         ),
         'symfony/console' => array(
             'pretty_version' => 'v6.3.4',
