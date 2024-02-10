@@ -2,6 +2,17 @@
 
 use App\Helpers\SeoHelpers;
 
+$featured_url = '';
+
+if (!empty($feature['external'])) {
+
+    $featured_url = $feature['url'];
+
+} else {
+
+    $featured_url = get_stylesheet_directory_uri() }}/{{ $feature['url'];
+}
+
 ?>
 
 <section class="SingleFeature SingleFeature-{{ $feature['name'] ?? '' }} w-full p-4 mb-6">
@@ -10,7 +21,7 @@ use App\Helpers\SeoHelpers;
         <script type="application/ld+json">{!! SeoHelpers::buildFeaturedLdJson($feature) !!}</script>
 
         <figure class="SingleFeature-thumbnail">
-            <a href="{{ !empty($feature['external']) ? $feature['url'] : get_stylesheet_directory_uri() }}/{{ $feature['url'] }}"
+            <a href="{{ $featured_url }}"
                target="_blank"
                rel="noreferrer"
                class="flex items-center"
@@ -46,7 +57,7 @@ use App\Helpers\SeoHelpers;
                     </div>
 
                     <div class="SingleFeature-production" title="Link to production landing page">
-                        <a href="{{ !empty($feature['external']) ? $feature['url'] : get_stylesheet_directory_uri() }}/{{ $feature['url'] }}"
+                        <a href="{{ $featured_url }}"
                            target="_blank"
                            rel="noreferrer"
                            class="flex items-center"
@@ -86,8 +97,8 @@ use App\Helpers\SeoHelpers;
                                 <figure title="{{ $icon['altText'] ?? '' }}">
 
                                     <img
-                                        src="{{ get_stylesheet_directory_uri() }}/resources/images/icons/languages/{{ $icon['name'] ?? '' }}.svg"
-                                        alt="Icon for {{ $icon['altText'] ?? '' }}">
+                                            src="{{ get_stylesheet_directory_uri() }}/resources/images/icons/languages/{{ $icon['name'] ?? '' }}.svg"
+                                            alt="Icon for {{ $icon['altText'] ?? '' }}">
 
                                 </figure>
 
