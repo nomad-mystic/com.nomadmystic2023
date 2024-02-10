@@ -10,10 +10,16 @@ use GuzzleHttp\Utils;
 use WP_REST_Request;
 use WP_REST_Response as WP_REST_Response;
 
+/**
+ * @classdesc Handle HTTP request related to the GitHub API
+ * @class GitHub
+ * @extends Controller
+ * @author Keith Murphy | nomadmystics@gmail.com
+ */
 class GitHub extends Controller
 {
     /**
-     * @description
+     * @description Pass this a query for the GitHub API and it will return the body's content
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      * @link https://github.com/vlucas/phpdotenv
@@ -23,9 +29,10 @@ class GitHub extends Controller
      * @throws GuzzleException
      *
      * @param string $query
+     * @param string $method
      * @return string|null
      */
-    public static function getGitHubEndpoint(string $query): ?string
+    public static function getGitHubEndpoint(string $query, string $method = 'GET'): ?string
     {
         try {
             $client = new Client();
@@ -34,7 +41,7 @@ class GitHub extends Controller
                 return 'Please check the GITHUB_API_KEY and GITHUB_USERNAME variables are set in .env';
             }
 
-            $response = $client->request('GET', $query, [
+            $response = $client->request($method, $query, [
                 'headers' => [
                     'X-GitHub-Api-Version' => '2022-11-28',
                     'Accept' => 'application/vnd.github+json',

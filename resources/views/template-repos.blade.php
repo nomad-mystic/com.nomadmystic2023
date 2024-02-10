@@ -10,7 +10,6 @@
         'headerTitle' => 'Repositories',
     ])
 
-
     @if(!empty($allRepos) && count($allRepos) > 0)
         @foreach($allRepos as $topicName => $repos)
 

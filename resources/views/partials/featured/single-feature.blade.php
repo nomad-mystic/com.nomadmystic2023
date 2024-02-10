@@ -16,7 +16,7 @@ use App\Helpers\SeoHelpers;
                class="flex items-center"
             >
                 <img src="{{ get_stylesheet_directory_uri() }}/{{ $feature['thumbnail'] ?? '' }}"
-                     alt="{{ $feature['thumbnailAlt'] ?? '' }}" />
+                     alt="{{ $feature['thumbnailAlt'] ?? '' }}"/>
             </a>
         </figure>
 
@@ -40,6 +40,7 @@ use App\Helpers\SeoHelpers;
                                     'role' => 'img',
                                 ]) }}
                             </figure>
+
                             <p class="ml-2">Code</p>
                         </a>
                     </div>
@@ -56,6 +57,7 @@ use App\Helpers\SeoHelpers;
                                     'role' => 'img',
                                 ]) }}
                             </figure>
+
                             <p class="ml-2">Production</p>
                         </a>
                     </div>

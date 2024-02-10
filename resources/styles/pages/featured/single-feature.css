@@ -4,8 +4,11 @@
     border-radius: var(--radius);
     border: 1px solid var(--color-black);
 
-    &-title {}
-    &-description {}
+    &-title {
+    }
+
+    &-description {
+    }
 
     &-thumbnail {
         @screen md {
@@ -24,9 +27,14 @@
         gap: .75rem;
     }
 
-    &-github {}
-    &-production {}
-    &-published {}
+    &-github {
+    }
+
+    &-production {
+    }
+
+    &-published {
+    }
 
     &-github,
     &-production,

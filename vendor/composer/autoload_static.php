@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2
+class ComposerStaticInit35c78f35e88b9053e595e181e978f76c
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -538,7 +538,6 @@ class ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2
         'App\\Http\\Controllers\\NPM' => __DIR__ . '/../..' . '/app/Http/Controllers/NPM.php',
         'App\\Providers\\ThemeServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ThemeServiceProvider.php',
         'App\\UtilsHelpers' => __DIR__ . '/../..' . '/app/UtilsHelpers.php',
-        'App\\View\\Components\\Alert' => __DIR__ . '/../..' . '/app/View/Components/Alert.php',
         'App\\View\\Composers\\About' => __DIR__ . '/../..' . '/app/View/Composers/About.php',
         'App\\View\\Composers\\App' => __DIR__ . '/../..' . '/app/View/Composers/App.php',
         'App\\View\\Composers\\Featured' => __DIR__ . '/../..' . '/app/View/Composers/Featured.php',
@@ -3062,9 +3061,9 @@ class ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitddb6173d2e234b5e5fedb649d315f6b2::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit35c78f35e88b9053e595e181e978f76c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit35c78f35e88b9053e595e181e978f76c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit35c78f35e88b9053e595e181e978f76c::$classMap;
 
         }, null, ClassLoader::class);
     }

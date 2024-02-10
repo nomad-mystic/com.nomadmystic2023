@@ -13,7 +13,6 @@ return array(
     'App\\Http\\Controllers\\NPM' => $baseDir . '/app/Http/Controllers/NPM.php',
     'App\\Providers\\ThemeServiceProvider' => $baseDir . '/app/Providers/ThemeServiceProvider.php',
     'App\\UtilsHelpers' => $baseDir . '/app/UtilsHelpers.php',
-    'App\\View\\Components\\Alert' => $baseDir . '/app/View/Components/Alert.php',
     'App\\View\\Composers\\About' => $baseDir . '/app/View/Composers/About.php',
     'App\\View\\Composers\\App' => $baseDir . '/app/View/Composers/App.php',
     'App\\View\\Composers\\Featured' => $baseDir . '/app/View/Composers/Featured.php',

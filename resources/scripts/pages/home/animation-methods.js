@@ -1,3 +1,9 @@
+
+/**
+ * @classdesc Parent methods for home page animations
+ * @class AnimationMethods
+ * @author Keith Murphy | nomadmystics@gmail.com
+ */
 export default class AnimationMethods {
     /**
      * @description Create style.Transition Animation with stroke-dashoffset
@@ -51,7 +57,7 @@ export default class AnimationMethods {
     }
 
     /**
-     * @description
+     * @description Perform "fade" animations
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      *
@@ -72,9 +78,10 @@ export default class AnimationMethods {
     }
 
     /**
-     * @description
+     * @description Perform "path" animations
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
+     *
      * @param {HTMLCollection} paths
      * @param {string} duration
      * @param {string} fillColor

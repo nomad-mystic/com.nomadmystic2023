@@ -1,7 +1,7 @@
 {{-- Not ideal but a workaround for different root paths in staging and production --}}
 <component is="style">
     summary::after {
-        background-image: url(@asset('images/icons/chevron-down.svg'));
+    background-image: url(@asset('images/icons/chevron-down.svg'));
     }
 </component>
 
@@ -22,6 +22,7 @@
                     <figure class="SinglePackage-npm">
                         {{ svg('si-npm') }}
                     </figure>
+
                     <p>Package</p>
                 </a>
             </div>
@@ -35,6 +36,7 @@
                     <figure class="SinglePackage-github">
                         {{ svg('si-github') }}
                     </figure>
+
                     <p>Homepage</p>
                 </a>
             </div>
@@ -48,6 +50,7 @@
                     <figure class="SinglePackage-issues">
                         {{ svg('fas-bugs') }}
                     </figure>
+
                     <p>Bugs</p>
                 </a>
             </div>
@@ -57,6 +60,7 @@
                     <figure>
                         {{ svg('fas-paperclip') }}
                     </figure>
+
                     <time>{{ Carbon\Carbon::parse($package['time']['created'] ?? '')->format('F d, Y') }}</time>
                 </div>
             </div>
@@ -66,6 +70,7 @@
                     <figure>
                         {{ svg('fas-heartbeat') }}
                     </figure>
+
                     <time>{{ Carbon\Carbon::parse($package['time']['modified'] ?? '')->format('F d, Y') }}</time>
                 </div>
             </div>

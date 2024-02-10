@@ -17,7 +17,7 @@ use Illuminate\Routing\Controller;
 class NPM extends Controller
 {
     /**
-     * @description
+     * @description Pass this a package name for the NPM registry, and it will return the body's content
      * @public
      * @author Keith Murphy | nomadmystics@gmail.com
      * @link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#registry
