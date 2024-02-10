@@ -29,7 +29,7 @@ use App\Helpers\SeoHelpers;
                     <h2 class="SingleWebsite-title text-2xl md:text-3xl pb-2">{{ $website['safeName'] ?? '' }}</h2>
                 </a>
 
-                <p class="SingleWebsite-description">{{ $website['description'] ?? '' }}</p>
+                <p class="SingleWebsite-description">{{ __($website['description'] ?? '', NOMAD_THEME_TEXT_DOMAIN) }}</p>
             </header>
 
             <section class="flex">
@@ -43,7 +43,7 @@ use App\Helpers\SeoHelpers;
                             <figure>
                                 {{ svg('si-github') }}
                             </figure>
-                            <p class="ml-2">Code</p>
+                            <p class="ml-2">{{ __('Code', NOMAD_THEME_TEXT_DOMAIN) }}</p>
                         </a>
                     </div>
                 @endif
@@ -57,7 +57,7 @@ use App\Helpers\SeoHelpers;
                         <figure>
                             {{ svg('fas-link') }}
                         </figure>
-                        <p class="ml-2">Production</p>
+                        <p class="ml-2">{{ __('Production', NOMAD_THEME_TEXT_DOMAIN) }}</p>
                     </a>
                 </div>
             </section>

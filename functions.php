@@ -1,5 +1,7 @@
 <?php
 
+const NOMAD_THEME_TEXT_DOMAIN = 'nomad-theme';
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
