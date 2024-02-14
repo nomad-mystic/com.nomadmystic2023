@@ -57,7 +57,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'primary_navigation' => __('Primary Navigation', NOMAD_THEME_TEXT_DOMAIN),
     ]);
 
     /**
@@ -66,7 +66,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'footer_navigation' => __('Footer Navigation', 'sage'),
+        'footer_navigation' => __('Footer Navigation', NOMAD_THEME_TEXT_DOMAIN),
     ]);
 
     /**
@@ -135,14 +135,14 @@ add_action('widgets_init', function () {
 
     register_sidebar(
         [
-            'name' => __('Primary', 'sage'),
+            'name' => __('Primary', NOMAD_THEME_TEXT_DOMAIN),
             'id' => 'sidebar-primary',
         ] + $config
     );
 
     register_sidebar(
         [
-            'name' => __('Footer', 'sage'),
+            'name' => __('Footer', NOMAD_THEME_TEXT_DOMAIN),
             'id' => 'sidebar-footer',
         ] + $config
     );
