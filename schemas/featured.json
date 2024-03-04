@@ -60,6 +60,61 @@
         ]
     },
     {
+        "safeName": "Entertainment Web App",
+        "name": "entertainment-web-app",
+        "description": "Frontend Mentor Challenge (advanced)",
+        "url": "https://entertainment-frontendmentor.vercel.app",
+        "path": "",
+        "static": true,
+        "external": true,
+        "thumbnail": "schemas/static/images/featured/featured-entertainment-web-app.png",
+        "thumbnailAlt": "Snapshot of a website for entertainment web app",
+        "githubURL": "https://github.com/nomad-mystic/io.frontendmentor/tree/main/entertainment-web-app",
+        "published": "March 4th 2024",
+        "builtWith": [
+            {
+                "name": "react",
+                "altText": "React Library",
+                "url": "https://react.dev/"
+            },
+            {
+                "name": "next",
+                "altText": "Next.js Framework",
+                "url": "https://nextjs.org/"
+            },
+            {
+                "name": "typescript",
+                "altText": "Typescript Language",
+                "url": "https://www.typescriptlang.org/"
+            },
+            {
+                "name": "tailwindcss",
+                "altText": "Tailwind CSS Library",
+                "url": "https://tailwindcss.com"
+            },
+            {
+                "name": "postcss",
+                "altText": "PostCSS Library",
+                "url": "https://postcss.org/"
+            },
+            {
+                "name": "vercel",
+                "altText": "Vercel Platform",
+                "url": "https://vercel.com/"
+            },
+            {
+                "name": "nodejs",
+                "altText": "Node.js Library",
+                "url": "https://nodejs.org/"
+            },
+            {
+                "name": "figma",
+                "altText": "Figma Graphic Tool",
+                "url": "https://www.figma.com/"
+            }
+        ]
+    },
+    {
         "safeName": "The History of Human Space Travel",
         "name": "space-travel",
         "description": "This is the midterm project I created for CAS222 at Portland Community College.",
